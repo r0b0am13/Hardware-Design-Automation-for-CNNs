@@ -130,6 +130,8 @@ for i in range(0, 32):
     bias_temp = conv_bias[i:i+1]
 
     conv_forward_1 = conv_forward(img_tensor, weights_temp, bias_temp)
+    conv_forward_1 = np.where(conv_forward_1 <= 1, conv_forward_1, 1)
+    conv_forward_1 = np.where(conv_forward_1 >= -1, conv_forward_1, -1)
     max_pool_1 = pool_forward(conv_forward_1)
     l.append(conv_forward_1)
     m.append(max_pool_1)
