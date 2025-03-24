@@ -64,7 +64,6 @@ def conv_forward(A_prev, W, b):
 
     return Z
 
-
 def pool_forward(A_prev):
     """
     Implements the forward pass of the pooling layer
@@ -124,17 +123,15 @@ conv_bias = np.array(conv_bias)
 l = []
 m = []
 
-for i in range(0, 32):
-    weights_temp = conv_weights[9*i:9*(i+1)]
-    weights_temp = weights_temp.reshape((3, 3))
-    bias_temp = conv_bias[i:i+1]
+weights_temp = conv_weights[:9]
+weights_temp = weights_temp.reshape((3, 3))
+bias_temp = conv_bias[:1]
 
-    conv_forward_1 = conv_forward(img_tensor, weights_temp, bias_temp)
-    conv_forward_1 = np.where(conv_forward_1 <= 1, conv_forward_1, 1)
-    conv_forward_1 = np.where(conv_forward_1 >= -1, conv_forward_1, -1)
-    max_pool_1 = pool_forward(conv_forward_1)
-    l.append(conv_forward_1)
-    m.append(max_pool_1)
+conv_forward_1 = conv_forward(img_tensor, weights_temp, bias_temp)
+conv_forward_1 = np.clip(conv_forward_1, -1, 1)
+max_pool_1 = pool_forward(conv_forward_1)
+l.append(conv_forward_1)
+m.append(max_pool_1)
 
 
 l = np.array(l)
