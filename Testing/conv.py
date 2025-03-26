@@ -151,5 +151,5 @@ m = m.reshape(-1,1)
 l = pd.DataFrame(l)
 m = pd.DataFrame(m)
 
-l.to_csv('conv2d.csv', index=False)
-m.to_csv('max_pool.csv', index=False)
+l.to_csv('conv2d.csv', header=None, index=None)
+m.to_csv('max_pool.csv', header=None, index=None)
