@@ -128,6 +128,9 @@ img_tensor = transform(image)
 img_tensor = img_tensor / 255.0
 
 img_tensor = img_tensor.numpy()
+img_tensor = np.flip(img_tensor, axis=1)
+img_tensor = np.flip(img_tensor, axis=0)
+
 
 conv_weights = pd.read_csv('Weights_Biases/conv2d.csv', header=None)
 conv_bias = pd.read_csv('Weights_Biases/conv2d_bias.csv', header=None)
@@ -140,6 +143,10 @@ m = []
 
 weights_temp = conv_weights[:9]
 weights_temp = weights_temp.reshape((3, 3))
+weights_temp = np.flip(weights_temp, axis = 1)
+weights_temp = np.flip(weights_temp, axis = 0)
+
+
 bias_temp = conv_bias[:1]
 
 conv_forward_1 = conv_forward(img_tensor, weights_temp, bias_temp)
