@@ -100,21 +100,6 @@ def pool_forward(A_prev):
 
     return A
 
-def zero_pad(X, pad = 1):
-    """
-    Pad with zeros all images of the dataset X.
-
-    Argument:
-    X -- python numpy array of shape (m, n_H, n_W, n_C) representing a batch of m images
-    pad -- integer, amount of padding around each image on vertical and horizontal dimensions
-
-    Returns:
-    X_pad -- padded image of shape (m, n_H + 2 * pad, n_W + 2 * pad, n_C)
-    """
-
-    X_pad = np.pad(X, ((pad, pad), (pad, pad)))
-    return X_pad
-
 # Read a PIL image
 image = Image.open('number_3.jpeg')
 
@@ -151,8 +136,7 @@ bias_temp = conv_bias[:1]
 
 conv_forward_1 = conv_forward(img_tensor, weights_temp, bias_temp)
 conv_forward_1 = np.clip(conv_forward_1, -1, 1)
-conv_forward_padded = zero_pad(conv_forward_1)
-max_pool_1 = pool_forward(conv_forward_padded)
+max_pool_1 = pool_forward(conv_forward_1)
 
 l.append(conv_forward_1)
 m.append(max_pool_1)
