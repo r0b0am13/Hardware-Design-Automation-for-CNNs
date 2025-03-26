@@ -80,8 +80,8 @@ def pool_forward(A_prev):
     stride = 2
 
     # Define the dimensions of the output
-    n_H = int((n_H_prev - f) / stride) + 1
-    n_W = int((n_W_prev - f) / stride) + 1
+    n_H = int((n_H_prev - f) / stride)
+    n_W = int((n_W_prev - f) / stride)
 
     # Initialize output matrix A
     A = np.zeros((n_H, n_W))
