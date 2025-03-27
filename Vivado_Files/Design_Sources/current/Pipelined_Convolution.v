@@ -2,6 +2,7 @@
 
 
 module Pipelined_Convolution#(
+    parameter COLUMN_SIZE = 28,
     parameter KERNEL_SIZE = 3,
     parameter DATA_WIDTH = 16,
     parameter FRACTION_BITS = 14,
@@ -18,9 +19,20 @@ module Pipelined_Convolution#(
     );
     localparam NUM_INP = KERNEL_SIZE*KERNEL_SIZE + 1;
     localparam STAGES = $clog2(NUM_INP);
+    localparam ROW_BITS = $clog2(COLUMN_SIZE);
     wire [DATA_WIDTH-1:0] init [0:NUM_INP - 1];
-
-
+    
+    reg [ROW_BITS-1:0] valid_conv = 0;
+    
+    always @(posedge clock)
+        if(valid)
+            if(valid_conv==COLUMN_SIZE-1)
+                valid_conv<=0;
+            else
+                valid_conv <= valid_conv+1;
+    wire valid_conv_wire;
+    assign valid_conv_wire = (valid_conv>COLUMN_SIZE-KERNEL_SIZE) ? 0 : 1; 
+    
     reg [STAGES-1:0] valid_reg;
     wire [STAGES-2:0] valid_wire;
     //VALID LOGIC
@@ -29,7 +41,7 @@ module Pipelined_Convolution#(
         for(m=0; m<STAGES;m=m+1)
             if(m==0) begin
                 always @(posedge clock)
-                    valid_reg[m] <=valid;
+                    valid_reg[m] <= (valid & valid_conv_wire);
                 assign valid_wire[m] = valid_reg[m]; 
             end       
             else if(m==STAGES-1) begin

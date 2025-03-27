@@ -26,8 +26,8 @@ module Maxpool
     DATA_WIDTH = 16,
     FRACTION_BITS = 14,
     SIGNED = 1,
-    ROW_SIZE = 28,
-    COLUMN_SIZE = 28
+    ROW_SIZE = 4,
+    COLUMN_SIZE = 4
     )(
     
     input [STRIDE_SIZE*STRIDE_SIZE*DATA_WIDTH - 1 : 0 ] data_in,
@@ -93,15 +93,18 @@ module Maxpool
     
     always @(posedge clock) begin
         if(data_in_valid) begin
-            if(row_counter==(ROW_SIZE)-1) begin
-            row_counter <=0;
-                if(row_valid_counter==STRIDE_SIZE-1)
+            if(row_counter==(ROW_SIZE-1)) begin
+                row_counter <=0;
+                if(row_valid_counter==STRIDE_SIZE-1) begin
                     row_valid_counter <=0;
-                else
-                   row_valid_counter <= row_valid_counter+1;              
+                end
+                else begin
+                   row_valid_counter <= row_valid_counter+1;   
+                end           
             end
-            else
-                counter <= counter + 1; 
+            else begin
+                row_counter <= row_counter + 1; 
+            end
         end
     end
     
