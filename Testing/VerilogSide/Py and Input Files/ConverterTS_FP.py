@@ -10,9 +10,9 @@ def binary_to_fixed_point(binary_str):
     return fixed_point_value
 
 # File paths
-input_file = "Output.txt"  # Change this to your actual file path
-conv_output_file = "Sorted_Convolution_Output.txt"
-maxpool_output_file = "Sorted_MaxPool_Output.txt"
+input_file = "RAW_Terminal_Output.txt"  # Change this to your actual file path
+conv_output_file = "FP_Convolution_TS.txt"
+maxpool_output_file = "FP_Maxpool_TS.txt"
 
 # Lists for storing convolution and maxpool outputs
 conv_data = []
@@ -38,12 +38,14 @@ with open(input_file, "r") as file:
 sorted_conv_data = sorted(conv_data, key=lambda x: x[0])  # Sort by timestamp
 sorted_maxpool_data = sorted(maxpool_data, key=lambda x: x[0])  # Sort by timestamp
 
-# Save only fixed-point values for convolution output
+# Save sorted convolution output
 with open(conv_output_file, "w") as f:
-    for _, value in sorted_conv_data:
-        f.write(f"{value:.6f}\n")
+    for time_stamp, value in sorted_conv_data:
+        f.write(f"Time: {time_stamp} | Fixed Point Output: {value:.15f}\n")
 
-# Save only fixed-point values for maxpool output
+# Save sorted maxpool output
 with open(maxpool_output_file, "w") as f:
-    for _, value in sorted_maxpool_data:
-        f.write(f"{value:.6f}\n")
+    for time_stamp, value in sorted_maxpool_data:
+        f.write(f"Time: {time_stamp} | Fixed Point Output: {value:.15f}\n")
+
+print(f"Sorted data saved:\n- {conv_output_file}\n- {maxpool_output_file}")

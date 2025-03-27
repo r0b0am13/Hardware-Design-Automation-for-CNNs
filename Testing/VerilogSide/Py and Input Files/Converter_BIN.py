@@ -1,9 +1,9 @@
 # File paths
-input_file = "Output.txt"  # Change this to your actual file path
-conv_file_with_time = "Sorted_Convolution_Output_With_Timestamp.txt"
-maxpool_file_with_time = "Sorted_MaxPool_Output_With_Timestamp.txt"
-conv_file_no_time = "Sorted_Convolution_Output_No_Timestamp.txt"
-maxpool_file_no_time = "Sorted_MaxPool_Output_No_Timestamp.txt"
+input_file = "RAW_Terminal_Output.txt"  # Change this to your actual file path
+conv_file_with_time = "BIN_Convolution_TS.txt"
+maxpool_file_with_time = "BIN_Maxpool_TS.txt"
+conv_file_no_time = "BIN_Convolution.txt"
+maxpool_file_no_time = "BIN_Maxpool.txt"
 
 # Lists for storing convolution and maxpool outputs
 conv_data = []
