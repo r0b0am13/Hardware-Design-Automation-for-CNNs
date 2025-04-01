@@ -101,7 +101,7 @@ def pool_forward(A_prev):
     return A
 
 # Read a PIL image
-image = Image.open('number_3.jpeg')
+image = Image.open('6x6img.jpg')
 
 # Define a transform to convert PIL
 transform = transforms.Compose([
@@ -117,8 +117,8 @@ img_tensor = np.flip(img_tensor, axis=1)
 img_tensor = np.flip(img_tensor, axis=0)
 
 
-conv_weights = pd.read_csv('Weights_Biases/conv2d.csv', header=None)
-conv_bias = pd.read_csv('Weights_Biases/conv2d_bias.csv', header=None)
+conv_weights = pd.read_csv('weights6x6.csv', header=None)
+conv_bias = pd.read_csv('bias6x6.csv', header=None)
 
 conv_weights = np.array(conv_weights)
 conv_bias = np.array(conv_bias)
@@ -127,12 +127,14 @@ l = []
 m = []
 
 weights_temp = conv_weights[:9]
+print(weights_temp)
 weights_temp = weights_temp.reshape((3, 3))
 weights_temp = np.flip(weights_temp, axis = 1)
 weights_temp = np.flip(weights_temp, axis = 0)
 
 
 bias_temp = conv_bias[:1]
+print(bias_temp)
 
 conv_forward_1 = conv_forward(img_tensor, weights_temp, bias_temp)
 conv_forward_1 = np.clip(conv_forward_1, -1, 1)
@@ -151,5 +153,5 @@ m = m.reshape(-1,1)
 l = pd.DataFrame(l)
 m = pd.DataFrame(m)
 
-l.to_csv('conv2d.csv', header=None, index=None)
-m.to_csv('max_pool.csv', header=None, index=None)
+l.to_csv('conv2d6x6.csv', header=None, index=None)
+m.to_csv('max_pool6x6.csv', header=None, index=None)
