@@ -1,24 +1,4 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 27.03.2025 01:39:01
-// Design Name: 
-// Module Name: Conv_Max_Full
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
-
 
 module Conv_Max_Full#(
     IN_DATA_WIDTH = 8,
@@ -37,7 +17,7 @@ module Conv_Max_Full#(
     input [IN_DATA_WIDTH-1:0] Pixel_In,
     input Pixel_valid,
     input clock,
-    output [DATA_WIDTH-1:0] Con_Out, Max_Out,
+    output [DATA_WIDTH-1:0] Con_Out, Max_Out,FP_Input,
     output Con_Valid, Max_Valid
     );
     
@@ -53,7 +33,7 @@ module Conv_Max_Full#(
     assign Max_Out = max_out;
     assign Con_Valid = convol_valid;
     assign Max_Valid = max_valid;
-    
+    assign FP_Input = FP_Out;
     Pixel8_to_FP16Format#(.IN_DATA_WIDTH(IN_DATA_WIDTH),.OUT_INTEGER(OUT_INTEGER),.OUT_FRACTION(OUT_FRACTION)) 
         P816(.Pixel_In(Pixel_In) ,.FP_Out(FP_Out));
         

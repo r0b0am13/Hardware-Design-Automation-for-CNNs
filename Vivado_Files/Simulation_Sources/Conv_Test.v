@@ -5,7 +5,7 @@
 module Conv_Test;
 
     reg clk, reset;
-    wire [15:0] convol_out, maxpool_out;
+    wire [15:0] convol_out, maxpool_out,FP_Out;
     wire convol_valid, max_valid;
 
     reg [7:0] mem [0:783]; 
@@ -19,6 +19,7 @@ module Conv_Test;
         .Pixel_In(pixel_in),
         .Pixel_valid(valid_pin),
         .clock(clk),
+        .FP_Input(FP_Out),
         .Con_Out(convol_out), 
         .Max_Out(maxpool_out),
         .Con_Valid(convol_valid), 
@@ -53,7 +54,7 @@ module Conv_Test;
             valid_pin <= 0;
         end else begin
             pixel_in <= mem[addr];
-            if (addr != 783) begin
+            if (addr != 784) begin
                 valid_pin <= 1;
                 addr <= addr + 1;
             end else begin

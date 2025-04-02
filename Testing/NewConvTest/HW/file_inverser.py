@@ -1,5 +1,5 @@
-input_file1 = "max_pool.csv"
-input_file2 = "conv2d.csv"
+input_file1 = "FP_Convolution.txt"
+input_file2 = "FP_Maxpool.txt"
 # Read the file and reverse the lines
 with open(input_file1, "r") as f:
     lines1 = f.readlines()
