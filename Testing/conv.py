@@ -37,8 +37,7 @@ def conv_forward(A_prev, W, b):
     Returns:
     Z -- conv output, numpy array of shape (m, n_H, n_W, n_C)
     """
-
-    n_H_prev, n_W_prev = 28, 28
+    _, n_H_prev, n_W_prev = A_prev.shape
 
     # Retrieve dimensions from W's shape
     (f, f) = W.shape
@@ -47,6 +46,7 @@ def conv_forward(A_prev, W, b):
     n_H = n_H_prev - f + 1
     n_W = n_W_prev - f + 1
 
+    print(n_H, n_W)
     # Initialize the output volume Z with zeros
     Z = np.zeros((n_H, n_W))
 
@@ -75,7 +75,7 @@ def pool_forward(A_prev):
     A -- output of the pool layer, a numpy array of shape (m, n_H, n_W, n_C)
     """
 
-    n_H_prev, n_W_prev = 28, 28
+    n_H_prev, n_W_prev = A_prev.shape
     f = 2
     stride = 2
 
