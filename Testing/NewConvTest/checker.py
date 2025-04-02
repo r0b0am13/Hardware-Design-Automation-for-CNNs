@@ -3,6 +3,11 @@ Conv_HW = 'FP_Convolution.txt'
 Max_SW = 'maxpool_output.txt'
 Max_HW = 'FP_Maxpool.txt'
 Threshold = 0.0003
+Image_size = 28
+Kernel_size = 3
+Maxpool_size = 2
+
+statistics_path = 'statistics.txt'
 
 with open(Conv_HW, 'r') as f1, open(Conv_SW, 'r') as f2:
         Conv_HW_lines = [float(line.strip()) for line in f1]
@@ -40,10 +45,18 @@ for i in range(len(Max_HW_lines)):
 Conv_Diff_Avg = Conv_Sum / len(Conv_HW_lines)
 Max_Diff_Avg = Max_Sum / len(Max_HW_lines)
 
-print("Convolution Hits: ", Conv_Hit)
-print("Convolution Misses: ", Conv_Miss)
-print("Maxpool Hits: ", Max_Hit)
-print("Maxpool Misses: ", Max_Miss)
-
-print("Convolution Average Difference: ", f"{Conv_Diff_Avg:.16f}")
-print("Maxpool Average Difference: ", f"{Max_Diff_Avg:.16f}")
+with open(statistics_path, 'w') as stats_file:
+    stats_file.write("\nStatistics: \n")
+    stats_file.write(f"Input image size: {Image_size} x {Image_size}\n")
+    stats_file.write(f"Number of pixels: {Image_size * Image_size}\n")
+    stats_file.write(f"Kernel size: {Kernel_size} x {Kernel_size}\n")
+    stats_file.write(f"Maxpool size: {Maxpool_size} x {Maxpool_size}\n")
+    stats_file.write(f"Threshold: {Threshold}\n\n")
+    stats_file.write(f"Number of Convolution Output: {len(Conv_HW_lines)}\n")
+    stats_file.write(f"Number of Maxpool Output: {len(Max_HW_lines)}\n\n")
+    stats_file.write(f"Convolution Hits: {Conv_Hit}\n")
+    stats_file.write(f"Convolution Misses: {Conv_Miss}\n")
+    stats_file.write(f"Maxpool Hits: {Max_Hit}\n")
+    stats_file.write(f"Maxpool Misses: {Max_Miss}\n\n")
+    stats_file.write(f"Convolution Average Difference: {Conv_Diff_Avg:.16f}\n")
+    stats_file.write(f"Maxpool Average Difference: {Max_Diff_Avg:.16f}\n")

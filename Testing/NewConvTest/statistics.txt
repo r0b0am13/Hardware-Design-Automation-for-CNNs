@@ -1,0 +1,19 @@
+
+Statstics:
+
+Input image size: 28 x 28
+Number of pixels: 784
+Kernel size: 3 x 3
+Maxpool size: 2 x 2
+Threshold: 0.0003
+
+Number of Convolution Output:  676
+Number of Maxpool Output:  169
+
+Convolution Hits: 676
+Convolution Misses: 0
+Maxpool Hits: 169
+Maxpool Misses: 0
+
+Convolution Average Difference: 0.0000607878481298
+Maxpool Average Difference: 0.0000702204636867
