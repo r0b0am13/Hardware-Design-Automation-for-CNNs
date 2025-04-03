@@ -29,7 +29,6 @@ print(weights,  "\n")
 output_rows = row - (Kernel_size - 1)
 output_columns = column - (Kernel_size - 1)
 output = np.zeros((output_rows, output_columns))
-print(norm_image)
 
 for i in range(output_rows):
     for j in range(output_columns):

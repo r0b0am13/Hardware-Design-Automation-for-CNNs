@@ -93,9 +93,6 @@ conv_bias = pd.read_csv('bias6x6.csv', header=None)
 conv_weights = np.array(conv_weights)
 conv_bias = np.array(conv_bias)
 
-l = []
-m = []
-
 weights_temp = conv_weights[:9]
 weights_temp = weights_temp.reshape((3, 3))
 weights_temp = np.flip(weights_temp, axis = 1)
@@ -104,24 +101,21 @@ weights_temp = np.flip(weights_temp, axis = 0)
 
 bias_temp = conv_bias[:1]
 
-conv_forward_1 = conv_forward(img_tensor, weights_temp, bias_temp)
-conv_forward_1 = np.clip(conv_forward_1, -1, 1)
-print(conv_forward_1)
-max_pool_1 = pool_forward(conv_forward_1)
-print(max_pool_1)
-
-l.append(conv_forward_1)
-m.append(max_pool_1)
+conv_forward = conv_forward(img_tensor, weights_temp, bias_temp)
+conv_forward = np.clip(conv_forward, -1, 1)
+print(conv_forward)
+max_pool = pool_forward(conv_forward)
+print(max_pool)
 
 
-l = np.array(l)
-m = np.array(m)
+# Write convolution outputs to a file
+with open('convolution_output.txt', 'w') as conv_file:
+    for row in conv_forward:
+        for value in row:
+            conv_file.write(f"{value}\n")
 
-l = l.reshape(-1,1)
-m = m.reshape(-1,1)
-
-l = pd.DataFrame(l)
-m = pd.DataFrame(m)
-#
-# l.to_csv('conv2d6x6.csv', header=None, index=None)
-# m.to_csv('max_pool6x6.csv', header=None, index=None)
+# Write maxpool outputs to a file
+with open('maxpool_output.txt', 'w') as pool_file:
+    for row in max_pool:
+        for value in row:
+            pool_file.write(f"{value}\n")
