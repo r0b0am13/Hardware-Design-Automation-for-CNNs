@@ -4,28 +4,6 @@ import pandas as pd
 from PIL import Image
 import torchvision.transforms as transforms
 
-def conv_single_step(a_slice_prev, W, b):
-    """
-    Arguments:
-    a_slice_prev -- slice of input data of shape (f, f, n_C_prev)
-    W -- Weight parameters contained in a window - matrix of shape (f, f, n_C_prev)
-    b -- Bias parameters contained in a window - matrix of shape (1, 1, 1)
-
-    Returns:
-    Z -- a scalar value, the result of convolving the sliding window (W, b) on a slice x of the input data
-    """
-
-    # Element-wise product between a_slice_prev and W
-    s = a_slice_prev * W
-
-    # Sum over all entries of the volume s
-    Z = np.sum(s)
-
-    # Add bias b to Z
-    Z += b
-
-    return Z[0,0]
-
 def conv_forward(A_prev, W, b):
     """
     Arguments:
@@ -37,7 +15,7 @@ def conv_forward(A_prev, W, b):
     Returns:
     Z -- conv output, numpy array of shape (m, n_H, n_W, n_C)
     """
-    _, n_H_prev, n_W_prev = A_prev.shape
+    n_H_prev, n_W_prev = A_prev.shape
 
     # Retrieve dimensions from W's shape
     (f, f) = W.shape
@@ -58,9 +36,8 @@ def conv_forward(A_prev, W, b):
             horiz_start = w
             horiz_end = horiz_start + f
 
-            a_slice_prev = A_prev[:, vert_start:vert_end, horiz_start:horiz_end]
-            a_slice_prev = a_slice_prev.reshape(f, f)
-            Z[h, w] = conv_single_step(a_slice_prev, W, b)
+            a_slice_prev = A_prev[vert_start:vert_end, horiz_start:horiz_end]
+            Z[h, w] = np.sum(a_slice_prev * W) + b[0, 0]
 
     return Z
 
@@ -80,8 +57,8 @@ def pool_forward(A_prev):
     stride = 2
 
     # Define the dimensions of the output
-    n_H = int((n_H_prev - f) / stride)
-    n_W = int((n_W_prev - f) / stride)
+    n_H = int((n_H_prev - f) / stride) + 1
+    n_W = int((n_W_prev - f) / stride) + 1
 
     # Initialize output matrix A
     A = np.zeros((n_H, n_W))
@@ -95,24 +72,17 @@ def pool_forward(A_prev):
             horiz_end = horiz_start + f
 
             a_slice_prev = A_prev[vert_start:vert_end, horiz_start:horiz_end]
-
             A[h,w] = np.max(a_slice_prev)
 
     return A
 
 # Read a PIL image
-image = Image.open('6x6img.jpg')
+image = Image.open('6x6img.jpg').convert('L')
 
-# Define a transform to convert PIL
-transform = transforms.Compose([
-    transforms.PILToTensor()
-])
 
 # Convert the PIL image to Torch tensor
-img_tensor = transform(image)
-img_tensor = img_tensor / 255.0
-
-img_tensor = img_tensor.numpy()
+img_tensor =  np.array(image)
+img_tensor = img_tensor / 256.0
 img_tensor = np.flip(img_tensor, axis=1)
 img_tensor = np.flip(img_tensor, axis=0)
 
@@ -123,35 +93,29 @@ conv_bias = pd.read_csv('bias6x6.csv', header=None)
 conv_weights = np.array(conv_weights)
 conv_bias = np.array(conv_bias)
 
-l = []
-m = []
-
 weights_temp = conv_weights[:9]
-print(weights_temp)
 weights_temp = weights_temp.reshape((3, 3))
 weights_temp = np.flip(weights_temp, axis = 1)
 weights_temp = np.flip(weights_temp, axis = 0)
 
 
 bias_temp = conv_bias[:1]
-print(bias_temp)
 
-conv_forward_1 = conv_forward(img_tensor, weights_temp, bias_temp)
-conv_forward_1 = np.clip(conv_forward_1, -1, 1)
-max_pool_1 = pool_forward(conv_forward_1)
-
-l.append(conv_forward_1)
-m.append(max_pool_1)
+conv_forward = conv_forward(img_tensor, weights_temp, bias_temp)
+conv_forward = np.clip(conv_forward, -1, 1)
+print(conv_forward)
+max_pool = pool_forward(conv_forward)
+print(max_pool)
 
 
-l = np.array(l)
-m = np.array(m)
+# Write convolution outputs to a file
+with open('convolution_output.txt', 'w') as conv_file:
+    for row in conv_forward:
+        for value in row:
+            conv_file.write(f"{value}\n")
 
-l = l.reshape(-1,1)
-m = m.reshape(-1,1)
-
-l = pd.DataFrame(l)
-m = pd.DataFrame(m)
-
-l.to_csv('conv2d6x6.csv', header=None, index=None)
-m.to_csv('max_pool6x6.csv', header=None, index=None)
+# Write maxpool outputs to a file
+with open('maxpool_output.txt', 'w') as pool_file:
+    for row in max_pool:
+        for value in row:
+            pool_file.write(f"{value}\n")

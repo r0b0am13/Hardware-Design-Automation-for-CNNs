@@ -33,8 +33,10 @@ output = np.zeros((output_rows, output_columns))
 for i in range(output_rows):
     for j in range(output_columns):
         region = norm_image[i:i+Kernel_size, j:j+Kernel_size] 
-        conv_result = np.sum(region * weights) + bias[0, 0]  
+        conv_result = np.sum(region * weights) + bias[0, 0]
         output[i, j] = conv_result
+
+
 print("Convolution Outputs:\n")
 print(output,   "\n")
 
