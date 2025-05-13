@@ -8,15 +8,19 @@
 ### Current Verilog Design Files in Vivado_Files/Design_Sources/current.
 ### Old Verilog Design Files in Vivado_Files/Design_Sources/old.
 ### Trained CNN with respective saved models and parameters in CNN_Files.
+### All testing data for convolution/maxpool is in Testing.
+
+## Current Progress
+ - Design of modular blocks for FP Adders,Multipliers and Comparators.
+ - Working parameterized Image Buffers, Convolution and Maxpool blocks.
+ - Tested Combined Convolution and Maxpool blocks with 6x6 and 28x28 image with average accuracy upto 4th decimal places.
+ - Joined NN and Conv/Maxpool block for a complete CNN.
 
 ## Changes to do :-
+  - Testing the complete CNN on simulation and hardware and fix the complete flow of data.
 
-### Software
-- Make python based convolution tester for FP values of trained model.
 
-### Hardware
-  - Complete FP_Adder.v for saturation logic and ensure parameterisation across files.
-  - Another Image buffer and MaxPool System (paramterised)
-  - Combine all to make a single Convolution & Maxpool Block (with image input and autoprocess for convolution)
+
+
 
 
