@@ -4,11 +4,11 @@
 
 ## Current File Locations
 
-### Verilog Testbenches in Vivado_File/Simulation_Sources. 
-### Current Verilog Design Files in Vivado_Files/Design_Sources/current.
-### Old Verilog Design Files in Vivado_Files/Design_Sources/old.
-### Trained CNN with respective saved models and parameters in CNN_Files.
-### All testing data for convolution/maxpool is in Testing.
+- Verilog Testbenches in **Vivado_File/Simulation_Sources.** 
+- Current Verilog Design Files in **Vivado_Files/Design_Sources/current.**
+- Old Verilog Design Files in **Vivado_Files/Design_Sources/old.**
+- Trained CNN with respective saved models and parameters in **CNN_Files.**
+- All testing data for convolution/maxpool is in **Testing.**
 
 ## Current Progress
  - Design of modular blocks for FP Adders,Multipliers and Comparators.
