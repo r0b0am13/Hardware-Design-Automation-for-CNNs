@@ -31,7 +31,7 @@ module Maxpool
     )(
     
     input [STRIDE_SIZE*STRIDE_SIZE*DATA_WIDTH - 1 : 0 ] data_in,
-    input data_in_valid,clock,
+    input data_in_valid,clock,sreset_n,
     output [DATA_WIDTH-1:0] maxpool_out,
     output out_valid
     
@@ -75,7 +75,10 @@ module Maxpool
         
             for(k=0; k<stage_width; k = k+1) begin : gen_reg
             always @(posedge clock)
-                reg_array[k] <= wire_array[k];
+                if(!sreset_n) 
+                    reg_array[k] <= 0;
+                else
+                    reg_array[k] <= wire_array[k];
             end
         end
         assign maxpool_out = gen_stage[STAGES-1].reg_array[0];
@@ -90,9 +93,13 @@ module Maxpool
     reg [$clog2(STRIDE_SIZE)-1: 0] row_valid_counter = 0;
     reg [$clog2(ROW_SIZE)-1: 0] row_counter = 0;
     
-    
+  //valid input control
     always @(posedge clock) begin
-        if(data_in_valid) begin
+        if(!sreset_n) begin
+            row_counter<=0;
+            row_valid_counter<=0;
+        end
+        else if(data_in_valid) begin
             if(row_counter==(ROW_SIZE-1)) begin
                 row_counter <=0;
                 if(row_valid_counter==STRIDE_SIZE-1) begin
@@ -110,7 +117,10 @@ module Maxpool
     
     
     always @(posedge clock) begin
-        if(data_in_valid) begin
+        if(!sreset_n) begin
+            counter<=0;
+        end
+        else if(data_in_valid) begin
             if(counter==STRIDE_SIZE-1)
             counter <=0;
             else
@@ -123,22 +133,32 @@ module Maxpool
     //VALID LOGIC
     genvar m;
     generate
-        for(m=0; m<STAGES;m=m+1)
+        for(m=0; m<STAGES;m=m+1) begin
             if(m==0) begin
                 always @(posedge clock)
-                    valid_reg[m] <=valid;
+                    if(!sreset_n)
+                        valid_reg[m] <= 0;
+                    else
+                        valid_reg[m] <=valid;
                 assign valid_wire[m] = valid_reg[m]; 
             end       
             else if(m==STAGES-1) begin
                 always @(posedge clock)
-                    valid_reg[m] <=valid_wire[m-1];
+                    if(!sreset_n)
+                        valid_reg[m] <= 0;
+                    else
+                        valid_reg[m] <=valid_wire[m-1];
                 assign out_valid = valid_reg[m]; 
             end
             else begin
                 always @(posedge clock)
-                    valid_reg[m] <=valid_wire[m-1];
+                    if(!sreset_n)
+                        valid_reg[m] <= 0;
+                    else
+                        valid_reg[m] <=valid_wire[m-1];
                 assign valid_wire[m] = valid_reg[m]; 
-            end       
+            end
+        end       
     endgenerate
    
    function automatic integer STAGE_WIDTH;

@@ -1,0 +1,20 @@
+name: mnist-cnn-env
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.9
+  - pip
+  - numpy
+  - pandas
+  - matplotlib
+  - seaborn
+  - scikit-learn
+  - imbalanced-learn
+  - pillow
+  - h5py>=3.8.0,<4
+  - pip:
+      - tensorflow==2.20.*
+      - keras>=3.0.0
+      - ml_dtypes
+      - optree

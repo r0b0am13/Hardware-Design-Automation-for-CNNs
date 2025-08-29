@@ -2,16 +2,18 @@
 
 module Data_Buffer 
     #(
-    DATA_SIZE = 8
+    DATA_WIDTH = 16
     )
     (
-    input clock,
+    input clock,sreset_n,
     input  data_valid,
-    input [DATA_SIZE-1:0] data_in,
-    output reg [DATA_SIZE-1:0] data_out);
+    input [DATA_WIDTH-1:0] data_in,
+    output reg [DATA_WIDTH-1:0] data_out);
 
 
 always @(posedge clock) 
-    if(data_valid)
+    if(!sreset_n)
+        data_out <= 0;
+    else if(data_valid)
         data_out <= data_in;
 endmodule

@@ -297,4 +297,26 @@ begin
     end
 end
 
+reg [`numNeuronLayer3*`dataWidth-1:0] holdData_4;
+assign axi_rd_data = holdData_4[`dataWidth-1:0];
+
+always @(posedge s_axi_aclk)
+    begin
+        if (o3_valid[0] == 1'b1)
+            holdData_4 <= x3_out;
+        else if(axi_rd_en)
+        begin
+            holdData_4 <= holdData_4>>`dataWidth;
+        end
+    end
+
+
+maxFinder #(.numInput(`numNeuronLayer3),.inputWidth(`dataWidth))
+    mFind(
+        .i_clk(s_axi_aclk),
+        .i_data(x3_out),
+        .i_valid(o3_valid),
+        .o_data(out),
+        .o_data_valid(out_valid)
+    );
 endmodule

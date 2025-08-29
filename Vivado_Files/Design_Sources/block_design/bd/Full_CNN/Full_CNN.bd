@@ -1,0 +1,873 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x9C7B1C152593246C",
+      "device": "xc7z020clg484-1",
+      "gen_directory": "../../../../Hardware_Automation_Vivado.gen/sources_1/bd/Full_CNN",
+      "name": "Full_CNN",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2025.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "Pixel8_to_FP16Format_0": "",
+      "Pipelined_Convolution_0": "",
+      "Maxpool_0": "",
+      "zyNet_0": "",
+      "Image_Buffer_0": "",
+      "Image_Buffer_1": "",
+      "Weight_Bias_0": ""
+    },
+    "ports": {
+      "Conv_Debug": {
+        "direction": "O",
+        "left": "15",
+        "right": "0"
+      },
+      "Pixel_In": {
+        "direction": "I",
+        "left": "7",
+        "right": "0"
+      },
+      "data_in_valid": {
+        "direction": "I"
+      },
+      "clock": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "ASSOCIATED_RESET": {
+            "value": "reset_n",
+            "value_src": "default"
+          },
+          "CLK_DOMAIN": {
+            "value": "Full_CNN_clock_0",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "reset_n": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_LOW",
+            "value_src": "default"
+          }
+        }
+      },
+      "o1_valid_d": {
+        "direction": "O",
+        "left": "63",
+        "right": "0"
+      },
+      "o2_valid_d": {
+        "direction": "O",
+        "left": "31",
+        "right": "0"
+      },
+      "o3_valid_d": {
+        "direction": "O",
+        "left": "9",
+        "right": "0"
+      },
+      "out_final": {
+        "direction": "O",
+        "left": "31",
+        "right": "0"
+      },
+      "out_valid_final": {
+        "direction": "O"
+      },
+      "x1_out_d": {
+        "direction": "O",
+        "left": "1023",
+        "right": "0"
+      },
+      "x2_out_d": {
+        "direction": "O",
+        "left": "511",
+        "right": "0"
+      },
+      "x3_out_d": {
+        "direction": "O",
+        "left": "159",
+        "right": "0"
+      },
+      "Conv_valid_Debug": {
+        "direction": "O"
+      },
+      "Maxpool_Debug": {
+        "direction": "O",
+        "left": "15",
+        "right": "0"
+      },
+      "Maxpool_valid_Debug": {
+        "direction": "O"
+      }
+    },
+    "components": {
+      "Pixel8_to_FP16Format_0": {
+        "vlnv": "xilinx.com:module_ref:Pixel8_to_FP16Format:1.0",
+        "ip_revision": "1",
+        "xci_name": "Full_CNN_Pixel8_to_FP16Format_0_0",
+        "xci_path": "ip\\Full_CNN_Pixel8_to_FP16Format_0_0\\Full_CNN_Pixel8_to_FP16Format_0_0.xci",
+        "inst_hier_path": "Pixel8_to_FP16Format_0",
+        "has_run_ip_tcl": "true",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Pixel8_to_FP16Format",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "Pixel_In": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "FP_Out": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          }
+        }
+      },
+      "Pipelined_Convolution_0": {
+        "vlnv": "xilinx.com:module_ref:Pipelined_Convolution:1.0",
+        "ip_revision": "1",
+        "xci_name": "Full_CNN_Pipelined_Convolution_0_0",
+        "xci_path": "ip\\Full_CNN_Pipelined_Convolution_0_0\\Full_CNN_Pipelined_Convolution_0_0.xci",
+        "inst_hier_path": "Pipelined_Convolution_0",
+        "has_run_ip_tcl": "true",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Pipelined_Convolution",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "data": {
+            "direction": "I",
+            "left": "143",
+            "right": "0"
+          },
+          "weights": {
+            "direction": "I",
+            "left": "143",
+            "right": "0"
+          },
+          "bias": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "clock": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "Full_CNN_clock_0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "sreset_n": {
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_LOW",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "valid": {
+            "direction": "I"
+          },
+          "convol_out": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          },
+          "convol_valid": {
+            "direction": "O"
+          }
+        }
+      },
+      "Maxpool_0": {
+        "vlnv": "xilinx.com:module_ref:Maxpool:1.0",
+        "ip_revision": "1",
+        "xci_name": "Full_CNN_Maxpool_0_0",
+        "xci_path": "ip\\Full_CNN_Maxpool_0_0\\Full_CNN_Maxpool_0_0.xci",
+        "inst_hier_path": "Maxpool_0",
+        "has_run_ip_tcl": "true",
+        "parameters": {
+          "COLUMN_SIZE": {
+            "value": "26"
+          },
+          "ROW_SIZE": {
+            "value": "26"
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Maxpool",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "data_in": {
+            "direction": "I",
+            "left": "63",
+            "right": "0"
+          },
+          "data_in_valid": {
+            "direction": "I"
+          },
+          "clock": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "Full_CNN_clock_0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "sreset_n": {
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_LOW",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "maxpool_out": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          },
+          "out_valid": {
+            "direction": "O"
+          }
+        }
+      },
+      "zyNet_0": {
+        "vlnv": "xilinx.com:module_ref:zyNet:1.0",
+        "ip_revision": "1",
+        "xci_name": "Full_CNN_zyNet_0_0",
+        "xci_path": "ip\\Full_CNN_zyNet_0_0\\Full_CNN_zyNet_0_0.xci",
+        "inst_hier_path": "zyNet_0",
+        "has_run_ip_tcl": "true",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "zyNet",
+          "boundary_crc": "0x0"
+        },
+        "interface_ports": {
+          "s_axi": {
+            "mode": "Slave",
+            "vlnv_bus_definition": "xilinx.com:interface:aximm:1.0",
+            "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
+            "parameters": {
+              "DATA_WIDTH": {
+                "value": "32",
+                "value_src": "auto"
+              },
+              "PROTOCOL": {
+                "value": "AXI4LITE",
+                "value_src": "constant"
+              },
+              "ID_WIDTH": {
+                "value": "0",
+                "value_src": "constant"
+              },
+              "ADDR_WIDTH": {
+                "value": "5",
+                "value_src": "auto"
+              },
+              "AWUSER_WIDTH": {
+                "value": "0",
+                "value_src": "constant"
+              },
+              "ARUSER_WIDTH": {
+                "value": "0",
+                "value_src": "constant"
+              },
+              "WUSER_WIDTH": {
+                "value": "0",
+                "value_src": "constant"
+              },
+              "RUSER_WIDTH": {
+                "value": "0",
+                "value_src": "constant"
+              },
+              "BUSER_WIDTH": {
+                "value": "0",
+                "value_src": "constant"
+              },
+              "READ_WRITE_MODE": {
+                "value": "READ_WRITE",
+                "value_src": "constant"
+              },
+              "HAS_BURST": {
+                "value": "0",
+                "value_src": "constant"
+              },
+              "HAS_LOCK": {
+                "value": "0",
+                "value_src": "constant"
+              },
+              "HAS_PROT": {
+                "value": "1",
+                "value_src": "constant"
+              },
+              "HAS_CACHE": {
+                "value": "0",
+                "value_src": "constant"
+              },
+              "HAS_QOS": {
+                "value": "0",
+                "value_src": "constant"
+              },
+              "HAS_REGION": {
+                "value": "0",
+                "value_src": "constant"
+              },
+              "HAS_WSTRB": {
+                "value": "1",
+                "value_src": "constant"
+              },
+              "HAS_BRESP": {
+                "value": "1",
+                "value_src": "constant"
+              },
+              "HAS_RRESP": {
+                "value": "1",
+                "value_src": "constant"
+              },
+              "SUPPORTS_NARROW_BURST": {
+                "value": "0",
+                "value_src": "auto"
+              },
+              "NUM_READ_OUTSTANDING": {
+                "value": "1",
+                "value_src": "auto"
+              },
+              "NUM_WRITE_OUTSTANDING": {
+                "value": "1",
+                "value_src": "auto"
+              },
+              "MAX_BURST_LENGTH": {
+                "value": "1",
+                "value_src": "auto"
+              },
+              "CLK_DOMAIN": {
+                "value": "Full_CNN_clock_0",
+                "value_src": "default_prop"
+              }
+            },
+            "memory_map_ref": "s_axi",
+            "port_maps": {
+              "AWADDR": {
+                "physical_name": "s_axi_awaddr",
+                "direction": "I",
+                "left": "4",
+                "right": "0"
+              },
+              "AWPROT": {
+                "physical_name": "s_axi_awprot",
+                "direction": "I",
+                "left": "2",
+                "right": "0"
+              },
+              "AWVALID": {
+                "physical_name": "s_axi_awvalid",
+                "direction": "I"
+              },
+              "AWREADY": {
+                "physical_name": "s_axi_awready",
+                "direction": "O"
+              },
+              "WDATA": {
+                "physical_name": "s_axi_wdata",
+                "direction": "I",
+                "left": "31",
+                "right": "0"
+              },
+              "WSTRB": {
+                "physical_name": "s_axi_wstrb",
+                "direction": "I",
+                "left": "3",
+                "right": "0"
+              },
+              "WVALID": {
+                "physical_name": "s_axi_wvalid",
+                "direction": "I"
+              },
+              "WREADY": {
+                "physical_name": "s_axi_wready",
+                "direction": "O"
+              },
+              "BRESP": {
+                "physical_name": "s_axi_bresp",
+                "direction": "O",
+                "left": "1",
+                "right": "0"
+              },
+              "BVALID": {
+                "physical_name": "s_axi_bvalid",
+                "direction": "O"
+              },
+              "BREADY": {
+                "physical_name": "s_axi_bready",
+                "direction": "I"
+              },
+              "ARADDR": {
+                "physical_name": "s_axi_araddr",
+                "direction": "I",
+                "left": "4",
+                "right": "0"
+              },
+              "ARPROT": {
+                "physical_name": "s_axi_arprot",
+                "direction": "I",
+                "left": "2",
+                "right": "0"
+              },
+              "ARVALID": {
+                "physical_name": "s_axi_arvalid",
+                "direction": "I"
+              },
+              "ARREADY": {
+                "physical_name": "s_axi_arready",
+                "direction": "O"
+              },
+              "RDATA": {
+                "physical_name": "s_axi_rdata",
+                "direction": "O",
+                "left": "31",
+                "right": "0"
+              },
+              "RRESP": {
+                "physical_name": "s_axi_rresp",
+                "direction": "O",
+                "left": "1",
+                "right": "0"
+              },
+              "RVALID": {
+                "physical_name": "s_axi_rvalid",
+                "direction": "O"
+              },
+              "RREADY": {
+                "physical_name": "s_axi_rready",
+                "direction": "I"
+              }
+            }
+          }
+        },
+        "ports": {
+          "s_axi_aclk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_BUSIF": {
+                "value": "s_axi",
+                "value_src": "constant"
+              },
+              "ASSOCIATED_RESET": {
+                "value": "s_axi_aresetn",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "Full_CNN_clock_0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "s_axi_aresetn": {
+            "type": "rst",
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_LOW",
+                "value_src": "constant"
+              }
+            }
+          },
+          "axis_in_data": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "axis_in_data_valid": {
+            "direction": "I"
+          },
+          "axis_in_data_ready": {
+            "direction": "O"
+          },
+          "intr": {
+            "type": "intr",
+            "direction": "O",
+            "parameters": {
+              "SENSITIVITY": {
+                "value": "LEVEL_HIGH",
+                "value_src": "constant"
+              }
+            }
+          },
+          "out_final": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "out_valid_final": {
+            "direction": "O"
+          },
+          "o1_valid_d": {
+            "direction": "O",
+            "left": "63",
+            "right": "0"
+          },
+          "x1_out_d": {
+            "direction": "O",
+            "left": "1023",
+            "right": "0"
+          },
+          "o2_valid_d": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "x2_out_d": {
+            "direction": "O",
+            "left": "511",
+            "right": "0"
+          },
+          "o3_valid_d": {
+            "direction": "O",
+            "left": "9",
+            "right": "0"
+          },
+          "x3_out_d": {
+            "direction": "O",
+            "left": "159",
+            "right": "0"
+          }
+        }
+      },
+      "Image_Buffer_0": {
+        "vlnv": "xilinx.com:module_ref:Image_Buffer:1.0",
+        "ip_revision": "1",
+        "xci_name": "Full_CNN_Image_Buffer_0_0",
+        "xci_path": "ip\\Full_CNN_Image_Buffer_0_0\\Full_CNN_Image_Buffer_0_0.xci",
+        "inst_hier_path": "Image_Buffer_0",
+        "has_run_ip_tcl": "true",
+        "parameters": {
+          "COLUMN_SIZE": {
+            "value": "28"
+          },
+          "ROW_SIZE": {
+            "value": "28"
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Image_Buffer",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clock": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "Full_CNN_clock_0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "data_in_valid": {
+            "direction": "I"
+          },
+          "sreset_n": {
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_LOW",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "data_in": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "kernel_out": {
+            "direction": "O",
+            "left": "143",
+            "right": "0"
+          },
+          "out_valid": {
+            "direction": "O"
+          }
+        }
+      },
+      "Image_Buffer_1": {
+        "vlnv": "xilinx.com:module_ref:Image_Buffer:1.0",
+        "ip_revision": "1",
+        "xci_name": "Full_CNN_Image_Buffer_1_0",
+        "xci_path": "ip\\Full_CNN_Image_Buffer_1_0\\Full_CNN_Image_Buffer_1_0.xci",
+        "inst_hier_path": "Image_Buffer_1",
+        "has_run_ip_tcl": "true",
+        "parameters": {
+          "COLUMN_SIZE": {
+            "value": "26"
+          },
+          "KERNEL_SIZE": {
+            "value": "2"
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Image_Buffer",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clock": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "Full_CNN_clock_0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "data_in_valid": {
+            "direction": "I"
+          },
+          "sreset_n": {
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_LOW",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "data_in": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "kernel_out": {
+            "direction": "O",
+            "left": "63",
+            "right": "0"
+          },
+          "out_valid": {
+            "direction": "O"
+          }
+        }
+      },
+      "Weight_Bias_0": {
+        "vlnv": "xilinx.com:module_ref:Weight_Bias:1.0",
+        "ip_revision": "1",
+        "xci_name": "Full_CNN_Weight_Bias_0_0",
+        "xci_path": "ip\\Full_CNN_Weight_Bias_0_0\\Full_CNN_Weight_Bias_0_0.xci",
+        "inst_hier_path": "Weight_Bias_0",
+        "has_run_ip_tcl": "true",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Weight_Bias",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "weights": {
+            "direction": "O",
+            "left": "143",
+            "right": "0"
+          },
+          "bias": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          }
+        }
+      }
+    },
+    "nets": {
+      "Image_Buffer_0_kernel_out": {
+        "ports": [
+          "Image_Buffer_0/kernel_out",
+          "Pipelined_Convolution_0/data"
+        ]
+      },
+      "Image_Buffer_0_out_valid": {
+        "ports": [
+          "Image_Buffer_0/out_valid",
+          "Pipelined_Convolution_0/valid"
+        ]
+      },
+      "Image_Buffer_1_kernel_out": {
+        "ports": [
+          "Image_Buffer_1/kernel_out",
+          "Maxpool_0/data_in"
+        ]
+      },
+      "Image_Buffer_1_out_valid": {
+        "ports": [
+          "Image_Buffer_1/out_valid",
+          "Maxpool_0/data_in_valid"
+        ]
+      },
+      "Maxpool_0_maxpool_out": {
+        "ports": [
+          "Maxpool_0/maxpool_out",
+          "Maxpool_Debug",
+          "zyNet_0/axis_in_data"
+        ]
+      },
+      "Maxpool_0_out_valid": {
+        "ports": [
+          "Maxpool_0/out_valid",
+          "Maxpool_valid_Debug",
+          "zyNet_0/axis_in_data_valid"
+        ]
+      },
+      "Pipelined_Convolution_0_convol_out": {
+        "ports": [
+          "Pipelined_Convolution_0/convol_out",
+          "Conv_Debug",
+          "Image_Buffer_1/data_in"
+        ]
+      },
+      "Pipelined_Convolution_0_convol_valid": {
+        "ports": [
+          "Pipelined_Convolution_0/convol_valid",
+          "Conv_valid_Debug",
+          "Image_Buffer_1/data_in_valid"
+        ]
+      },
+      "Pixel8_to_FP16Format_0_FP_Out": {
+        "ports": [
+          "Pixel8_to_FP16Format_0/FP_Out",
+          "Image_Buffer_0/data_in"
+        ]
+      },
+      "Pixel_In_0_1": {
+        "ports": [
+          "Pixel_In",
+          "Pixel8_to_FP16Format_0/Pixel_In"
+        ]
+      },
+      "Weight_Bias_0_bias": {
+        "ports": [
+          "Weight_Bias_0/bias",
+          "Pipelined_Convolution_0/bias"
+        ]
+      },
+      "Weight_Bias_0_weights": {
+        "ports": [
+          "Weight_Bias_0/weights",
+          "Pipelined_Convolution_0/weights"
+        ]
+      },
+      "clock_0_2": {
+        "ports": [
+          "clock",
+          "zyNet_0/s_axi_aclk",
+          "Image_Buffer_0/clock",
+          "Image_Buffer_1/clock",
+          "Maxpool_0/clock",
+          "Pipelined_Convolution_0/clock"
+        ]
+      },
+      "data_in_valid_0_1": {
+        "ports": [
+          "data_in_valid",
+          "Image_Buffer_0/data_in_valid"
+        ]
+      },
+      "s_axi_aresetn_0_1": {
+        "ports": [
+          "reset_n",
+          "zyNet_0/s_axi_aresetn",
+          "Maxpool_0/sreset_n",
+          "Image_Buffer_0/sreset_n",
+          "Pipelined_Convolution_0/sreset_n",
+          "Image_Buffer_1/sreset_n"
+        ]
+      },
+      "zyNet_0_o1_valid_d": {
+        "ports": [
+          "zyNet_0/o1_valid_d",
+          "o1_valid_d"
+        ]
+      },
+      "zyNet_0_o2_valid_d": {
+        "ports": [
+          "zyNet_0/o2_valid_d",
+          "o2_valid_d"
+        ]
+      },
+      "zyNet_0_o3_valid_d": {
+        "ports": [
+          "zyNet_0/o3_valid_d",
+          "o3_valid_d"
+        ]
+      },
+      "zyNet_0_out_final": {
+        "ports": [
+          "zyNet_0/out_final",
+          "out_final"
+        ]
+      },
+      "zyNet_0_out_valid_final": {
+        "ports": [
+          "zyNet_0/out_valid_final",
+          "out_valid_final"
+        ]
+      },
+      "zyNet_0_x1_out_d": {
+        "ports": [
+          "zyNet_0/x1_out_d",
+          "x1_out_d"
+        ]
+      },
+      "zyNet_0_x2_out_d": {
+        "ports": [
+          "zyNet_0/x2_out_d",
+          "x2_out_d"
+        ]
+      },
+      "zyNet_0_x3_out_d": {
+        "ports": [
+          "zyNet_0/x3_out_d",
+          "x3_out_d"
+        ]
+      }
+    }
+  }
+}

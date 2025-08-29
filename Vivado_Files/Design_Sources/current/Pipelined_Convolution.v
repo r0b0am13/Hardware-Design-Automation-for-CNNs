@@ -11,7 +11,7 @@ module Pipelined_Convolution#(
     (
     input [DATA_WIDTH*KERNEL_SIZE*KERNEL_SIZE-1:0] data, weights,
     input [DATA_WIDTH-1:0] bias,
-    input clock,
+    input clock, sreset_n,
     input valid,
     output [DATA_WIDTH-1:0] convol_out,
     output convol_valid
@@ -25,7 +25,9 @@ module Pipelined_Convolution#(
     reg [ROW_BITS-1:0] valid_conv = 0;
     
     always @(posedge clock)
-        if(valid)
+        if(!sreset_n)
+            valid_conv<=0;
+        else if(valid)
             if(valid_conv==COLUMN_SIZE-1)
                 valid_conv<=0;
             else
@@ -38,22 +40,32 @@ module Pipelined_Convolution#(
     //VALID LOGIC
     genvar m;
     generate
-        for(m=0; m<STAGES;m=m+1)
+        for(m=0; m<STAGES;m=m+1) begin
             if(m==0) begin
                 always @(posedge clock)
-                    valid_reg[m] <= (valid & valid_conv_wire);
+                    if(!sreset_n)
+                        valid_reg[m] <= 0;
+                    else
+                        valid_reg[m] <= (valid & valid_conv_wire);
                 assign valid_wire[m] = valid_reg[m]; 
             end       
             else if(m==STAGES-1) begin
                 always @(posedge clock)
-                    valid_reg[m] <=valid_wire[m-1];
+                    if(!sreset_n)
+                        valid_reg[m] <= 0;
+                    else
+                        valid_reg[m] <=valid_wire[m-1];
                 assign convol_valid = valid_reg[m]; 
             end
             else begin
                 always @(posedge clock)
-                    valid_reg[m] <=valid_wire[m-1];
+                    if(!sreset_n)
+                        valid_reg[m] <= 0;
+                    else
+                        valid_reg[m] <=valid_wire[m-1];
                 assign valid_wire[m] = valid_reg[m]; 
-            end       
+            end
+       end       
     endgenerate
     
     //Multiplier Stage
@@ -101,7 +113,10 @@ module Pipelined_Convolution#(
         
             for(k=0; k<stage_width; k = k+1) begin : gen_reg
             always @(posedge clock)
-                reg_array[k] <= wire_array[k];
+                if(!sreset_n)
+                    reg_array[k] <= 0;
+                else
+                    reg_array[k] <= wire_array[k];
             end
         end
         assign convol_out = gen_stage[STAGES-1].reg_array[0];

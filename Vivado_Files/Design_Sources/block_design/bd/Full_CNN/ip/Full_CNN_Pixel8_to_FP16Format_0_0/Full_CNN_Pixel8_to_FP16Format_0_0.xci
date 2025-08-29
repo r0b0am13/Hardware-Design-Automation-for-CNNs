@@ -1,0 +1,52 @@
+{
+  "schema": "xilinx.com:schema:json_instance:1.0",
+  "ip_inst": {
+    "xci_name": "Full_CNN_Pixel8_to_FP16Format_0_0",
+    "cell_name": "Pixel8_to_FP16Format_0",
+    "component_reference": "xilinx.com:module_ref:Pixel8_to_FP16Format:1.0",
+    "ip_revision": "1",
+    "gen_directory": "../../../../../../Hardware_Automation_Vivado.gen/sources_1/bd/Full_CNN/ip/Full_CNN_Pixel8_to_FP16Format_0_0",
+    "parameters": {
+      "component_parameters": {
+        "IN_DATA_WIDTH": [ { "value": "8", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "OUT_INTEGER": [ { "value": "2", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "OUT_FRACTION": [ { "value": "14", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "Component_Name": [ { "value": "Full_CNN_Pixel8_to_FP16Format_0_0", "resolve_type": "user", "usage": "all" } ]
+      },
+      "model_parameters": {
+        "IN_DATA_WIDTH": [ { "value": "8", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "OUT_INTEGER": [ { "value": "2", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "OUT_FRACTION": [ { "value": "14", "resolve_type": "generated", "format": "long", "usage": "all" } ]
+      },
+      "project_parameters": {
+        "ARCHITECTURE": [ { "value": "zynq" } ],
+        "BASE_BOARD_PART": [ { "value": "avnet.com:zedboard:part0:1.4" } ],
+        "BOARD_CONNECTIONS": [ { "value": "" } ],
+        "DEVICE": [ { "value": "xc7z020" } ],
+        "PACKAGE": [ { "value": "clg484" } ],
+        "PREFHDL": [ { "value": "VERILOG" } ],
+        "SILICON_REVISION": [ { "value": "" } ],
+        "SIMULATOR_LANGUAGE": [ { "value": "MIXED" } ],
+        "SPEEDGRADE": [ { "value": "-1" } ],
+        "STATIC_POWER": [ { "value": "" } ],
+        "TEMPERATURE_GRADE": [ { "value": "" } ]
+      },
+      "runtime_parameters": {
+        "IPCONTEXT": [ { "value": "IP_Integrator" } ],
+        "IPREVISION": [ { "value": "1" } ],
+        "MANAGED": [ { "value": "TRUE" } ],
+        "OUTPUTDIR": [ { "value": "../../../../../../Hardware_Automation_Vivado.gen/sources_1/bd/Full_CNN/ip/Full_CNN_Pixel8_to_FP16Format_0_0" } ],
+        "SELECTEDSIMMODEL": [ { "value": "" } ],
+        "SHAREDDIR": [ { "value": "../../ipshared" } ],
+        "SWVERSION": [ { "value": "2025.1" } ],
+        "SYNTHESISFLOW": [ { "value": "OOC_HIERARCHICAL" } ]
+      }
+    },
+    "boundary": {
+      "ports": {
+        "Pixel_In": [ { "direction": "in", "size_left": "7", "size_right": "0" } ],
+        "FP_Out": [ { "direction": "out", "size_left": "15", "size_right": "0" } ]
+      }
+    }
+  }
+}
