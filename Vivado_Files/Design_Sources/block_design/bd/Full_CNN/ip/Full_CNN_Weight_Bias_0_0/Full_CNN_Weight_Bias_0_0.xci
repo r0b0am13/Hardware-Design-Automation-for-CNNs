@@ -10,11 +10,13 @@
       "component_parameters": {
         "DATA_WIDTH": [ { "value": "16", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "KERNEL_SIZE": [ { "value": "3", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "FILE_NAME": [ { "value": "conv_2d_w.mem", "resolve_type": "user", "usage": "all" } ],
         "Component_Name": [ { "value": "Full_CNN_Weight_Bias_0_0", "resolve_type": "user", "usage": "all" } ]
       },
       "model_parameters": {
         "DATA_WIDTH": [ { "value": "16", "resolve_type": "generated", "format": "long", "usage": "all" } ],
-        "KERNEL_SIZE": [ { "value": "3", "resolve_type": "generated", "format": "long", "usage": "all" } ]
+        "KERNEL_SIZE": [ { "value": "3", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "FILE_NAME": [ { "value": "conv_2d_w.mem", "resolve_type": "generated", "usage": "all" } ]
       },
       "project_parameters": {
         "ARCHITECTURE": [ { "value": "zynq" } ],

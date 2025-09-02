@@ -6,7 +6,6 @@ module Conv_Max_Full#(
     OUT_FRACTION = 14,
     KERNEL_SIZE1 = 3,
     KERNEL_SIZE2 = 2,
-    DATA_SIZE = 16,
     DATA_WIDTH = 16,
     ROW_SIZE1 = 28,
     COLUMN_SIZE1 = 28,
@@ -22,11 +21,11 @@ module Conv_Max_Full#(
     );
     
     wire [DATA_WIDTH-1:0] FP_Out,convol_out,max_out;
-    wire [KERNEL_SIZE1*KERNEL_SIZE1*DATA_SIZE-1:0] Kernel_Out1;
+    wire [KERNEL_SIZE1*KERNEL_SIZE1*DATA_WIDTH-1:0] Kernel_Out1;
     wire [KERNEL_SIZE2*KERNEL_SIZE2*DATA_WIDTH - 1 : 0 ] Kernel_Out2;
     wire out_valid1,out_valid2;
     wire convol_valid,max_valid;
-    wire [KERNEL_SIZE1*KERNEL_SIZE1*DATA_SIZE-1:0] weights;
+    wire [KERNEL_SIZE1*KERNEL_SIZE1*DATA_WIDTH-1:0] weights;
     wire [DATA_WIDTH-1:0] bias;
     
     assign Con_Out = convol_out;
@@ -38,7 +37,7 @@ module Conv_Max_Full#(
         P816(.Pixel_In(Pixel_In) ,.FP_Out(FP_Out));
         
     Image_Buffer #(.KERNEL_SIZE(KERNEL_SIZE1),
-                   .DATA_SIZE(DATA_SIZE),
+                   .DATA_WIDTH(DATA_WIDTH),
                    .ROW_SIZE(ROW_SIZE1),
                    .COLUMN_SIZE(COLUMN_SIZE1)) 
                    IB_to_Conv (.clock(clock), 
@@ -72,7 +71,7 @@ module Conv_Max_Full#(
                             );
     
     Image_Buffer #(.KERNEL_SIZE(KERNEL_SIZE2),
-                   .DATA_SIZE(DATA_SIZE),
+                   .DATA_WIDTH(DATA_WIDTH),
                    .ROW_SIZE(ROW_SIZE2),
                    .COLUMN_SIZE(COLUMN_SIZE2)) 
                    IB_to_Max (.clock(clock), 

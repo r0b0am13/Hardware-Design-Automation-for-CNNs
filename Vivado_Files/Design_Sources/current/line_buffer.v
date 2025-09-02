@@ -26,7 +26,7 @@ for(i=0;i<ROW_SIZE;i=i+1) begin
         Data_Buffer #(DATA_WIDTH) pb (.sreset_n(sreset_n),.clock(clock),.data_valid(data_valid),.data_in(wiring[i-1]),.data_out(wiring[i]));
     end
 for(i=0; i<KERNEL_SIZE;i = i+1) begin
-    assign kernel_row_out[(i+1)*DATA_WIDTH-1:i*DATA_WIDTH] = wiring[KERNEL_SIZE-i-1]; 
+    assign kernel_row_out[(i+1)*DATA_WIDTH-1:i*DATA_WIDTH] = wiring[i]; 
 end
     assign data_out = wiring[ROW_SIZE-1];
 endgenerate

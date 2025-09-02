@@ -23,7 +23,7 @@ module Image_Buffer #(
                 Line_Buffer #(.KERNEL_SIZE(KERNEL_SIZE),.DATA_WIDTH(DATA_WIDTH),.ROW_SIZE(ROW_SIZE)) lb (.sreset_n(sreset_n),.clock(clock),.data_valid(data_in_valid),.data_in(data_in),.data_out(lb_out[i]),.kernel_row_out(kernel_row_out[i]));
             end
             else if(i==(KERNEL_SIZE-1)) begin //out
-                Line_Buffer #(.KERNEL_SIZE(KERNEL_SIZE),.DATA_WIDTH(DATA_WIDTH),.ROW_SIZE(KERNEL_SIZE)) lb (.sreset_n(sreset_n),.clock(clock),.data_valid(data_in_valid),.data_in(lb_out[i-1]),.data_out(lb_out[i]),.kernel_row_out(kernel_row_out[i]));
+                Line_Buffer #(.KERNEL_SIZE(KERNEL_SIZE),.DATA_WIDTH(DATA_WIDTH),.ROW_SIZE(KERNEL_SIZE+1)) lb (.sreset_n(sreset_n),.clock(clock),.data_valid(data_in_valid),.data_in(lb_out[i-1]),.data_out(lb_out[i]),.kernel_row_out(kernel_row_out[i]));
             end
             else begin //middle
                 Line_Buffer #(.KERNEL_SIZE(KERNEL_SIZE),.DATA_WIDTH(DATA_WIDTH),.ROW_SIZE(ROW_SIZE)) lb (.sreset_n(sreset_n),.clock(clock),.data_valid(data_in_valid),.data_in(lb_out[i-1]),.data_out(lb_out[i]),.kernel_row_out(kernel_row_out[i]));
@@ -31,7 +31,7 @@ module Image_Buffer #(
         end
     
         for(i=0;i<KERNEL_SIZE;i=i+1) begin
-            assign kernel_out[(i+1)*DATA_WIDTH*KERNEL_SIZE-1:i*DATA_WIDTH*KERNEL_SIZE] = kernel_row_out[KERNEL_SIZE-i-1];
+            assign kernel_out[(i+1)*DATA_WIDTH*KERNEL_SIZE-1:i*DATA_WIDTH*KERNEL_SIZE] = kernel_row_out[i];
         end
 
     endgenerate
@@ -50,9 +50,9 @@ module Image_Buffer #(
                     counter <= 0;
                 end
                 else
-                    counter= counter + 1;
+                    counter <= counter + 1;
             end
-            if(data_in_valid & (counter>=ROW_SIZE*(KERNEL_SIZE-1)+KERNEL_SIZE))
+            if(data_in_valid & (counter>=ROW_SIZE*(KERNEL_SIZE-1)+KERNEL_SIZE-1))
                 out_valid <= 1;
             else
                 out_valid <= 0;
