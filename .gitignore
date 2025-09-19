@@ -1,3 +1,5 @@
 .idea
+# Ignore Python virtual environment in the Testing_Sep_25 folder
+Testing_Sep_25/.venv/
 
 .DS_Store
