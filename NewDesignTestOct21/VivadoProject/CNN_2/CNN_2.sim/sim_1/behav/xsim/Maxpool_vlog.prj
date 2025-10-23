@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../CNN_2.srcs/sources_1/new/FP_Comparator.v" \
+"../../../../CNN_2.srcs/sources_1/new/Maxpool.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

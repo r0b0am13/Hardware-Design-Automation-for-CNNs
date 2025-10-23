@@ -1,0 +1,491 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed Oct 22 00:29:12 2025" VIVADOVERSION="2020.2">
+
+  <SYSTEMINFO ARCH="zynq" BOARD="em.avnet.com:zed:part0:1.4" DEVICE="7z020" NAME="Full_CNN" PACKAGE="clg484" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="I" LEFT="7" NAME="Pixel_In" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_Pixel_In">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="DataConverter_0" PORT="data_in"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clock" SIGIS="clk" SIGNAME="External_Ports_clock">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ConvSlider" PORT="clock"/>
+        <CONNECTION INSTANCE="Convolution_0" PORT="clock"/>
+        <CONNECTION INSTANCE="Maxpool_0" PORT="clock"/>
+        <CONNECTION INSTANCE="MaxSlider" PORT="clock"/>
+        <CONNECTION INSTANCE="zyNet_0" PORT="s_axi_aclk"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="data_in_valid" SIGIS="undef" SIGNAME="External_Ports_data_in_valid">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ConvSlider" PORT="data_valid"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="reset_n" SIGIS="undef" SIGNAME="External_Ports_reset_n">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ConvSlider" PORT="sreset_n"/>
+        <CONNECTION INSTANCE="Convolution_0" PORT="sreset_n"/>
+        <CONNECTION INSTANCE="MaxSlider" PORT="sreset_n"/>
+        <CONNECTION INSTANCE="Maxpool_0" PORT="sreset_n"/>
+        <CONNECTION INSTANCE="zyNet_0" PORT="s_axi_aresetn"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="1023" NAME="x1_out_d" RIGHT="0" SIGIS="undef" SIGNAME="zyNet_0_x1_out_d">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="zyNet_0" PORT="x1_out_d"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="63" NAME="o1_valid_d" RIGHT="0" SIGIS="undef" SIGNAME="zyNet_0_o1_valid_d">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="zyNet_0" PORT="o1_valid_d"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="511" NAME="x2_out_d" RIGHT="0" SIGIS="undef" SIGNAME="zyNet_0_x2_out_d">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="zyNet_0" PORT="x2_out_d"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="31" NAME="o2_valid_d" RIGHT="0" SIGIS="undef" SIGNAME="zyNet_0_o2_valid_d">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="zyNet_0" PORT="o2_valid_d"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="159" NAME="x3_out_d" RIGHT="0" SIGIS="undef" SIGNAME="zyNet_0_x3_out_d">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="zyNet_0" PORT="x3_out_d"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="out_valid_final" SIGIS="undef" SIGNAME="zyNet_0_out_valid_final">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="zyNet_0" PORT="out_valid_final"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="9" NAME="o3_valid_d" RIGHT="0" SIGIS="undef" SIGNAME="zyNet_0_o3_valid_d">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="zyNet_0" PORT="o3_valid_d"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="31" NAME="out_final" RIGHT="0" SIGIS="undef" SIGNAME="zyNet_0_out_final">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="zyNet_0" PORT="out_final"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="15" NAME="Maxpool_Debug" RIGHT="0" SIGIS="undef" SIGNAME="Maxpool_0_maxp_out">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Maxpool_0" PORT="maxp_out"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="Maxpool_valid_Debug" SIGIS="undef" SIGNAME="Maxpool_0_maxp_valid">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Maxpool_0" PORT="maxp_valid"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="Conv_valid_Debug" SIGIS="undef" SIGNAME="Convolution_0_conv_valid">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Convolution_0" PORT="conv_valid"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="15" NAME="Conv_Debug" RIGHT="0" SIGIS="undef" SIGNAME="Convolution_0_conv_out">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Convolution_0" PORT="conv_out"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE COREREVISION="1" FULLNAME="/ConvSlider" HWVERSION="1.0" INSTANCE="ConvSlider" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="ImageBuf_KernelSlider" VLNV="xilinx.com:module_ref:ImageBuf_KernelSlider:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="KERNEL_SIZE" VALUE="3"/>
+        <PARAMETER NAME="DATA_WIDTH" VALUE="16"/>
+        <PARAMETER NAME="COLUMN_NUM" VALUE="28"/>
+        <PARAMETER NAME="ROW_NUM" VALUE="28"/>
+        <PARAMETER NAME="STRIDE" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="Full_CNN_ImageBuf_KernelSlider_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clock" SIGIS="clk" SIGNAME="External_Ports_clock">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clock"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="data_valid" SIGIS="undef" SIGNAME="External_Ports_data_in_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="data_in_valid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="sreset_n" SIGIS="undef" SIGNAME="External_Ports_reset_n">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="reset_n"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="data_in" RIGHT="0" SIGIS="undef" SIGNAME="DataConverter_0_data_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DataConverter_0" PORT="data_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="data_out" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="143" NAME="kernel_out" RIGHT="0" SIGIS="undef" SIGNAME="ConvSlider_kernel_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Convolution_0" PORT="kernel_in"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="kernel_valid" SIGIS="undef" SIGNAME="ConvSlider_kernel_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Convolution_0" PORT="data_valid"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/ConvWeightBiasModule_0" HWVERSION="1.0" INSTANCE="ConvWeightBiasModule_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="ConvWeightBiasModule" VLNV="xilinx.com:module_ref:ConvWeightBiasModule:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="KERNEL_SIZE" VALUE="3"/>
+        <PARAMETER NAME="DATA_WIDTH" VALUE="16"/>
+        <PARAMETER NAME="Component_Name" VALUE="Full_CNN_ConvWeightBiasModule_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" LEFT="143" NAME="Weights" RIGHT="0" SIGIS="undef" SIGNAME="ConvWeightBiasModule_0_Weights">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Convolution_0" PORT="weights"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="Bias" RIGHT="0" SIGIS="undef" SIGNAME="ConvWeightBiasModule_0_Bias">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Convolution_0" PORT="bias"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/Convolution_0" HWVERSION="1.0" INSTANCE="Convolution_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Convolution" VLNV="xilinx.com:module_ref:Convolution:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="KERNEL_SIZE" VALUE="3"/>
+        <PARAMETER NAME="DATA_WIDTH" VALUE="16"/>
+        <PARAMETER NAME="FRACTION_SIZE" VALUE="14"/>
+        <PARAMETER NAME="SIGNED" VALUE="1"/>
+        <PARAMETER NAME="ACTIVATION" VALUE="1"/>
+        <PARAMETER NAME="GUARD_TYPE" VALUE="2"/>
+        <PARAMETER NAME="Component_Name" VALUE="Full_CNN_Convolution_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clock" SIGIS="clk" SIGNAME="External_Ports_clock">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clock"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="data_valid" SIGIS="undef" SIGNAME="ConvSlider_kernel_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ConvSlider" PORT="kernel_valid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="sreset_n" SIGIS="undef" SIGNAME="External_Ports_reset_n">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="reset_n"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="143" NAME="kernel_in" RIGHT="0" SIGIS="undef" SIGNAME="ConvSlider_kernel_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ConvSlider" PORT="kernel_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="143" NAME="weights" RIGHT="0" SIGIS="undef" SIGNAME="ConvWeightBiasModule_0_Weights">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ConvWeightBiasModule_0" PORT="Weights"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="bias" RIGHT="0" SIGIS="undef" SIGNAME="ConvWeightBiasModule_0_Bias">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ConvWeightBiasModule_0" PORT="Bias"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="conv_out" RIGHT="0" SIGIS="undef" SIGNAME="Convolution_0_conv_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Conv_Debug"/>
+            <CONNECTION INSTANCE="MaxSlider" PORT="data_in"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="conv_valid" SIGIS="undef" SIGNAME="Convolution_0_conv_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Conv_valid_Debug"/>
+            <CONNECTION INSTANCE="MaxSlider" PORT="data_valid"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/DataConverter_0" HWVERSION="1.0" INSTANCE="DataConverter_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="DataConverter" VLNV="xilinx.com:module_ref:DataConverter:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="INPUT_DATAWIDTH" VALUE="8"/>
+        <PARAMETER NAME="INPUT_FRACTION_WIDTH" VALUE="0"/>
+        <PARAMETER NAME="OUTPUT_DATAWIDTH" VALUE="16"/>
+        <PARAMETER NAME="OUTPUT_FRACTION_WIDTH" VALUE="14"/>
+        <PARAMETER NAME="Component_Name" VALUE="Full_CNN_DataConverter_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="7" NAME="data_in" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_Pixel_In">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Pixel_In"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="data_out" RIGHT="0" SIGIS="undef" SIGNAME="DataConverter_0_data_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ConvSlider" PORT="data_in"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/MaxSlider" HWVERSION="1.0" INSTANCE="MaxSlider" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="ImageBuf_KernelSlider" VLNV="xilinx.com:module_ref:ImageBuf_KernelSlider:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="KERNEL_SIZE" VALUE="2"/>
+        <PARAMETER NAME="DATA_WIDTH" VALUE="16"/>
+        <PARAMETER NAME="COLUMN_NUM" VALUE="26"/>
+        <PARAMETER NAME="ROW_NUM" VALUE="26"/>
+        <PARAMETER NAME="STRIDE" VALUE="2"/>
+        <PARAMETER NAME="Component_Name" VALUE="Full_CNN_ConvSlider_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clock" SIGIS="clk" SIGNAME="External_Ports_clock">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clock"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="data_valid" SIGIS="undef" SIGNAME="Convolution_0_conv_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Convolution_0" PORT="conv_valid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="sreset_n" SIGIS="undef" SIGNAME="External_Ports_reset_n">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="reset_n"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="data_in" RIGHT="0" SIGIS="undef" SIGNAME="Convolution_0_conv_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Convolution_0" PORT="conv_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="data_out" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="63" NAME="kernel_out" RIGHT="0" SIGIS="undef" SIGNAME="MaxSlider_kernel_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Maxpool_0" PORT="kernel_in"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="kernel_valid" SIGIS="undef" SIGNAME="MaxSlider_kernel_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Maxpool_0" PORT="data_valid"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/Maxpool_0" HWVERSION="1.0" INSTANCE="Maxpool_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Maxpool" VLNV="xilinx.com:module_ref:Maxpool:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="KERNEL_SIZE" VALUE="2"/>
+        <PARAMETER NAME="DATA_WIDTH" VALUE="16"/>
+        <PARAMETER NAME="SIGNED" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="Full_CNN_Maxpool_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clock" SIGIS="clk" SIGNAME="External_Ports_clock">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clock"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="data_valid" SIGIS="undef" SIGNAME="MaxSlider_kernel_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="MaxSlider" PORT="kernel_valid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="sreset_n" SIGIS="undef" SIGNAME="External_Ports_reset_n">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="reset_n"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="63" NAME="kernel_in" RIGHT="0" SIGIS="undef" SIGNAME="MaxSlider_kernel_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="MaxSlider" PORT="kernel_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="maxp_out" RIGHT="0" SIGIS="undef" SIGNAME="Maxpool_0_maxp_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Maxpool_Debug"/>
+            <CONNECTION INSTANCE="zyNet_0" PORT="axis_in_data"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="maxp_valid" SIGIS="undef" SIGNAME="Maxpool_0_maxp_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Maxpool_valid_Debug"/>
+            <CONNECTION INSTANCE="zyNet_0" PORT="axis_in_data_valid"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/zyNet_0" HWVERSION="1.0" INSTANCE="zyNet_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="zyNet" VLNV="xilinx.com:module_ref:zyNet:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_S_AXI_DATA_WIDTH" VALUE="32"/>
+        <PARAMETER NAME="C_S_AXI_ADDR_WIDTH" VALUE="5"/>
+        <PARAMETER NAME="Component_Name" VALUE="Full_CNN_zyNet_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="s_axi_aclk" SIGIS="clk" SIGNAME="External_Ports_clock">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clock"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axi_aresetn" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_reset_n">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="reset_n"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="axis_in_data" RIGHT="0" SIGIS="undef" SIGNAME="Maxpool_0_maxp_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Maxpool_0" PORT="maxp_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="axis_in_data_valid" SIGIS="undef" SIGNAME="Maxpool_0_maxp_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Maxpool_0" PORT="maxp_valid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="axis_in_data_ready" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="4" NAME="s_axi_awaddr" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="2" NAME="s_axi_awprot" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" NAME="s_axi_awvalid" SIGIS="undef"/>
+        <PORT DIR="O" NAME="s_axi_awready" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="31" NAME="s_axi_wdata" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="3" NAME="s_axi_wstrb" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" NAME="s_axi_wvalid" SIGIS="undef"/>
+        <PORT DIR="O" NAME="s_axi_wready" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="1" NAME="s_axi_bresp" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" NAME="s_axi_bvalid" SIGIS="undef"/>
+        <PORT DIR="I" NAME="s_axi_bready" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="4" NAME="s_axi_araddr" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="2" NAME="s_axi_arprot" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" NAME="s_axi_arvalid" SIGIS="undef"/>
+        <PORT DIR="O" NAME="s_axi_arready" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="31" NAME="s_axi_rdata" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="1" NAME="s_axi_rresp" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" NAME="s_axi_rvalid" SIGIS="undef"/>
+        <PORT DIR="I" NAME="s_axi_rready" SIGIS="undef"/>
+        <PORT DIR="O" NAME="intr" SENSITIVITY="LEVEL_HIGH" SIGIS="INTERRUPT"/>
+        <PORT DIR="O" LEFT="31" NAME="out_final" RIGHT="0" SIGIS="undef" SIGNAME="zyNet_0_out_final">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="out_final"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="out_valid_final" SIGIS="undef" SIGNAME="zyNet_0_out_valid_final">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="out_valid_final"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="63" NAME="o1_valid_d" RIGHT="0" SIGIS="undef" SIGNAME="zyNet_0_o1_valid_d">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="o1_valid_d"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1023" NAME="x1_out_d" RIGHT="0" SIGIS="undef" SIGNAME="zyNet_0_x1_out_d">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="x1_out_d"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="o2_valid_d" RIGHT="0" SIGIS="undef" SIGNAME="zyNet_0_o2_valid_d">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="o2_valid_d"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="511" NAME="x2_out_d" RIGHT="0" SIGIS="undef" SIGNAME="zyNet_0_x2_out_d">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="x2_out_d"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="9" NAME="o3_valid_d" RIGHT="0" SIGIS="undef" SIGNAME="zyNet_0_o3_valid_d">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="o3_valid_d"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="159" NAME="x3_out_d" RIGHT="0" SIGIS="undef" SIGNAME="zyNet_0_x3_out_d">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="x3_out_d"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES>
+        <BUSINTERFACE BUSNAME="__NOC__" DATAWIDTH="32" NAME="s_axi" TYPE="SLAVE" VLNV="xilinx.com:interface:aximm:1.0">
+          <PARAMETER NAME="DATA_WIDTH" VALUE="32"/>
+          <PARAMETER NAME="PROTOCOL" VALUE="AXI4LITE"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
+          <PARAMETER NAME="ID_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="ADDR_WIDTH" VALUE="5"/>
+          <PARAMETER NAME="AWUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="ARUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="WUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="RUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="BUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="READ_WRITE_MODE" VALUE="READ_WRITE"/>
+          <PARAMETER NAME="HAS_BURST" VALUE="0"/>
+          <PARAMETER NAME="HAS_LOCK" VALUE="0"/>
+          <PARAMETER NAME="HAS_PROT" VALUE="1"/>
+          <PARAMETER NAME="HAS_CACHE" VALUE="0"/>
+          <PARAMETER NAME="HAS_QOS" VALUE="0"/>
+          <PARAMETER NAME="HAS_REGION" VALUE="0"/>
+          <PARAMETER NAME="HAS_WSTRB" VALUE="1"/>
+          <PARAMETER NAME="HAS_BRESP" VALUE="1"/>
+          <PARAMETER NAME="HAS_RRESP" VALUE="1"/>
+          <PARAMETER NAME="SUPPORTS_NARROW_BURST" VALUE="0"/>
+          <PARAMETER NAME="NUM_READ_OUTSTANDING" VALUE="1"/>
+          <PARAMETER NAME="NUM_WRITE_OUTSTANDING" VALUE="1"/>
+          <PARAMETER NAME="MAX_BURST_LENGTH" VALUE="1"/>
+          <PARAMETER NAME="PHASE" VALUE="0.000"/>
+          <PARAMETER NAME="CLK_DOMAIN" VALUE="Full_CNN_clock"/>
+          <PARAMETER NAME="NUM_READ_THREADS" VALUE="1"/>
+          <PARAMETER NAME="NUM_WRITE_THREADS" VALUE="1"/>
+          <PARAMETER NAME="RUSER_BITS_PER_BYTE" VALUE="0"/>
+          <PARAMETER NAME="WUSER_BITS_PER_BYTE" VALUE="0"/>
+          <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
+          <PORTMAPS>
+            <PORTMAP LOGICAL="AWADDR" PHYSICAL="s_axi_awaddr"/>
+            <PORTMAP LOGICAL="AWPROT" PHYSICAL="s_axi_awprot"/>
+            <PORTMAP LOGICAL="AWVALID" PHYSICAL="s_axi_awvalid"/>
+            <PORTMAP LOGICAL="AWREADY" PHYSICAL="s_axi_awready"/>
+            <PORTMAP LOGICAL="WDATA" PHYSICAL="s_axi_wdata"/>
+            <PORTMAP LOGICAL="WSTRB" PHYSICAL="s_axi_wstrb"/>
+            <PORTMAP LOGICAL="WVALID" PHYSICAL="s_axi_wvalid"/>
+            <PORTMAP LOGICAL="WREADY" PHYSICAL="s_axi_wready"/>
+            <PORTMAP LOGICAL="BRESP" PHYSICAL="s_axi_bresp"/>
+            <PORTMAP LOGICAL="BVALID" PHYSICAL="s_axi_bvalid"/>
+            <PORTMAP LOGICAL="BREADY" PHYSICAL="s_axi_bready"/>
+            <PORTMAP LOGICAL="ARADDR" PHYSICAL="s_axi_araddr"/>
+            <PORTMAP LOGICAL="ARPROT" PHYSICAL="s_axi_arprot"/>
+            <PORTMAP LOGICAL="ARVALID" PHYSICAL="s_axi_arvalid"/>
+            <PORTMAP LOGICAL="ARREADY" PHYSICAL="s_axi_arready"/>
+            <PORTMAP LOGICAL="RDATA" PHYSICAL="s_axi_rdata"/>
+            <PORTMAP LOGICAL="RRESP" PHYSICAL="s_axi_rresp"/>
+            <PORTMAP LOGICAL="RVALID" PHYSICAL="s_axi_rvalid"/>
+            <PORTMAP LOGICAL="RREADY" PHYSICAL="s_axi_rready"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+      </BUSINTERFACES>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

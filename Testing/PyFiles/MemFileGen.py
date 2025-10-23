@@ -1,6 +1,6 @@
 from PIL import Image
-image_path = 'number_3.jpeg'
-memfile_path = "image_mem.memfile"
+image_path = 'number_5.jpeg'
+memfile_path = "number_5.memfile"
 
 def convert_image_to_memfile(image_path, memfile_path):
     # Open the image
