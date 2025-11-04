@@ -45,20 +45,20 @@
     <Option Name="IPStaticSourceDir" Val="$PIPUSERFILESDIR/ipstatic"/>
     <Option Name="EnableBDX" Val="FALSE"/>
     <Option Name="DSABoardId" Val="zed"/>
-    <Option Name="WTXSimLaunchSim" Val="220"/>
+    <Option Name="WTXSimLaunchSim" Val="255"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
     <Option Name="WTVcsLaunchSim" Val="0"/>
     <Option Name="WTRivieraLaunchSim" Val="0"/>
     <Option Name="WTActivehdlLaunchSim" Val="0"/>
-    <Option Name="WTXSimExportSim" Val="5"/>
-    <Option Name="WTModelSimExportSim" Val="5"/>
-    <Option Name="WTQuestaExportSim" Val="5"/>
-    <Option Name="WTIesExportSim" Val="5"/>
-    <Option Name="WTVcsExportSim" Val="5"/>
-    <Option Name="WTRivieraExportSim" Val="5"/>
-    <Option Name="WTActivehdlExportSim" Val="5"/>
+    <Option Name="WTXSimExportSim" Val="7"/>
+    <Option Name="WTModelSimExportSim" Val="7"/>
+    <Option Name="WTQuestaExportSim" Val="7"/>
+    <Option Name="WTIesExportSim" Val="7"/>
+    <Option Name="WTVcsExportSim" Val="7"/>
+    <Option Name="WTRivieraExportSim" Val="7"/>
+    <Option Name="WTActivehdlExportSim" Val="7"/>
     <Option Name="GenerateIPUpgradeLog" Val="TRUE"/>
     <Option Name="XSimRadix" Val="hex"/>
     <Option Name="XSimTimeUnit" Val="ns"/>
@@ -74,8 +74,54 @@
   <FileSets Version="1" Minor="31">
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
       <Filter Type="Srcs"/>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/include.v">
+        <FileInfo SFType="VHeader">
+          <Attr Name="ImportPath" Val="$PPRDIR/../../HDACNN/HDACNN.srcs/sources_1/imports/Projects-/Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/include.v"/>
+          <Attr Name="ImportTime" Val="1758368952"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/Weight_Memory.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../HDACNN/HDACNN.srcs/sources_1/imports/Projects-/Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/Weight_Memory.v"/>
+          <Attr Name="ImportTime" Val="1756482885"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/relu.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../HDACNN/HDACNN.srcs/sources_1/imports/Projects-/Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/relu.v"/>
+          <Attr Name="ImportTime" Val="1756482885"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/neuron.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../HDACNN/HDACNN.srcs/sources_1/imports/Projects-/Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/neuron.v"/>
+          <Attr Name="ImportTime" Val="1756482885"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/Sig_ROM.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../HDACNN/HDACNN.srcs/sources_1/imports/Projects-/Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/Sig_ROM.v"/>
+          <Attr Name="ImportTime" Val="1756482885"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PSRCDIR/sources_1/new/FP_Adder.v">
         <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -83,6 +129,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/new/FP_Multiplier.v">
         <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -90,6 +137,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/new/Convolution.v">
         <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -161,59 +209,10 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/include.v">
-        <FileInfo SFType="VHeader">
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../HDACNN/HDACNN.srcs/sources_1/imports/Projects-/Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/include.v"/>
-          <Attr Name="ImportTime" Val="1758368952"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/Sig_ROM.v">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../HDACNN/HDACNN.srcs/sources_1/imports/Projects-/Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/Sig_ROM.v"/>
-          <Attr Name="ImportTime" Val="1756482885"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/imports/rtl/axi_lite_wrapper.v">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="$PPRDIR/../../HDACNN/HDACNN.srcs/sources_1/imports/Projects-/Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/axi_lite_wrapper.v"/>
-          <Attr Name="ImportTime" Val="1756482885"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/neuron.v">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../HDACNN/HDACNN.srcs/sources_1/imports/Projects-/Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/neuron.v"/>
-          <Attr Name="ImportTime" Val="1756482885"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/Weight_Memory.v">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../HDACNN/HDACNN.srcs/sources_1/imports/Projects-/Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/Weight_Memory.v"/>
-          <Attr Name="ImportTime" Val="1756482885"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/relu.v">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../HDACNN/HDACNN.srcs/sources_1/imports/Projects-/Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/relu.v"/>
           <Attr Name="ImportTime" Val="1756482885"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -278,14 +277,6 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_39.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_39.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/imports/rtl/w_1_48.mif">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/w_1_48.mif"/>
@@ -302,49 +293,9 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_12.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_12.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_55.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_55.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_3_3.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_3_3.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_2_6.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_2_6.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/imports/rtl/w_2_3.mif">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/w_2_3.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_22.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_22.mif"/>
           <Attr Name="ImportTime" Val="1761062836"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -358,49 +309,9 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_2_30.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_2_30.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_30.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_30.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_45.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_45.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_2_10.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_2_10.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/imports/rtl/w_3_9.mif">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/w_3_9.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_59.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_59.mif"/>
           <Attr Name="ImportTime" Val="1761062836"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -422,14 +333,6 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_16.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_16.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/imports/rtl/w_3_0.mif">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/w_3_0.mif"/>
@@ -438,41 +341,9 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_27.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_27.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/imports/rtl/w_2_23.mif">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/w_2_23.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_7.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_7.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_50.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_50.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_2_24.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_2_24.mif"/>
           <Attr Name="ImportTime" Val="1761062836"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -502,30 +373,6 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_2_19.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_2_19.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_51.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_51.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_3_7.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_3_7.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/imports/rtl/w_1_43.mif">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/w_1_43.mif"/>
@@ -542,33 +389,9 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_34.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_34.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/imports/rtl/w_1_26.mif">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/w_1_26.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_2_25.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_2_25.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_2_18.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_2_18.mif"/>
           <Attr Name="ImportTime" Val="1761062836"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -590,22 +413,6 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_2.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_2.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_44.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_44.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/imports/rtl/w_1_50.mif">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/w_1_50.mif"/>
@@ -622,25 +429,9 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_61.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_61.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/imports/rtl/w_1_33.mif">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/w_1_33.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_17.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_17.mif"/>
           <Attr Name="ImportTime" Val="1761062836"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -686,30 +477,6 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_2_31.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_2_31.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_23.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_23.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_2_2.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_2_2.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/imports/rtl/w_2_28.mif">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/w_2_28.mif"/>
@@ -718,49 +485,9 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_40.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_40.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_2_29.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_2_29.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_2_14.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_2_14.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/imports/rtl/w_1_54.mif">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/w_1_54.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_49.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_49.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_2_20.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_2_20.mif"/>
           <Attr Name="ImportTime" Val="1761062836"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -790,25 +517,9 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_21.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_21.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/imports/rtl/w_1_47.mif">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/w_1_47.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_48.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_48.mif"/>
           <Attr Name="ImportTime" Val="1761062836"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -862,57 +573,9 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_3_4.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_3_4.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_2_3.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_2_3.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_56.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_56.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_2_7.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_2_7.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/imports/rtl/w_2_29.mif">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/w_2_29.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_13.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_13.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_3_0.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_3_0.mif"/>
           <Attr Name="ImportTime" Val="1761062836"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -942,33 +605,9 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_2_23.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_2_23.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_6.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_6.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/imports/rtl/w_1_5.mif">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/w_1_5.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_33.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_33.mif"/>
           <Attr Name="ImportTime" Val="1761062836"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -982,41 +621,9 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_2_11.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_2_11.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/imports/rtl/w_1_27.mif">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/w_1_27.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_28.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_28.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_2_26.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_2_26.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_3.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_3.mif"/>
           <Attr Name="ImportTime" Val="1761062836"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -1046,14 +653,6 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_52.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_52.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/imports/rtl/w_2_25.mif">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/w_2_25.mif"/>
@@ -1062,41 +661,9 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_3_8.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_3_8.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_60.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_60.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/imports/rtl/w_1_2.mif">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/w_1_2.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_2_15.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_2_15.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_37.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_37.mif"/>
           <Attr Name="ImportTime" Val="1761062836"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -1134,25 +701,9 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_24.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_24.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/imports/rtl/w_1_40.mif">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/w_1_40.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_41.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_41.mif"/>
           <Attr Name="ImportTime" Val="1761062836"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -1182,14 +733,6 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_2_12.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_2_12.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/imports/rtl/w_2_5.mif">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/w_2_5.mif"/>
@@ -1214,30 +757,6 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_57.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_57.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_3_1.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_3_1.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_9.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_9.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/imports/rtl/w_1_6.mif">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/w_1_6.mif"/>
@@ -1246,33 +765,9 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_2_22.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_2_22.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_47.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_47.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/imports/rtl/w_1_46.mif">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/w_1_46.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_32.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_32.mif"/>
           <Attr Name="ImportTime" Val="1761062836"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -1302,57 +797,9 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_29.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_29.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_0.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_0.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_2_4.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_2_4.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_14.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_14.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_63.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_63.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/imports/rtl/w_1_31.mif">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/w_1_31.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_20.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_20.mif"/>
           <Attr Name="ImportTime" Val="1761062836"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -1390,14 +837,6 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_2_0.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_2_0.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/imports/rtl/w_1_35.mif">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/w_1_35.mif"/>
@@ -1422,25 +861,9 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_42.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_42.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/imports/rtl/w_1_1.mif">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/w_1_1.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_25.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_25.mif"/>
           <Attr Name="ImportTime" Val="1761062836"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -1454,41 +877,9 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_10.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_10.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_3_5.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_3_5.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_2_16.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_2_16.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/imports/rtl/w_1_41.mif">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/w_1_41.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_53.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_53.mif"/>
           <Attr Name="ImportTime" Val="1761062836"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -1502,38 +893,6 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_19.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_19.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_4.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_4.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_2_27.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_2_27.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_36.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_36.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/imports/rtl/w_2_6.mif">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/w_2_6.mif"/>
@@ -1542,49 +901,9 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_2_9.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_2_9.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_3_2.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_3_2.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/imports/rtl/w_1_7.mif">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/w_1_7.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_2_5.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_2_5.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_2_21.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_2_21.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_8.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_8.mif"/>
           <Attr Name="ImportTime" Val="1761062836"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -1606,14 +925,6 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_38.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_38.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/imports/rtl/w_2_20.mif">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/w_2_20.mif"/>
@@ -1625,14 +936,6 @@
       <File Path="$PSRCDIR/sources_1/imports/rtl/w_2_12.mif">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/w_2_12.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_2_13.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_2_13.mif"/>
           <Attr Name="ImportTime" Val="1761062836"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -1654,33 +957,9 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_3_9.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_3_9.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_62.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_62.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/imports/rtl/w_2_24.mif">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/w_2_24.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_31.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_31.mif"/>
           <Attr Name="ImportTime" Val="1761062836"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -1718,14 +997,6 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_46.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_46.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/imports/rtl/w_1_57.mif">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/w_1_57.mif"/>
@@ -1734,33 +1005,9 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_15.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_15.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_58.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_58.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/imports/rtl/w_1_14.mif">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/w_1_14.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_26.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_26.mif"/>
           <Attr Name="ImportTime" Val="1761062836"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -1790,14 +1037,6 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_18.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_18.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/imports/rtl/w_3_5.mif">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/w_3_5.mif"/>
@@ -1814,22 +1053,6 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_35.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_35.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_5.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_5.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/imports/rtl/w_2_16.mif">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/w_2_16.mif"/>
@@ -1838,33 +1061,9 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_1.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_1.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/imports/rtl/w_1_42.mif">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/w_1_42.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_2_17.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_2_17.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_43.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_43.mif"/>
           <Attr Name="ImportTime" Val="1761062836"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -1886,41 +1085,9 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_2_8.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_2_8.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/imports/rtl/w_1_49.mif">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/w_1_49.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_3_6.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_3_6.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_2_1.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_2_1.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_11.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_11.mif"/>
           <Attr Name="ImportTime" Val="1761062836"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -1942,25 +1109,9 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_54.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_54.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/imports/rtl/w_1_10.mif">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/w_1_10.mif"/>
-          <Attr Name="ImportTime" Val="1761062836"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/rtl/b_2_28.mif">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_2_28.mif"/>
           <Attr Name="ImportTime" Val="1761062836"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -1990,12 +1141,919 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_39.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_39.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_12.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_12.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_2_12.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_2_12.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_55.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_55.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_3_3.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_3_3.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_2_6.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_2_6.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_57.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_57.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_3_1.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_3_1.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_9.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_9.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_2_22.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_2_22.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_22.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_22.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_47.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_47.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_2_30.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_2_30.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_30.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_30.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_45.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_45.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_32.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_32.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_2_10.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_2_10.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_59.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_59.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_29.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_29.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_16.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_16.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_0.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_0.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_2_4.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_2_4.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_27.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_27.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_14.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_14.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_63.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_63.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_20.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_20.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_7.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_7.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_50.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_50.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_2_24.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_2_24.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_2_19.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_2_19.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_51.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_51.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_3_7.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_3_7.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_2_0.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_2_0.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_34.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_34.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_2_25.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_2_25.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_2_18.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_2_18.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_42.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_42.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_2.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_2.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_44.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_44.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_61.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_61.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_25.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_25.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_17.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_17.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_10.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_10.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_2_31.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_2_31.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_3_5.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_3_5.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_23.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_23.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_2_2.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_2_2.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_2_16.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_2_16.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_40.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_40.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_2_29.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_2_29.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_53.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_53.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_2_14.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_2_14.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_19.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_19.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_4.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_4.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_2_27.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_2_27.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_36.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_36.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_49.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_49.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_2_20.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_2_20.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_2_9.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_2_9.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_3_2.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_3_2.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_2_5.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_2_5.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_21.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_21.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_2_21.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_2_21.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_8.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_8.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_48.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_48.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_38.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_38.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_3_4.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_3_4.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_2_13.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_2_13.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_2_3.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_2_3.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_56.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_56.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_2_7.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_2_7.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_13.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_13.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_3_0.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_3_0.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_3_9.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_3_9.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_62.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_62.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_2_23.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_2_23.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_31.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_31.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_6.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_6.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_33.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_33.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_46.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_46.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_2_11.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_2_11.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_15.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_15.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_28.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_28.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_58.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_58.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_26.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_26.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_2_26.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_2_26.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_3.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_3.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_18.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_18.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_52.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_52.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_3_8.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_3_8.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_35.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_35.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_60.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_60.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_5.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_5.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_1.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_1.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_2_17.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_2_17.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_43.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_43.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_2_15.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_2_15.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_37.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_37.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_2_8.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_2_8.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_3_6.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_3_6.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_2_1.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_2_1.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_11.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_11.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_24.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_24.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_54.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_54.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_1_41.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_1_41.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/rtl/b_2_28.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Hardware-Design-Automation-for-CNNs/mnistZynet/mnistZynet/src/fpga/rtl/b_2_28.mif"/>
+          <Attr Name="ImportTime" Val="1761656799"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/number_0.mem">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/number_9.mem">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/number_4.mem">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/number_5.mem">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/number_3.mem">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/number_6.mem">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/number_1.mem">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/number_8.mem">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/number_2.mem">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/number_7.mem">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
-        <Option Name="TopModule" Val="Convolution"/>
+        <Option Name="TopModule" Val="neuron"/>
         <Option Name="TopLib" Val="xil_defaultlib"/>
-        <Option Name="TopRTLFile" Val="$PSRCDIR/sources_1/new/Convolution.v"/>
-        <Option Name="TopAutoSet" Val="TRUE"/>
+        <Option Name="TopRTLFile" Val="$PSRCDIR/sources_1/imports/rtl/neuron.v"/>
       </Config>
     </FileSet>
     <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
@@ -2006,8 +2064,16 @@
     </FileSet>
     <FileSet Name="sim_1" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sim_1" RelGenDir="$PGENDIR/sim_1">
       <Filter Type="Srcs"/>
+      <File Path="$PSRCDIR/sim_1/new/AllNumbersTest.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PSRCDIR/sim_1/new/Complete_CNN_Test.v">
         <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -2087,7 +2153,7 @@
       </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
-        <Option Name="TopModule" Val="Complete_CNN_TestBench_FixedParams"/>
+        <Option Name="TopModule" Val="AllNumbersTest"/>
         <Option Name="TopLib" Val="xil_defaultlib"/>
         <Option Name="TransportPathDelay" Val="0"/>
         <Option Name="TransportIntDelay" Val="0"/>

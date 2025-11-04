@@ -26,7 +26,7 @@ class model:
     def compile(self,pretrained='No',weights="",biases="",dataWidth=16,sigmoidSize=5,weightIntSize=1,inputIntSize=4):
         gen_nn.gen_nn(self.numLayers,self.layers,dataWidth,pretrained=pretrained,weights=weights,biases=biases,sigmoidSize=sigmoidSize,weightIntSize=weightIntSize,inputIntSize=inputIntSize)
         if pretrained=='Yes':
-            genWegitsAndBias.genWegitsAndBias(dataWidth,dataWidth-weightIntSize,dataWidth-weightIntSize-inputIntSize,weights,biases)
+            genWegitsAndBias.genWegitsAndBias(dataWidth,dataWidth-weightIntSize,dataWidth-weightIntSize,weights,biases)
     
 def makeXilinxProject(projectName='myProject',fpgaPart='xc7z020clg484-1'):
     xilinxUtils.makeVivadoProject(projectName,fpgaPart)

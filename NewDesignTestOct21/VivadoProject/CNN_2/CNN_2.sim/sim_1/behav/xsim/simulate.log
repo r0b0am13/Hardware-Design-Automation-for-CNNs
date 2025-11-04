@@ -1,1823 +1,1063 @@
 Vivado Simulator 2020.2
 Time resolution is 1 ps
-[695000] Count:           1 Conv_Debug = 0000
-[705000] Count:           2 Conv_Debug = 0000
-[715000] Count:           3 Conv_Debug = 0000
-[725000] Count:           4 Conv_Debug = 0000
-[735000] Count:           5 Conv_Debug = 0000
-[745000] Count:           6 Conv_Debug = 0000
-[755000] Count:           7 Conv_Debug = 0000
-[765000] Count:           8 Conv_Debug = 0000
-[775000] Count:           9 Conv_Debug = 0000
-[785000] Count:          10 Conv_Debug = 0000
-[795000] Count:          11 Conv_Debug = 0000
-[805000] Count:          12 Conv_Debug = 0000
-[815000] Count:          13 Conv_Debug = 0000
-[825000] Count:          14 Conv_Debug = 0000
-[835000] Count:          15 Conv_Debug = 0000
-[845000] Count:          16 Conv_Debug = 0000
-[855000] Count:          17 Conv_Debug = 0000
-[865000] Count:          18 Conv_Debug = 0000
-[875000] Count:          19 Conv_Debug = 0000
-[885000] Count:          20 Conv_Debug = 0000
-[895000] Count:          21 Conv_Debug = 0000
-[905000] Count:          22 Conv_Debug = 0000
-[915000] Count:          23 Conv_Debug = 0000
-[925000] Count:          24 Conv_Debug = 0000
-[935000] Count:          25 Conv_Debug = 0000
-[945000] Count:          26 Conv_Debug = 0000
-[975000] Count:          27 Conv_Debug = 0000
-[985000] Count:          28 Conv_Debug = 0000
-[995000] Count:          29 Conv_Debug = 0000
-[1005000] Count:          30 Conv_Debug = 0000
-[1015000] Count:          31 Conv_Debug = 0000
-[1025000] Count:          32 Conv_Debug = 0000
-[1025000] Count:           1 Maxpool_Debug = 0000
-[1035000] Count:          33 Conv_Debug = 0000
-[1045000] Count:          34 Conv_Debug = 0000
-[1045000] Count:           2 Maxpool_Debug = 0000
-[1055000] Count:          35 Conv_Debug = 0000
-[1065000] Count:          36 Conv_Debug = 0000
-[1065000] Count:           3 Maxpool_Debug = 0000
-[1075000] Count:          37 Conv_Debug = 0000
-[1085000] Count:          38 Conv_Debug = 0000
-[1085000] Count:           4 Maxpool_Debug = 0000
-[1095000] Count:          39 Conv_Debug = 0000
-[1105000] Count:          40 Conv_Debug = 0000
-[1105000] Count:           5 Maxpool_Debug = 0000
-[1115000] Count:          41 Conv_Debug = 0000
-[1125000] Count:          42 Conv_Debug = 0000
-[1125000] Count:           6 Maxpool_Debug = 0000
-[1135000] Count:          43 Conv_Debug = 0000
-[1145000] Count:          44 Conv_Debug = 0000
-[1145000] Count:           7 Maxpool_Debug = 0000
-[1155000] Count:          45 Conv_Debug = 0000
-[1165000] Count:          46 Conv_Debug = 0000
-[1165000] Count:           8 Maxpool_Debug = 0000
-[1175000] Count:          47 Conv_Debug = 0000
-[1185000] Count:          48 Conv_Debug = 0000
-[1185000] Count:           9 Maxpool_Debug = 0000
-[1195000] Count:          49 Conv_Debug = 0000
-[1205000] Count:          50 Conv_Debug = 0000
-[1205000] Count:          10 Maxpool_Debug = 0000
-[1215000] Count:          51 Conv_Debug = 0000
-[1225000] Count:          52 Conv_Debug = 0000
-[1225000] Count:          11 Maxpool_Debug = 0000
-[1245000] Count:          12 Maxpool_Debug = 0000
-[1255000] Count:          53 Conv_Debug = 0000
-[1265000] Count:          54 Conv_Debug = 0000
-[1265000] Count:          13 Maxpool_Debug = 0000
-[1275000] Count:          55 Conv_Debug = 0000
-[1285000] Count:          56 Conv_Debug = 0000
-[1295000] Count:          57 Conv_Debug = 0000
-[1305000] Count:          58 Conv_Debug = 0000
-[1315000] Count:          59 Conv_Debug = 0000
-[1325000] Count:          60 Conv_Debug = 0000
-[1335000] Count:          61 Conv_Debug = 0000
-[1345000] Count:          62 Conv_Debug = 0000
-[1355000] Count:          63 Conv_Debug = 0000
-[1365000] Count:          64 Conv_Debug = 0000
-[1375000] Count:          65 Conv_Debug = 0000
-[1385000] Count:          66 Conv_Debug = 0000
-[1395000] Count:          67 Conv_Debug = 0000
-[1405000] Count:          68 Conv_Debug = 0000
-[1415000] Count:          69 Conv_Debug = 0000
-[1425000] Count:          70 Conv_Debug = 0000
-[1435000] Count:          71 Conv_Debug = 0000
-[1445000] Count:          72 Conv_Debug = 0000
-[1455000] Count:          73 Conv_Debug = 0000
-[1465000] Count:          74 Conv_Debug = 0000
-[1475000] Count:          75 Conv_Debug = 0000
-[1485000] Count:          76 Conv_Debug = 0000
-[1495000] Count:          77 Conv_Debug = 0000
-[1505000] Count:          78 Conv_Debug = 0000
-[1535000] Count:          79 Conv_Debug = 0000
-[1545000] Count:          80 Conv_Debug = 0000
-[1555000] Count:          81 Conv_Debug = 0000
-[1565000] Count:          82 Conv_Debug = 0000
-[1575000] Count:          83 Conv_Debug = 0000
-[1585000] Count:          84 Conv_Debug = 0000
-[1585000] Count:          14 Maxpool_Debug = 0000
-[1595000] Count:          85 Conv_Debug = 0000
-[1605000] Count:          86 Conv_Debug = 0000
-[1605000] Count:          15 Maxpool_Debug = 0000
-[1615000] Count:          87 Conv_Debug = 0000
-[1625000] Count:          88 Conv_Debug = 0000
-[1625000] Count:          16 Maxpool_Debug = 0000
-[1635000] Count:          89 Conv_Debug = 0000
-[1645000] Count:          90 Conv_Debug = 0000
-[1645000] Count:          17 Maxpool_Debug = 0000
-[1655000] Count:          91 Conv_Debug = 0000
-[1665000] Count:          92 Conv_Debug = 0000
-[1665000] Count:          18 Maxpool_Debug = 0000
-[1675000] Count:          93 Conv_Debug = 0000
-[1685000] Count:          94 Conv_Debug = 0000
-[1685000] Count:          19 Maxpool_Debug = 0000
-[1695000] Count:          95 Conv_Debug = 0000
-[1705000] Count:          96 Conv_Debug = 0000
-[1705000] Count:          20 Maxpool_Debug = 0000
-[1715000] Count:          97 Conv_Debug = 0000
-[1725000] Count:          98 Conv_Debug = 0000
-[1725000] Count:          21 Maxpool_Debug = 0000
-[1735000] Count:          99 Conv_Debug = 0000
-[1745000] Count:         100 Conv_Debug = 0000
-[1745000] Count:          22 Maxpool_Debug = 0000
-[1755000] Count:         101 Conv_Debug = 0000
-[1765000] Count:         102 Conv_Debug = 0000
-[1765000] Count:          23 Maxpool_Debug = 0000
-[1775000] Count:         103 Conv_Debug = 0000
-[1785000] Count:         104 Conv_Debug = 0000
-[1785000] Count:          24 Maxpool_Debug = 0000
-[1805000] Count:          25 Maxpool_Debug = 0000
-[1815000] Count:         105 Conv_Debug = 0000
-[1825000] Count:         106 Conv_Debug = 0000
-[1825000] Count:          26 Maxpool_Debug = 0000
-[1835000] Count:         107 Conv_Debug = 0000
-[1845000] Count:         108 Conv_Debug = 0000
-[1855000] Count:         109 Conv_Debug = 0000
-[1865000] Count:         110 Conv_Debug = 0118
-[1875000] Count:         111 Conv_Debug = 0b25
-[1885000] Count:         112 Conv_Debug = 0bf5
-[1895000] Count:         113 Conv_Debug = 0cfe
-[1905000] Count:         114 Conv_Debug = 0c4a
-[1915000] Count:         115 Conv_Debug = 0be6
-[1925000] Count:         116 Conv_Debug = 0b83
-[1935000] Count:         117 Conv_Debug = 0ab8
-[1945000] Count:         118 Conv_Debug = 0a7a
-[1955000] Count:         119 Conv_Debug = 09a1
-[1965000] Count:         120 Conv_Debug = 08d1
-[1975000] Count:         121 Conv_Debug = 0795
-[1985000] Count:         122 Conv_Debug = 0301
-[1995000] Count:         123 Conv_Debug = 0000
-[2005000] Count:         124 Conv_Debug = 0000
-[2015000] Count:         125 Conv_Debug = 0000
-[2025000] Count:         126 Conv_Debug = 0000
-[2035000] Count:         127 Conv_Debug = 0000
-[2045000] Count:         128 Conv_Debug = 0000
-[2055000] Count:         129 Conv_Debug = 0000
-[2065000] Count:         130 Conv_Debug = 0000
-[2095000] Count:         131 Conv_Debug = 0000
-[2105000] Count:         132 Conv_Debug = 0000
-[2115000] Count:         133 Conv_Debug = 0000
-[2125000] Count:         134 Conv_Debug = 0000
-[2135000] Count:         135 Conv_Debug = 005f
-[2145000] Count:         136 Conv_Debug = 0b9a
-[2145000] Count:          27 Maxpool_Debug = 0000
-[2155000] Count:         137 Conv_Debug = 1253
-[2165000] Count:         138 Conv_Debug = 0fb3
-[2165000] Count:          28 Maxpool_Debug = 0000
-[2175000] Count:         139 Conv_Debug = 10b8
-[2185000] Count:         140 Conv_Debug = 123b
-[2185000] Count:          29 Maxpool_Debug = 0b9a
-[2195000] Count:         141 Conv_Debug = 1264
-[2205000] Count:         142 Conv_Debug = 12ce
-[2205000] Count:          30 Maxpool_Debug = 1253
-[2215000] Count:         143 Conv_Debug = 1364
-[2225000] Count:         144 Conv_Debug = 13ad
-[2225000] Count:          31 Maxpool_Debug = 123b
-[2235000] Count:         145 Conv_Debug = 1483
-[2245000] Count:         146 Conv_Debug = 1526
-[2245000] Count:          32 Maxpool_Debug = 12ce
-[2255000] Count:         147 Conv_Debug = 15ff
-[2265000] Count:         148 Conv_Debug = 0fae
-[2265000] Count:          33 Maxpool_Debug = 13ad
-[2275000] Count:         149 Conv_Debug = 0000
-[2285000] Count:         150 Conv_Debug = 0000
-[2285000] Count:          34 Maxpool_Debug = 1526
-[2295000] Count:         151 Conv_Debug = 0000
-[2305000] Count:         152 Conv_Debug = 0000
-[2305000] Count:          35 Maxpool_Debug = 15ff
-[2315000] Count:         153 Conv_Debug = 0000
-[2325000] Count:         154 Conv_Debug = 0000
-[2325000] Count:          36 Maxpool_Debug = 0000
-[2335000] Count:         155 Conv_Debug = 0000
-[2345000] Count:         156 Conv_Debug = 0000
-[2345000] Count:          37 Maxpool_Debug = 0000
-[2365000] Count:          38 Maxpool_Debug = 0000
-[2375000] Count:         157 Conv_Debug = 0000
-[2385000] Count:         158 Conv_Debug = 0000
-[2385000] Count:          39 Maxpool_Debug = 0000
-[2395000] Count:         159 Conv_Debug = 0000
-[2405000] Count:         160 Conv_Debug = 0000
-[2415000] Count:         161 Conv_Debug = 032c
-[2425000] Count:         162 Conv_Debug = 10aa
-[2435000] Count:         163 Conv_Debug = 0ddb
-[2445000] Count:         164 Conv_Debug = 0499
-[2455000] Count:         165 Conv_Debug = 0311
-[2465000] Count:         166 Conv_Debug = 041e
-[2475000] Count:         167 Conv_Debug = 0421
-[2485000] Count:         168 Conv_Debug = 0482
-[2495000] Count:         169 Conv_Debug = 04da
-[2505000] Count:         170 Conv_Debug = 050d
-[2515000] Count:         171 Conv_Debug = 059f
-[2525000] Count:         172 Conv_Debug = 0615
-[2535000] Count:         173 Conv_Debug = 069c
-[2545000] Count:         174 Conv_Debug = 02b1
-[2555000] Count:         175 Conv_Debug = 0000
-[2565000] Count:         176 Conv_Debug = 0000
-[2575000] Count:         177 Conv_Debug = 0000
-[2585000] Count:         178 Conv_Debug = 0000
-[2595000] Count:         179 Conv_Debug = 0000
-[2605000] Count:         180 Conv_Debug = 0000
-[2615000] Count:         181 Conv_Debug = 0000
-[2625000] Count:         182 Conv_Debug = 0000
-[2655000] Count:         183 Conv_Debug = 0000
-[2665000] Count:         184 Conv_Debug = 0000
-[2675000] Count:         185 Conv_Debug = 0000
-[2685000] Count:         186 Conv_Debug = 0000
-[2695000] Count:         187 Conv_Debug = 0378
-[2705000] Count:         188 Conv_Debug = 10a4
-[2705000] Count:          40 Maxpool_Debug = 0000
-[2715000] Count:         189 Conv_Debug = 0a6e
-[2725000] Count:         190 Conv_Debug = 0000
-[2725000] Count:          41 Maxpool_Debug = 0000
-[2735000] Count:         191 Conv_Debug = 0000
-[2745000] Count:         192 Conv_Debug = 0000
-[2745000] Count:          42 Maxpool_Debug = 10aa
-[2755000] Count:         193 Conv_Debug = 0000
-[2765000] Count:         194 Conv_Debug = 0000
-[2765000] Count:          43 Maxpool_Debug = 0ddb
-[2775000] Count:         195 Conv_Debug = 0000
-[2785000] Count:         196 Conv_Debug = 0000
-[2785000] Count:          44 Maxpool_Debug = 041e
-[2795000] Count:         197 Conv_Debug = 0000
-[2805000] Count:         198 Conv_Debug = 0000
-[2805000] Count:          45 Maxpool_Debug = 0482
-[2815000] Count:         199 Conv_Debug = 0000
-[2825000] Count:         200 Conv_Debug = 0000
-[2825000] Count:          46 Maxpool_Debug = 050d
-[2835000] Count:         201 Conv_Debug = 0000
-[2845000] Count:         202 Conv_Debug = 0000
-[2845000] Count:          47 Maxpool_Debug = 0615
-[2855000] Count:         203 Conv_Debug = 0000
-[2865000] Count:         204 Conv_Debug = 0000
-[2865000] Count:          48 Maxpool_Debug = 069c
-[2875000] Count:         205 Conv_Debug = 0000
-[2885000] Count:         206 Conv_Debug = 0000
-[2885000] Count:          49 Maxpool_Debug = 0000
-[2895000] Count:         207 Conv_Debug = 0000
-[2905000] Count:         208 Conv_Debug = 0000
-[2905000] Count:          50 Maxpool_Debug = 0000
-[2925000] Count:          51 Maxpool_Debug = 0000
-[2935000] Count:         209 Conv_Debug = 0000
-[2945000] Count:         210 Conv_Debug = 0000
-[2945000] Count:          52 Maxpool_Debug = 0000
-[2955000] Count:         211 Conv_Debug = 0000
-[2965000] Count:         212 Conv_Debug = 0000
-[2975000] Count:         213 Conv_Debug = 0389
-[2985000] Count:         214 Conv_Debug = 10eb
-[2995000] Count:         215 Conv_Debug = 0a60
-[3005000] Count:         216 Conv_Debug = 0000
-[3015000] Count:         217 Conv_Debug = 0000
-[3025000] Count:         218 Conv_Debug = 0000
-[3035000] Count:         219 Conv_Debug = 0000
-[3045000] Count:         220 Conv_Debug = 0000
-[3055000] Count:         221 Conv_Debug = 0000
-[3065000] Count:         222 Conv_Debug = 0000
-[3075000] Count:         223 Conv_Debug = 0000
-[3085000] Count:         224 Conv_Debug = 0000
-[3095000] Count:         225 Conv_Debug = 0000
-[3105000] Count:         226 Conv_Debug = 0000
-[3115000] Count:         227 Conv_Debug = 0000
-[3125000] Count:         228 Conv_Debug = 0000
-[3135000] Count:         229 Conv_Debug = 0000
-[3145000] Count:         230 Conv_Debug = 0000
-[3155000] Count:         231 Conv_Debug = 0000
-[3165000] Count:         232 Conv_Debug = 0000
-[3175000] Count:         233 Conv_Debug = 0000
-[3185000] Count:         234 Conv_Debug = 0000
-[3215000] Count:         235 Conv_Debug = 0000
-[3225000] Count:         236 Conv_Debug = 0000
-[3235000] Count:         237 Conv_Debug = 0000
-[3245000] Count:         238 Conv_Debug = 0000
-[3255000] Count:         239 Conv_Debug = 0357
-[3265000] Count:         240 Conv_Debug = 11f9
-[3265000] Count:          53 Maxpool_Debug = 0000
-[3275000] Count:         241 Conv_Debug = 0b3a
-[3285000] Count:         242 Conv_Debug = 0000
-[3285000] Count:          54 Maxpool_Debug = 0000
-[3295000] Count:         243 Conv_Debug = 0000
-[3305000] Count:         244 Conv_Debug = 014d
-[3305000] Count:          55 Maxpool_Debug = 11f9
-[3315000] Count:         245 Conv_Debug = 048d
-[3325000] Count:         246 Conv_Debug = 05a9
-[3325000] Count:          56 Maxpool_Debug = 0b3a
-[3335000] Count:         247 Conv_Debug = 037e
-[3345000] Count:         248 Conv_Debug = 0143
-[3345000] Count:          57 Maxpool_Debug = 014d
-[3355000] Count:         249 Conv_Debug = 0000
-[3365000] Count:         250 Conv_Debug = 0000
-[3365000] Count:          58 Maxpool_Debug = 05a9
-[3375000] Count:         251 Conv_Debug = 0000
-[3385000] Count:         252 Conv_Debug = 0000
-[3385000] Count:          59 Maxpool_Debug = 037e
-[3395000] Count:         253 Conv_Debug = 0000
-[3405000] Count:         254 Conv_Debug = 0000
-[3405000] Count:          60 Maxpool_Debug = 0000
-[3415000] Count:         255 Conv_Debug = 0000
-[3425000] Count:         256 Conv_Debug = 0000
-[3425000] Count:          61 Maxpool_Debug = 0000
-[3435000] Count:         257 Conv_Debug = 0000
-[3445000] Count:         258 Conv_Debug = 0000
-[3445000] Count:          62 Maxpool_Debug = 0000
-[3455000] Count:         259 Conv_Debug = 0000
-[3465000] Count:         260 Conv_Debug = 0000
-[3465000] Count:          63 Maxpool_Debug = 0000
-[3485000] Count:          64 Maxpool_Debug = 0000
-[3495000] Count:         261 Conv_Debug = 0000
-[3505000] Count:         262 Conv_Debug = 0000
-[3505000] Count:          65 Maxpool_Debug = 0000
-[3515000] Count:         263 Conv_Debug = 0000
-[3525000] Count:         264 Conv_Debug = 0000
-[3535000] Count:         265 Conv_Debug = 02cc
-[3545000] Count:         266 Conv_Debug = 1021
-[3555000] Count:         267 Conv_Debug = 0e5b
-[3565000] Count:         268 Conv_Debug = 06e5
-[3575000] Count:         269 Conv_Debug = 0cd5
-[3585000] Count:         270 Conv_Debug = 10ca
-[3595000] Count:         271 Conv_Debug = 14e0
-[3605000] Count:         272 Conv_Debug = 1622
-[3615000] Count:         273 Conv_Debug = 152c
-[3625000] Count:         274 Conv_Debug = 1303
-[3635000] Count:         275 Conv_Debug = 1005
-[3645000] Count:         276 Conv_Debug = 09df
-[3655000] Count:         277 Conv_Debug = 027e
-[3665000] Count:         278 Conv_Debug = 0000
-[3675000] Count:         279 Conv_Debug = 0000
-[3685000] Count:         280 Conv_Debug = 0000
-[3695000] Count:         281 Conv_Debug = 0000
-[3705000] Count:         282 Conv_Debug = 0000
-[3715000] Count:         283 Conv_Debug = 0000
-[3725000] Count:         284 Conv_Debug = 0000
-[3735000] Count:         285 Conv_Debug = 0000
-[3745000] Count:         286 Conv_Debug = 0000
-[3775000] Count:         287 Conv_Debug = 0000
-[3785000] Count:         288 Conv_Debug = 0000
-[3795000] Count:         289 Conv_Debug = 0000
-[3805000] Count:         290 Conv_Debug = 0000
-[3815000] Count:         291 Conv_Debug = 0169
-[3825000] Count:         292 Conv_Debug = 11e3
-[3825000] Count:          66 Maxpool_Debug = 0000
-[3835000] Count:         293 Conv_Debug = 160d
-[3845000] Count:         294 Conv_Debug = 138d
-[3845000] Count:          67 Maxpool_Debug = 0000
-[3855000] Count:         295 Conv_Debug = 144a
-[3865000] Count:         296 Conv_Debug = 0eb1
-[3865000] Count:          68 Maxpool_Debug = 11e3
-[3875000] Count:         297 Conv_Debug = 0b4c
-[3885000] Count:         298 Conv_Debug = 0ae5
-[3885000] Count:          69 Maxpool_Debug = 160d
-[3895000] Count:         299 Conv_Debug = 0c2d
-[3905000] Count:         300 Conv_Debug = 0e81
-[3905000] Count:          70 Maxpool_Debug = 144a
-[3915000] Count:         301 Conv_Debug = 1212
-[3925000] Count:         302 Conv_Debug = 14fa
-[3925000] Count:          71 Maxpool_Debug = 1622
-[3935000] Count:         303 Conv_Debug = 109e
-[3945000] Count:         304 Conv_Debug = 0868
-[3945000] Count:          72 Maxpool_Debug = 152c
-[3955000] Count:         305 Conv_Debug = 0000
-[3965000] Count:         306 Conv_Debug = 0000
-[3965000] Count:          73 Maxpool_Debug = 14fa
-[3975000] Count:         307 Conv_Debug = 0000
-[3985000] Count:         308 Conv_Debug = 0000
-[3985000] Count:          74 Maxpool_Debug = 109e
-[3995000] Count:         309 Conv_Debug = 0000
-[4005000] Count:         310 Conv_Debug = 0000
-[4005000] Count:          75 Maxpool_Debug = 0000
-[4015000] Count:         311 Conv_Debug = 0000
-[4025000] Count:         312 Conv_Debug = 0000
-[4025000] Count:          76 Maxpool_Debug = 0000
-[4045000] Count:          77 Maxpool_Debug = 0000
-[4055000] Count:         313 Conv_Debug = 0000
-[4065000] Count:         314 Conv_Debug = 0000
-[4065000] Count:          78 Maxpool_Debug = 0000
-[4075000] Count:         315 Conv_Debug = 0000
-[4085000] Count:         316 Conv_Debug = 0000
-[4095000] Count:         317 Conv_Debug = 0000
-[4105000] Count:         318 Conv_Debug = 094f
-[4115000] Count:         319 Conv_Debug = 133f
-[4125000] Count:         320 Conv_Debug = 0ed2
-[4135000] Count:         321 Conv_Debug = 0495
-[4145000] Count:         322 Conv_Debug = 0034
-[4155000] Count:         323 Conv_Debug = 0000
-[4165000] Count:         324 Conv_Debug = 0000
-[4175000] Count:         325 Conv_Debug = 0000
-[4185000] Count:         326 Conv_Debug = 0182
-[4195000] Count:         327 Conv_Debug = 040a
-[4205000] Count:         328 Conv_Debug = 07c0
-[4215000] Count:         329 Conv_Debug = 10d4
-[4225000] Count:         330 Conv_Debug = 12db
-[4235000] Count:         331 Conv_Debug = 094e
-[4245000] Count:         332 Conv_Debug = 0000
-[4255000] Count:         333 Conv_Debug = 0000
-[4265000] Count:         334 Conv_Debug = 0000
-[4275000] Count:         335 Conv_Debug = 0000
-[4285000] Count:         336 Conv_Debug = 0000
-[4295000] Count:         337 Conv_Debug = 0000
-[4305000] Count:         338 Conv_Debug = 0000
-[4335000] Count:         339 Conv_Debug = 0000
-[4345000] Count:         340 Conv_Debug = 0000
-[4355000] Count:         341 Conv_Debug = 0000
-[4365000] Count:         342 Conv_Debug = 0000
-[4375000] Count:         343 Conv_Debug = 0000
-[4385000] Count:         344 Conv_Debug = 002c
-[4385000] Count:          79 Maxpool_Debug = 0000
-[4395000] Count:         345 Conv_Debug = 0408
-[4405000] Count:         346 Conv_Debug = 0000
-[4405000] Count:          80 Maxpool_Debug = 0000
-[4415000] Count:         347 Conv_Debug = 0000
-[4425000] Count:         348 Conv_Debug = 0000
-[4425000] Count:          81 Maxpool_Debug = 094f
-[4435000] Count:         349 Conv_Debug = 0000
-[4445000] Count:         350 Conv_Debug = 0000
-[4445000] Count:          82 Maxpool_Debug = 133f
-[4455000] Count:         351 Conv_Debug = 0000
-[4465000] Count:         352 Conv_Debug = 0000
-[4465000] Count:          83 Maxpool_Debug = 0495
-[4475000] Count:         353 Conv_Debug = 0000
-[4485000] Count:         354 Conv_Debug = 0000
-[4485000] Count:          84 Maxpool_Debug = 0000
-[4495000] Count:         355 Conv_Debug = 0616
-[4505000] Count:         356 Conv_Debug = 120e
-[4505000] Count:          85 Maxpool_Debug = 0182
-[4515000] Count:         357 Conv_Debug = 0fb3
-[4525000] Count:         358 Conv_Debug = 0158
-[4525000] Count:          86 Maxpool_Debug = 07c0
-[4535000] Count:         359 Conv_Debug = 0000
-[4545000] Count:         360 Conv_Debug = 0000
-[4545000] Count:          87 Maxpool_Debug = 12db
-[4555000] Count:         361 Conv_Debug = 0000
-[4565000] Count:         362 Conv_Debug = 0000
-[4565000] Count:          88 Maxpool_Debug = 0fb3
-[4575000] Count:         363 Conv_Debug = 0000
-[4585000] Count:         364 Conv_Debug = 0000
-[4585000] Count:          89 Maxpool_Debug = 0000
-[4605000] Count:          90 Maxpool_Debug = 0000
-[4615000] Count:         365 Conv_Debug = 0000
-[4625000] Count:         366 Conv_Debug = 0000
-[4625000] Count:          91 Maxpool_Debug = 0000
-[4635000] Count:         367 Conv_Debug = 0000
-[4645000] Count:         368 Conv_Debug = 0000
-[4655000] Count:         369 Conv_Debug = 0000
-[4665000] Count:         370 Conv_Debug = 0000
-[4675000] Count:         371 Conv_Debug = 0000
-[4685000] Count:         372 Conv_Debug = 0000
-[4695000] Count:         373 Conv_Debug = 0000
-[4705000] Count:         374 Conv_Debug = 0000
-[4715000] Count:         375 Conv_Debug = 0000
-[4725000] Count:         376 Conv_Debug = 0000
-[4735000] Count:         377 Conv_Debug = 0000
-[4745000] Count:         378 Conv_Debug = 0000
-[4755000] Count:         379 Conv_Debug = 0000
-[4765000] Count:         380 Conv_Debug = 0000
-[4775000] Count:         381 Conv_Debug = 0000
-[4785000] Count:         382 Conv_Debug = 0856
-[4795000] Count:         383 Conv_Debug = 107f
-[4805000] Count:         384 Conv_Debug = 07c8
-[4815000] Count:         385 Conv_Debug = 0000
-[4825000] Count:         386 Conv_Debug = 0000
-[4835000] Count:         387 Conv_Debug = 0000
-[4845000] Count:         388 Conv_Debug = 0000
-[4855000] Count:         389 Conv_Debug = 0000
-[4865000] Count:         390 Conv_Debug = 0000
-[4895000] Count:         391 Conv_Debug = 0000
-[4905000] Count:         392 Conv_Debug = 0000
-[4915000] Count:         393 Conv_Debug = 0000
-[4925000] Count:         394 Conv_Debug = 0000
-[4935000] Count:         395 Conv_Debug = 0000
-[4945000] Count:         396 Conv_Debug = 0000
-[4945000] Count:          92 Maxpool_Debug = 0000
-[4955000] Count:         397 Conv_Debug = 0000
-[4965000] Count:         398 Conv_Debug = 0000
-[4965000] Count:          93 Maxpool_Debug = 0000
-[4975000] Count:         399 Conv_Debug = 0000
-[4985000] Count:         400 Conv_Debug = 0000
-[4985000] Count:          94 Maxpool_Debug = 0000
-[4995000] Count:         401 Conv_Debug = 0000
-[5005000] Count:         402 Conv_Debug = 0000
-[5005000] Count:          95 Maxpool_Debug = 0000
-[5015000] Count:         403 Conv_Debug = 0000
-[5025000] Count:         404 Conv_Debug = 0000
-[5025000] Count:          96 Maxpool_Debug = 0000
-[5035000] Count:         405 Conv_Debug = 0000
-[5045000] Count:         406 Conv_Debug = 0000
-[5045000] Count:          97 Maxpool_Debug = 0000
-[5055000] Count:         407 Conv_Debug = 0000
-[5065000] Count:         408 Conv_Debug = 0321
-[5065000] Count:          98 Maxpool_Debug = 0000
-[5075000] Count:         409 Conv_Debug = 130f
-[5085000] Count:         410 Conv_Debug = 0a45
-[5085000] Count:          99 Maxpool_Debug = 0000
-[5095000] Count:         411 Conv_Debug = 0000
-[5105000] Count:         412 Conv_Debug = 0000
-[5105000] Count:         100 Maxpool_Debug = 0856
-[5115000] Count:         413 Conv_Debug = 0000
-[5125000] Count:         414 Conv_Debug = 0000
-[5125000] Count:         101 Maxpool_Debug = 130f
-[5135000] Count:         415 Conv_Debug = 0000
-[5145000] Count:         416 Conv_Debug = 0000
-[5145000] Count:         102 Maxpool_Debug = 0000
-[5165000] Count:         103 Maxpool_Debug = 0000
-[5175000] Count:         417 Conv_Debug = 0000
-[5185000] Count:         418 Conv_Debug = 0000
-[5185000] Count:         104 Maxpool_Debug = 0000
-[5195000] Count:         419 Conv_Debug = 0000
-[5205000] Count:         420 Conv_Debug = 0000
-[5215000] Count:         421 Conv_Debug = 0000
-[5225000] Count:         422 Conv_Debug = 0000
-[5235000] Count:         423 Conv_Debug = 0000
-[5245000] Count:         424 Conv_Debug = 0000
-[5255000] Count:         425 Conv_Debug = 0000
-[5265000] Count:         426 Conv_Debug = 0000
-[5275000] Count:         427 Conv_Debug = 0000
-[5285000] Count:         428 Conv_Debug = 0000
-[5295000] Count:         429 Conv_Debug = 0000
-[5305000] Count:         430 Conv_Debug = 0000
-[5315000] Count:         431 Conv_Debug = 0000
-[5325000] Count:         432 Conv_Debug = 0000
-[5335000] Count:         433 Conv_Debug = 0000
-[5345000] Count:         434 Conv_Debug = 070c
-[5355000] Count:         435 Conv_Debug = 10c8
-[5365000] Count:         436 Conv_Debug = 0838
-[5375000] Count:         437 Conv_Debug = 0000
-[5385000] Count:         438 Conv_Debug = 0000
-[5395000] Count:         439 Conv_Debug = 0000
-[5405000] Count:         440 Conv_Debug = 0000
-[5415000] Count:         441 Conv_Debug = 0000
-[5425000] Count:         442 Conv_Debug = 0000
-[5455000] Count:         443 Conv_Debug = 0000
-[5465000] Count:         444 Conv_Debug = 0000
-[5475000] Count:         445 Conv_Debug = 0000
-[5485000] Count:         446 Conv_Debug = 0000
-[5495000] Count:         447 Conv_Debug = 0000
-[5505000] Count:         448 Conv_Debug = 0425
-[5505000] Count:         105 Maxpool_Debug = 0000
-[5515000] Count:         449 Conv_Debug = 0a35
-[5525000] Count:         450 Conv_Debug = 07bb
-[5525000] Count:         106 Maxpool_Debug = 0000
-[5535000] Count:         451 Conv_Debug = 0000
-[5545000] Count:         452 Conv_Debug = 0000
-[5545000] Count:         107 Maxpool_Debug = 0425
-[5555000] Count:         453 Conv_Debug = 0000
-[5565000] Count:         454 Conv_Debug = 0000
-[5565000] Count:         108 Maxpool_Debug = 0a35
-[5575000] Count:         455 Conv_Debug = 0000
-[5585000] Count:         456 Conv_Debug = 0000
-[5585000] Count:         109 Maxpool_Debug = 0000
-[5595000] Count:         457 Conv_Debug = 0000
-[5605000] Count:         458 Conv_Debug = 0000
-[5605000] Count:         110 Maxpool_Debug = 0000
-[5615000] Count:         459 Conv_Debug = 0123
-[5625000] Count:         460 Conv_Debug = 0f87
-[5625000] Count:         111 Maxpool_Debug = 0000
-[5635000] Count:         461 Conv_Debug = 103f
-[5645000] Count:         462 Conv_Debug = 0571
-[5645000] Count:         112 Maxpool_Debug = 0000
-[5655000] Count:         463 Conv_Debug = 0000
-[5665000] Count:         464 Conv_Debug = 0000
-[5665000] Count:         113 Maxpool_Debug = 0f87
-[5675000] Count:         465 Conv_Debug = 0000
-[5685000] Count:         466 Conv_Debug = 0000
-[5685000] Count:         114 Maxpool_Debug = 10c8
-[5695000] Count:         467 Conv_Debug = 0000
-[5705000] Count:         468 Conv_Debug = 0000
-[5705000] Count:         115 Maxpool_Debug = 0000
-[5725000] Count:         116 Maxpool_Debug = 0000
-[5735000] Count:         469 Conv_Debug = 0000
-[5745000] Count:         470 Conv_Debug = 0000
-[5745000] Count:         117 Maxpool_Debug = 0000
-[5755000] Count:         471 Conv_Debug = 0000
-[5765000] Count:         472 Conv_Debug = 0000
-[5775000] Count:         473 Conv_Debug = 0000
-[5785000] Count:         474 Conv_Debug = 04be
-[5795000] Count:         475 Conv_Debug = 142d
-[5805000] Count:         476 Conv_Debug = 1072
-[5815000] Count:         477 Conv_Debug = 04d6
-[5825000] Count:         478 Conv_Debug = 0000
-[5835000] Count:         479 Conv_Debug = 0000
-[5845000] Count:         480 Conv_Debug = 0000
-[5855000] Count:         481 Conv_Debug = 0000
-[5865000] Count:         482 Conv_Debug = 0000
-[5875000] Count:         483 Conv_Debug = 0000
-[5885000] Count:         484 Conv_Debug = 0000
-[5895000] Count:         485 Conv_Debug = 08f6
-[5905000] Count:         486 Conv_Debug = 10e7
-[5915000] Count:         487 Conv_Debug = 0c11
-[5925000] Count:         488 Conv_Debug = 0000
-[5935000] Count:         489 Conv_Debug = 0000
-[5945000] Count:         490 Conv_Debug = 0000
-[5955000] Count:         491 Conv_Debug = 0000
-[5965000] Count:         492 Conv_Debug = 0000
-[5975000] Count:         493 Conv_Debug = 0000
-[5985000] Count:         494 Conv_Debug = 0000
-[6015000] Count:         495 Conv_Debug = 0000
-[6025000] Count:         496 Conv_Debug = 0000
-[6035000] Count:         497 Conv_Debug = 0000
-[6045000] Count:         498 Conv_Debug = 0000
-[6055000] Count:         499 Conv_Debug = 0000
-[6065000] Count:         500 Conv_Debug = 0000
-[6065000] Count:         118 Maxpool_Debug = 0000
-[6075000] Count:         501 Conv_Debug = 0859
-[6085000] Count:         502 Conv_Debug = 1377
-[6085000] Count:         119 Maxpool_Debug = 0000
-[6095000] Count:         503 Conv_Debug = 11e6
-[6105000] Count:         504 Conv_Debug = 099f
-[6105000] Count:         120 Maxpool_Debug = 04be
-[6115000] Count:         505 Conv_Debug = 01b3
-[6125000] Count:         506 Conv_Debug = 0000
-[6125000] Count:         121 Maxpool_Debug = 142d
-[6135000] Count:         507 Conv_Debug = 0000
-[6145000] Count:         508 Conv_Debug = 0000
-[6145000] Count:         122 Maxpool_Debug = 11e6
-[6155000] Count:         509 Conv_Debug = 0000
-[6165000] Count:         510 Conv_Debug = 07c4
-[6165000] Count:         123 Maxpool_Debug = 01b3
-[6175000] Count:         511 Conv_Debug = 0f60
-[6185000] Count:         512 Conv_Debug = 0eba
-[6185000] Count:         124 Maxpool_Debug = 0000
-[6195000] Count:         513 Conv_Debug = 027e
-[6205000] Count:         514 Conv_Debug = 0000
-[6205000] Count:         125 Maxpool_Debug = 07c4
-[6215000] Count:         515 Conv_Debug = 0000
-[6225000] Count:         516 Conv_Debug = 0000
-[6225000] Count:         126 Maxpool_Debug = 10e7
-[6235000] Count:         517 Conv_Debug = 0000
-[6245000] Count:         518 Conv_Debug = 0000
-[6245000] Count:         127 Maxpool_Debug = 0c11
-[6255000] Count:         519 Conv_Debug = 0000
-[6265000] Count:         520 Conv_Debug = 0000
-[6265000] Count:         128 Maxpool_Debug = 0000
-[6285000] Count:         129 Maxpool_Debug = 0000
-[6295000] Count:         521 Conv_Debug = 0000
-[6305000] Count:         522 Conv_Debug = 0000
-[6305000] Count:         130 Maxpool_Debug = 0000
-[6315000] Count:         523 Conv_Debug = 0000
-[6325000] Count:         524 Conv_Debug = 0000
-[6335000] Count:         525 Conv_Debug = 0000
-[6345000] Count:         526 Conv_Debug = 0000
-[6355000] Count:         527 Conv_Debug = 0000
-[6365000] Count:         528 Conv_Debug = 07f5
-[6375000] Count:         529 Conv_Debug = 11e0
-[6385000] Count:         530 Conv_Debug = 156f
-[6395000] Count:         531 Conv_Debug = 0fe2
-[6405000] Count:         532 Conv_Debug = 0ae9
-[6415000] Count:         533 Conv_Debug = 092e
-[6425000] Count:         534 Conv_Debug = 0b23
-[6435000] Count:         535 Conv_Debug = 0ea7
-[6445000] Count:         536 Conv_Debug = 1147
-[6455000] Count:         537 Conv_Debug = 101e
-[6465000] Count:         538 Conv_Debug = 053d
-[6475000] Count:         539 Conv_Debug = 0000
-[6485000] Count:         540 Conv_Debug = 0000
-[6495000] Count:         541 Conv_Debug = 0000
-[6505000] Count:         542 Conv_Debug = 0000
-[6515000] Count:         543 Conv_Debug = 0000
-[6525000] Count:         544 Conv_Debug = 0000
-[6535000] Count:         545 Conv_Debug = 0000
-[6545000] Count:         546 Conv_Debug = 0000
-[6575000] Count:         547 Conv_Debug = 0000
-[6585000] Count:         548 Conv_Debug = 0000
-[6595000] Count:         549 Conv_Debug = 0000
-[6605000] Count:         550 Conv_Debug = 0000
-[6615000] Count:         551 Conv_Debug = 0000
-[6625000] Count:         552 Conv_Debug = 0000
-[6625000] Count:         131 Maxpool_Debug = 0000
-[6635000] Count:         553 Conv_Debug = 0000
-[6645000] Count:         554 Conv_Debug = 0000
-[6645000] Count:         132 Maxpool_Debug = 0000
-[6655000] Count:         555 Conv_Debug = 051a
-[6665000] Count:         556 Conv_Debug = 09bc
-[6665000] Count:         133 Maxpool_Debug = 0000
-[6675000] Count:         557 Conv_Debug = 0f27
-[6685000] Count:         558 Conv_Debug = 1357
-[6685000] Count:         134 Maxpool_Debug = 07f5
-[6695000] Count:         559 Conv_Debug = 142c
-[6705000] Count:         560 Conv_Debug = 13cd
-[6705000] Count:         135 Maxpool_Debug = 156f
-[6715000] Count:         561 Conv_Debug = 1223
-[6725000] Count:         562 Conv_Debug = 0bfc
-[6725000] Count:         136 Maxpool_Debug = 1357
-[6735000] Count:         563 Conv_Debug = 0274
-[6745000] Count:         564 Conv_Debug = 0000
-[6745000] Count:         137 Maxpool_Debug = 142c
-[6755000] Count:         565 Conv_Debug = 0000
-[6765000] Count:         566 Conv_Debug = 0000
-[6765000] Count:         138 Maxpool_Debug = 1223
-[6775000] Count:         567 Conv_Debug = 0000
-[6785000] Count:         568 Conv_Debug = 0000
-[6785000] Count:         139 Maxpool_Debug = 101e
-[6795000] Count:         569 Conv_Debug = 0000
-[6805000] Count:         570 Conv_Debug = 0000
-[6805000] Count:         140 Maxpool_Debug = 0000
-[6815000] Count:         571 Conv_Debug = 0000
-[6825000] Count:         572 Conv_Debug = 0000
-[6825000] Count:         141 Maxpool_Debug = 0000
-[6845000] Count:         142 Maxpool_Debug = 0000
-[6855000] Count:         573 Conv_Debug = 0000
-[6865000] Count:         574 Conv_Debug = 0000
-[6865000] Count:         143 Maxpool_Debug = 0000
-[6875000] Count:         575 Conv_Debug = 0000
-[6885000] Count:         576 Conv_Debug = 0000
-[6895000] Count:         577 Conv_Debug = 0000
-[6905000] Count:         578 Conv_Debug = 0000
-[6915000] Count:         579 Conv_Debug = 0000
-[6925000] Count:         580 Conv_Debug = 0000
-[6935000] Count:         581 Conv_Debug = 0000
-[6945000] Count:         582 Conv_Debug = 0000
-[6955000] Count:         583 Conv_Debug = 0375
-[6965000] Count:         584 Conv_Debug = 0559
-[6975000] Count:         585 Conv_Debug = 04ff
-[6985000] Count:         586 Conv_Debug = 047c
-[6995000] Count:         587 Conv_Debug = 031a
-[7005000] Count:         588 Conv_Debug = 0000
-[7015000] Count:         589 Conv_Debug = 0000
-[7025000] Count:         590 Conv_Debug = 0000
-[7035000] Count:         591 Conv_Debug = 0000
-[7045000] Count:         592 Conv_Debug = 0000
-[7055000] Count:         593 Conv_Debug = 0000
-[7065000] Count:         594 Conv_Debug = 0000
-[7075000] Count:         595 Conv_Debug = 0000
-[7085000] Count:         596 Conv_Debug = 0000
-[7095000] Count:         597 Conv_Debug = 0000
-[7105000] Count:         598 Conv_Debug = 0000
-[7135000] Count:         599 Conv_Debug = 0000
-[7145000] Count:         600 Conv_Debug = 0000
-[7155000] Count:         601 Conv_Debug = 0000
-[7165000] Count:         602 Conv_Debug = 0000
-[7175000] Count:         603 Conv_Debug = 0000
-[7185000] Count:         604 Conv_Debug = 0000
-[7185000] Count:         144 Maxpool_Debug = 0000
-[7195000] Count:         605 Conv_Debug = 0000
-[7205000] Count:         606 Conv_Debug = 0000
-[7205000] Count:         145 Maxpool_Debug = 0000
-[7215000] Count:         607 Conv_Debug = 0000
-[7225000] Count:         608 Conv_Debug = 0000
-[7225000] Count:         146 Maxpool_Debug = 0000
-[7235000] Count:         609 Conv_Debug = 0000
-[7245000] Count:         610 Conv_Debug = 0000
-[7245000] Count:         147 Maxpool_Debug = 0000
-[7255000] Count:         611 Conv_Debug = 0000
-[7265000] Count:         612 Conv_Debug = 0000
-[7265000] Count:         148 Maxpool_Debug = 0000
-[7275000] Count:         613 Conv_Debug = 0000
-[7285000] Count:         614 Conv_Debug = 0000
-[7285000] Count:         149 Maxpool_Debug = 0559
-[7295000] Count:         615 Conv_Debug = 0000
-[7305000] Count:         616 Conv_Debug = 0000
-[7305000] Count:         150 Maxpool_Debug = 04ff
-[7315000] Count:         617 Conv_Debug = 0000
-[7325000] Count:         618 Conv_Debug = 0000
-[7325000] Count:         151 Maxpool_Debug = 031a
-[7335000] Count:         619 Conv_Debug = 0000
-[7345000] Count:         620 Conv_Debug = 0000
-[7345000] Count:         152 Maxpool_Debug = 0000
-[7355000] Count:         621 Conv_Debug = 0000
-[7365000] Count:         622 Conv_Debug = 0000
-[7365000] Count:         153 Maxpool_Debug = 0000
-[7375000] Count:         623 Conv_Debug = 0000
-[7385000] Count:         624 Conv_Debug = 0000
-[7385000] Count:         154 Maxpool_Debug = 0000
-[7405000] Count:         155 Maxpool_Debug = 0000
-[7415000] Count:         625 Conv_Debug = 0000
-[7425000] Count:         626 Conv_Debug = 0000
-[7425000] Count:         156 Maxpool_Debug = 0000
-[7435000] Count:         627 Conv_Debug = 0000
-[7445000] Count:         628 Conv_Debug = 0000
-[7455000] Count:         629 Conv_Debug = 0000
-[7465000] Count:         630 Conv_Debug = 0000
-[7475000] Count:         631 Conv_Debug = 0000
-[7485000] Count:         632 Conv_Debug = 0000
-[7495000] Count:         633 Conv_Debug = 0000
-[7505000] Count:         634 Conv_Debug = 0000
-[7515000] Count:         635 Conv_Debug = 0000
-[7525000] Count:         636 Conv_Debug = 0000
-[7535000] Count:         637 Conv_Debug = 0000
-[7545000] Count:         638 Conv_Debug = 0000
-[7555000] Count:         639 Conv_Debug = 0000
-[7565000] Count:         640 Conv_Debug = 0000
-[7575000] Count:         641 Conv_Debug = 0000
-[7585000] Count:         642 Conv_Debug = 0000
-[7595000] Count:         643 Conv_Debug = 0000
-[7605000] Count:         644 Conv_Debug = 0000
-[7615000] Count:         645 Conv_Debug = 0000
-[7625000] Count:         646 Conv_Debug = 0000
-[7635000] Count:         647 Conv_Debug = 0000
-[7645000] Count:         648 Conv_Debug = 0000
-[7655000] Count:         649 Conv_Debug = 0000
-[7665000] Count:         650 Conv_Debug = 0000
-[7695000] Count:         651 Conv_Debug = 0000
-[7705000] Count:         652 Conv_Debug = 0000
-[7715000] Count:         653 Conv_Debug = 0000
-[7725000] Count:         654 Conv_Debug = 0000
-[7735000] Count:         655 Conv_Debug = 0000
-[7745000] Count:         656 Conv_Debug = 0000
-[7745000] Count:         157 Maxpool_Debug = 0000
-[7755000] Count:         657 Conv_Debug = 0000
-[7765000] Count:         658 Conv_Debug = 0000
-[7765000] Count:         158 Maxpool_Debug = 0000
-[7775000] Count:         659 Conv_Debug = 0000
-[7785000] Count:         660 Conv_Debug = 0000
-[7785000] Count:         159 Maxpool_Debug = 0000
-[7795000] Count:         661 Conv_Debug = 0000
-[7805000] Count:         662 Conv_Debug = 0000
-[7805000] Count:         160 Maxpool_Debug = 0000
-[7815000] Count:         663 Conv_Debug = 0000
-[7825000] Count:         664 Conv_Debug = 0000
-[7825000] Count:         161 Maxpool_Debug = 0000
-[7835000] Count:         665 Conv_Debug = 0000
-[7845000] Count:         666 Conv_Debug = 0000
-[7845000] Count:         162 Maxpool_Debug = 0000
-[7855000] Count:         667 Conv_Debug = 0000
-[7865000] Count:         668 Conv_Debug = 0000
-[7865000] Count:         163 Maxpool_Debug = 0000
-[7875000] Count:         669 Conv_Debug = 0000
-[7885000] Count:         670 Conv_Debug = 0000
-[7885000] Count:         164 Maxpool_Debug = 0000
-[7895000] Count:         671 Conv_Debug = 0000
-[7905000] Count:         672 Conv_Debug = 0000
-[7905000] Count:         165 Maxpool_Debug = 0000
-[7915000] Count:         673 Conv_Debug = 0000
-[7925000] Count:         674 Conv_Debug = 0000
-[7925000] Count:         166 Maxpool_Debug = 0000
-[7935000] Count:         675 Conv_Debug = 0000
-[7945000] Count:         676 Conv_Debug = 0000
-[7945000] Count:         167 Maxpool_Debug = 0000
-[7965000] Count:         168 Maxpool_Debug = 0000
-[7985000] Count:         169 Maxpool_Debug = 0000
-[8035000] Count:           1 x1_out_d = 7fff7fff504e7fff000000007fff000000007fff7fff00007fff2783000000000000221d7fff7011000000007fff7fff00007fff7fff000025e37fff000034a0000000007fff7fff00007fff7fff00000000000000000000000060fe00007fff0000000009aa7fff0000000000000000000025d80000000000007fff00000000 (valid = ffffffffffffffff)
           0   0000000000000000
           1   0000000000000000
           2   0111111111111111
           3   0000000000000000
-          4   0000000000000000
+          4   0010000111011000
           5   0000000000000000
-          6   0010010111011000
+          6   0000000000000000
           7   0000000000000000
           8   0000000000000000
           9   0000000000000000
          10   0000000000000000
          11   0000000000000000
-         12   0111111111111111
-         13   0000100110101010
+         12   0001000110100111
+         13   0000000000000000
          14   0000000000000000
          15   0000000000000000
-         16   0111111111111111
+         16   0000000000000000
          17   0000000000000000
-         18   0110000011111110
+         18   0000000000000000
+         19   0000000000000000
+         20   0000000000000000
+         21   0000000000000000
+         22   0011011110110110
+         23   0000000000000000
+         24   0000000000000000
+         25   0000000000000000
+         26   0000000000000000
+         27   0000000000000000
+         28   0100101101000100
+         29   0000000000000000
+         30   0000000000000000
+         31   0000000000000000
+         32   0010000100100100
+         33   0000000000000000
+         34   0000000000000000
+         35   0111111111111111
+         36   0000000000000000
+         37   0000000000000000
+         38   0001011111000001
+         39   0111111111111111
+         40   0000000000000000
+         41   0111111111111111
+         42   0111111111111111
+         43   0000000000000000
+         44   0000000000000000
+         45   0000000000000000
+         46   0000000000000000
+         47   0000010110001001
+         48   0000000000000000
+         49   0000000000000000
+         50   0000000000000000
+         51   0000000000000000
+         52   0000000000000000
+         53   0000000000000000
+         54   0000001101100001
+         55   0000000000000000
+         56   0000000000000000
+         57   0000000000000000
+         58   0000000000000000
+         59   0000000000000000
+         60   0111111111111111
+         61   0000000000000000
+         62   0000000000000000
+         63   0000000000000000
+          0   0100011111111010
+          1   0000000000000000
+          2   0000000000000000
+          3   0000000000000000
+          4   0000000000000000
+          5   0010110001001111
+          6   0000000000000000
+          7   0000000000000000
+          8   0000000000000000
+          9   0111111111111111
+         10   0000000000000000
+         11   0000000000000000
+         12   0000000000000000
+         13   0000000000000000
+         14   0000000000000000
+         15   0000000000000000
+         16   0010011000000001
+         17   0000000000000000
+         18   0000000000000000
          19   0000000000000000
          20   0000000000000000
          21   0000000000000000
          22   0000000000000000
          23   0000000000000000
          24   0000000000000000
-         25   0111111111111111
-         26   0111111111111111
+         25   0000000000000000
+         26   0000000000000000
          27   0000000000000000
-         28   0111111111111111
+         28   0011111000101010
          29   0111111111111111
-         30   0000000000000000
+         30   0000110011000101
          31   0000000000000000
-         32   0011010010100000
-         33   0000000000000000
-         34   0111111111111111
-         35   0010010111100011
-         36   0000000000000000
-         37   0111111111111111
-         38   0111111111111111
-         39   0000000000000000
-         40   0111111111111111
-         41   0111111111111111
-         42   0000000000000000
-         43   0000000000000000
-         44   0111000000010001
-         45   0111111111111111
-         46   0010001000011101
-         47   0000000000000000
-         48   0000000000000000
-         49   0000000000000000
-         50   0010011110000011
-         51   0111111111111111
-         52   0000000000000000
-         53   0111111111111111
-         54   0111111111111111
-         55   0000000000000000
-         56   0000000000000000
-         57   0111111111111111
-         58   0000000000000000
-         59   0000000000000000
-         60   0111111111111111
-         61   0101000001001110
-         62   0111111111111111
-         63   0111111111111111
-[8555000] Count:         677 Conv_Debug = 0000
-[8565000] Count:         678 Conv_Debug = 0000
-[8575000] Count:         679 Conv_Debug = 0000
-[8585000] Count:         680 Conv_Debug = 0000
-[8595000] Count:         681 Conv_Debug = 0000
-[8605000] Count:         682 Conv_Debug = 0000
-[8615000] Count:         683 Conv_Debug = 0000
-[8625000] Count:         684 Conv_Debug = 0000
-[8635000] Count:         685 Conv_Debug = 0000
-[8645000] Count:         686 Conv_Debug = 0000
-[8655000] Count:         687 Conv_Debug = 0000
-[8665000] Count:         688 Conv_Debug = 0000
-[8675000] Count:         689 Conv_Debug = 0000
-[8685000] Count:         690 Conv_Debug = 0000
-[8695000] Count:         691 Conv_Debug = 0000
-[8705000] Count:         692 Conv_Debug = 0000
-[8715000] Count:         693 Conv_Debug = 0000
-[8725000] Count:         694 Conv_Debug = 0000
-[8735000] Count:         695 Conv_Debug = 0000
-[8735000] Count:           1 x2_out_d = 7fff0000000000007fff7fff7fff2321000000007fff7fff7fff00007fff7fff67fd00007fff7fff000000007fff00007fff017f7fff7fff7fff000000000000 (valid = ffffffff)
-          0   0000000000000000
-          1   0000000000000000
-          2   0000000000000000
-          3   0111111111111111
-          4   0111111111111111
-          5   0111111111111111
-          6   0000000101111111
-          7   0111111111111111
-          8   0000000000000000
-          9   0111111111111111
-         10   0000000000000000
-         11   0000000000000000
-         12   0111111111111111
-         13   0111111111111111
-         14   0000000000000000
-         15   0110011111111101
-         16   0111111111111111
-         17   0111111111111111
-         18   0000000000000000
-         19   0111111111111111
-         20   0111111111111111
-         21   0111111111111111
-         22   0000000000000000
-         23   0000000000000000
-         24   0010001100100001
-         25   0111111111111111
-         26   0111111111111111
-         27   0111111111111111
-         28   0000000000000000
-         29   0000000000000000
-         30   0000000000000000
-         31   0111111111111111
-[8745000] Count:         696 Conv_Debug = 0000
-[8755000] Count:         697 Conv_Debug = 0000
-[8765000] Count:         698 Conv_Debug = 0000
-[8775000] Count:         699 Conv_Debug = 0000
-[8785000] Count:         700 Conv_Debug = 0000
-[8795000] Count:         701 Conv_Debug = 0000
-[8805000] Count:         702 Conv_Debug = 0000
-[8835000] Count:         703 Conv_Debug = 0000
-[8845000] Count:         704 Conv_Debug = 0000
-[8855000] Count:         705 Conv_Debug = 0000
-[8865000] Count:         706 Conv_Debug = 0000
-[8875000] Count:         707 Conv_Debug = 0000
-[8885000] Count:         708 Conv_Debug = 0000
-[8885000] Count:         170 Maxpool_Debug = 0000
-[8895000] Count:         709 Conv_Debug = 0000
-[8905000] Count:         710 Conv_Debug = 0000
-[8905000] Count:         171 Maxpool_Debug = 0000
-[8915000] Count:         711 Conv_Debug = 0000
-[8925000] Count:         712 Conv_Debug = 0000
-[8925000] Count:         172 Maxpool_Debug = 0000
-[8935000] Count:         713 Conv_Debug = 0000
-[8945000] Count:         714 Conv_Debug = 0000
-[8945000] Count:         173 Maxpool_Debug = 0000
-[8955000] Count:         715 Conv_Debug = 0000
-[8965000] Count:         716 Conv_Debug = 0000
-[8965000] Count:         174 Maxpool_Debug = 0000
-[8975000] Count:         717 Conv_Debug = 0000
-[8985000] Count:         718 Conv_Debug = 0000
-[8985000] Count:         175 Maxpool_Debug = 0000
-[8995000] Count:         719 Conv_Debug = 0000
-[9005000] Count:         720 Conv_Debug = 0000
-[9005000] Count:         176 Maxpool_Debug = 0000
-[9015000] Count:         721 Conv_Debug = 0000
-[9025000] Count:         722 Conv_Debug = 0000
-[9025000] Count:         177 Maxpool_Debug = 0000
-[9035000] Count:         723 Conv_Debug = 0000
-[9045000] Count:         724 Conv_Debug = 0000
-[9045000] Count:         178 Maxpool_Debug = 0000
-[9055000] Count:         725 Conv_Debug = 0000
-[9065000] Count:         726 Conv_Debug = 0000
-[9065000] Count:         179 Maxpool_Debug = 0000
-[9075000] Count:         727 Conv_Debug = 0000
-[9085000] Count:         728 Conv_Debug = 0000
-[9085000] Count:         180 Maxpool_Debug = 0000
-[9105000] Count:         181 Maxpool_Debug = 0000
-[9115000] Count:         729 Conv_Debug = 0000
-[9115000] Count:           1 x3_out_d = 0000000000007fff000000000000000000007fff (valid = 3ff)
-          0   0111111111111111
+          0   0110111001111001
           1   0000000000000000
           2   0000000000000000
           3   0000000000000000
           4   0000000000000000
           5   0000000000000000
-          6   0111111111111111
+          6   0000000000000000
           7   0000000000000000
-          8   0000000000000000
+          8   0001101011010000
           9   0000000000000000
-[9125000] Count:         730 Conv_Debug = 0000
-[9125000] Count:         182 Maxpool_Debug = 0000
-[9135000] Count:         731 Conv_Debug = 0000
-[9145000] Count:         732 Conv_Debug = 0000
-[9155000] Count:         733 Conv_Debug = 0000
-[9165000] Count:         734 Conv_Debug = 0000
-[9175000] Count:         735 Conv_Debug = 0000
-[9185000] Count:         736 Conv_Debug = 0000
-[9195000] Count:         737 Conv_Debug = 0000
-[9205000] Count:         738 Conv_Debug = 0000
-[9215000] Count:         739 Conv_Debug = 0000
-[9225000] Count:         740 Conv_Debug = 0000
-[9225000] Count:           1 Final Output = 00000000
-[9235000] Count:         741 Conv_Debug = 0000
-[9245000] Count:         742 Conv_Debug = 0000
-[9255000] Count:         743 Conv_Debug = 0000
-[9265000] Count:         744 Conv_Debug = 0000
-[9275000] Count:         745 Conv_Debug = 0000
-[9285000] Count:         746 Conv_Debug = 0000
-[9295000] Count:         747 Conv_Debug = 0000
-[9305000] Count:         748 Conv_Debug = 0000
-[9315000] Count:         749 Conv_Debug = 0000
-[9325000] Count:         750 Conv_Debug = 0000
-[9335000] Count:         751 Conv_Debug = 0000
-[9345000] Count:         752 Conv_Debug = 0000
-[9355000] Count:         753 Conv_Debug = 0000
-[9365000] Count:         754 Conv_Debug = 0000
-[9395000] Count:         755 Conv_Debug = 0000
-[9405000] Count:         756 Conv_Debug = 0000
-[9415000] Count:         757 Conv_Debug = 0000
-[9425000] Count:         758 Conv_Debug = 0000
-[9435000] Count:         759 Conv_Debug = 0000
-[9445000] Count:         760 Conv_Debug = 0000
-[9445000] Count:         183 Maxpool_Debug = 0000
-[9455000] Count:         761 Conv_Debug = 0000
-[9465000] Count:         762 Conv_Debug = 0000
-[9465000] Count:         184 Maxpool_Debug = 0000
-[9475000] Count:         763 Conv_Debug = 0000
-[9485000] Count:         764 Conv_Debug = 0000
-[9485000] Count:         185 Maxpool_Debug = 0000
-[9495000] Count:         765 Conv_Debug = 0000
-[9505000] Count:         766 Conv_Debug = 0000
-[9505000] Count:         186 Maxpool_Debug = 0000
-[9515000] Count:         767 Conv_Debug = 0000
-[9525000] Count:         768 Conv_Debug = 0000
-[9525000] Count:         187 Maxpool_Debug = 0000
-[9535000] Count:         769 Conv_Debug = 0000
-[9545000] Count:         770 Conv_Debug = 0000
-[9545000] Count:         188 Maxpool_Debug = 0000
-[9555000] Count:         771 Conv_Debug = 0000
-[9565000] Count:         772 Conv_Debug = 0000
-[9565000] Count:         189 Maxpool_Debug = 0000
-[9575000] Count:         773 Conv_Debug = 0000
-[9585000] Count:         774 Conv_Debug = 0000
-[9585000] Count:         190 Maxpool_Debug = 0000
-[9595000] Count:         775 Conv_Debug = 0000
-[9605000] Count:         776 Conv_Debug = 0000
-[9605000] Count:         191 Maxpool_Debug = 0000
-[9615000] Count:         777 Conv_Debug = 0000
-[9625000] Count:         778 Conv_Debug = 0000
-[9625000] Count:         192 Maxpool_Debug = 0000
-[9635000] Count:         779 Conv_Debug = 0000
-[9645000] Count:         780 Conv_Debug = 0000
-[9645000] Count:         193 Maxpool_Debug = 0000
-[9665000] Count:         194 Maxpool_Debug = 0000
-[9675000] Count:         781 Conv_Debug = 0000
-[9685000] Count:         782 Conv_Debug = 0000
-[9685000] Count:         195 Maxpool_Debug = 0000
-[9695000] Count:         783 Conv_Debug = 0000
-[9705000] Count:         784 Conv_Debug = 0000
-[9715000] Count:         785 Conv_Debug = 0000
-[9725000] Count:         786 Conv_Debug = 0118
-[9735000] Count:         787 Conv_Debug = 0b25
-[9745000] Count:         788 Conv_Debug = 0bf5
-[9755000] Count:         789 Conv_Debug = 0cfe
-[9765000] Count:         790 Conv_Debug = 0c4a
-[9775000] Count:         791 Conv_Debug = 0be6
-[9785000] Count:         792 Conv_Debug = 0b83
-[9795000] Count:         793 Conv_Debug = 0ab8
-[9805000] Count:         794 Conv_Debug = 0a7a
-[9815000] Count:         795 Conv_Debug = 09a1
-[9825000] Count:         796 Conv_Debug = 08d1
-[9835000] Count:         797 Conv_Debug = 0795
-[9845000] Count:         798 Conv_Debug = 0301
-[9855000] Count:         799 Conv_Debug = 0000
-[9865000] Count:         800 Conv_Debug = 0000
-[9875000] Count:         801 Conv_Debug = 0000
-[9885000] Count:         802 Conv_Debug = 0000
-[9895000] Count:         803 Conv_Debug = 0000
-[9905000] Count:         804 Conv_Debug = 0000
-[9915000] Count:         805 Conv_Debug = 0000
-[9925000] Count:         806 Conv_Debug = 0000
-[9955000] Count:         807 Conv_Debug = 0000
-[9965000] Count:         808 Conv_Debug = 0000
-[9975000] Count:         809 Conv_Debug = 0000
-[9985000] Count:         810 Conv_Debug = 0000
-[9995000] Count:         811 Conv_Debug = 005f
-[10005000] Count:         812 Conv_Debug = 0b9a
-[10005000] Count:         196 Maxpool_Debug = 0000
-[10015000] Count:         813 Conv_Debug = 1253
-[10025000] Count:         814 Conv_Debug = 0fb3
-[10025000] Count:         197 Maxpool_Debug = 0000
-[10035000] Count:         815 Conv_Debug = 10b8
-[10045000] Count:         816 Conv_Debug = 123b
-[10045000] Count:         198 Maxpool_Debug = 0b9a
-[10055000] Count:         817 Conv_Debug = 1264
-[10065000] Count:         818 Conv_Debug = 12ce
-[10065000] Count:         199 Maxpool_Debug = 1253
-[10075000] Count:         819 Conv_Debug = 1364
-[10085000] Count:         820 Conv_Debug = 13ad
-[10085000] Count:         200 Maxpool_Debug = 123b
-[10095000] Count:         821 Conv_Debug = 1483
-[10105000] Count:         822 Conv_Debug = 1526
-[10105000] Count:         201 Maxpool_Debug = 12ce
-[10115000] Count:         823 Conv_Debug = 15ff
-[10125000] Count:         824 Conv_Debug = 0fae
-[10125000] Count:         202 Maxpool_Debug = 13ad
-[10135000] Count:         825 Conv_Debug = 0000
-[10145000] Count:         826 Conv_Debug = 0000
-[10145000] Count:         203 Maxpool_Debug = 1526
-[10155000] Count:         827 Conv_Debug = 0000
-[10165000] Count:         828 Conv_Debug = 0000
-[10165000] Count:         204 Maxpool_Debug = 15ff
-[10175000] Count:         829 Conv_Debug = 0000
-[10185000] Count:         830 Conv_Debug = 0000
-[10185000] Count:         205 Maxpool_Debug = 0000
-[10195000] Count:         831 Conv_Debug = 0000
-[10205000] Count:         832 Conv_Debug = 0000
-[10205000] Count:         206 Maxpool_Debug = 0000
-[10225000] Count:         207 Maxpool_Debug = 0000
-[10235000] Count:         833 Conv_Debug = 0000
-[10245000] Count:         834 Conv_Debug = 0000
-[10245000] Count:         208 Maxpool_Debug = 0000
-[10255000] Count:         835 Conv_Debug = 0000
-[10265000] Count:         836 Conv_Debug = 0000
-[10275000] Count:         837 Conv_Debug = 032c
-[10285000] Count:         838 Conv_Debug = 10aa
-[10295000] Count:         839 Conv_Debug = 0ddb
-[10305000] Count:         840 Conv_Debug = 0499
-[10315000] Count:         841 Conv_Debug = 0311
-[10325000] Count:         842 Conv_Debug = 041e
-[10335000] Count:         843 Conv_Debug = 0421
-[10345000] Count:         844 Conv_Debug = 0482
-[10355000] Count:         845 Conv_Debug = 04da
-[10365000] Count:         846 Conv_Debug = 050d
-[10375000] Count:         847 Conv_Debug = 059f
-[10385000] Count:         848 Conv_Debug = 0615
-[10395000] Count:         849 Conv_Debug = 069c
-[10405000] Count:         850 Conv_Debug = 02b1
-[10415000] Count:         851 Conv_Debug = 0000
-[10425000] Count:         852 Conv_Debug = 0000
-[10435000] Count:         853 Conv_Debug = 0000
-[10445000] Count:         854 Conv_Debug = 0000
-[10455000] Count:         855 Conv_Debug = 0000
-[10465000] Count:         856 Conv_Debug = 0000
-[10475000] Count:         857 Conv_Debug = 0000
-[10485000] Count:         858 Conv_Debug = 0000
-[10515000] Count:         859 Conv_Debug = 0000
-[10525000] Count:         860 Conv_Debug = 0000
-[10535000] Count:         861 Conv_Debug = 0000
-[10545000] Count:         862 Conv_Debug = 0000
-[10555000] Count:         863 Conv_Debug = 0378
-[10565000] Count:         864 Conv_Debug = 10a4
-[10565000] Count:         209 Maxpool_Debug = 0000
-[10575000] Count:         865 Conv_Debug = 0a6e
-[10585000] Count:         866 Conv_Debug = 0000
-[10585000] Count:         210 Maxpool_Debug = 0000
-[10595000] Count:         867 Conv_Debug = 0000
-[10605000] Count:         868 Conv_Debug = 0000
-[10605000] Count:         211 Maxpool_Debug = 10aa
-[10615000] Count:         869 Conv_Debug = 0000
-[10625000] Count:         870 Conv_Debug = 0000
-[10625000] Count:         212 Maxpool_Debug = 0ddb
-[10635000] Count:         871 Conv_Debug = 0000
-[10645000] Count:         872 Conv_Debug = 0000
-[10645000] Count:         213 Maxpool_Debug = 041e
-[10655000] Count:         873 Conv_Debug = 0000
-[10665000] Count:         874 Conv_Debug = 0000
-[10665000] Count:         214 Maxpool_Debug = 0482
-[10675000] Count:         875 Conv_Debug = 0000
-[10685000] Count:         876 Conv_Debug = 0000
-[10685000] Count:         215 Maxpool_Debug = 050d
-[10695000] Count:         877 Conv_Debug = 0000
-[10705000] Count:         878 Conv_Debug = 0000
-[10705000] Count:         216 Maxpool_Debug = 0615
-[10715000] Count:         879 Conv_Debug = 0000
-[10725000] Count:         880 Conv_Debug = 0000
-[10725000] Count:         217 Maxpool_Debug = 069c
-[10735000] Count:         881 Conv_Debug = 0000
-[10745000] Count:         882 Conv_Debug = 0000
-[10745000] Count:         218 Maxpool_Debug = 0000
-[10755000] Count:         883 Conv_Debug = 0000
-[10765000] Count:         884 Conv_Debug = 0000
-[10765000] Count:         219 Maxpool_Debug = 0000
-[10785000] Count:         220 Maxpool_Debug = 0000
-[10795000] Count:         885 Conv_Debug = 0000
-[10805000] Count:         886 Conv_Debug = 0000
-[10805000] Count:         221 Maxpool_Debug = 0000
-[10815000] Count:         887 Conv_Debug = 0000
-[10825000] Count:         888 Conv_Debug = 0000
-[10835000] Count:         889 Conv_Debug = 0389
-[10845000] Count:         890 Conv_Debug = 10eb
-[10855000] Count:         891 Conv_Debug = 0a60
-[10865000] Count:         892 Conv_Debug = 0000
-[10875000] Count:         893 Conv_Debug = 0000
-[10885000] Count:         894 Conv_Debug = 0000
-[10895000] Count:         895 Conv_Debug = 0000
-[10905000] Count:         896 Conv_Debug = 0000
-[10915000] Count:         897 Conv_Debug = 0000
-[10925000] Count:         898 Conv_Debug = 0000
-[10935000] Count:         899 Conv_Debug = 0000
-[10945000] Count:         900 Conv_Debug = 0000
-[10955000] Count:         901 Conv_Debug = 0000
-[10965000] Count:         902 Conv_Debug = 0000
-[10975000] Count:         903 Conv_Debug = 0000
-[10985000] Count:         904 Conv_Debug = 0000
-[10995000] Count:         905 Conv_Debug = 0000
-[11005000] Count:         906 Conv_Debug = 0000
-[11015000] Count:         907 Conv_Debug = 0000
-[11025000] Count:         908 Conv_Debug = 0000
-[11035000] Count:         909 Conv_Debug = 0000
-[11045000] Count:         910 Conv_Debug = 0000
-[11075000] Count:         911 Conv_Debug = 0000
-[11085000] Count:         912 Conv_Debug = 0000
-[11095000] Count:         913 Conv_Debug = 0000
-[11105000] Count:         914 Conv_Debug = 0000
-[11115000] Count:         915 Conv_Debug = 0357
-[11125000] Count:         916 Conv_Debug = 11f9
-[11125000] Count:         222 Maxpool_Debug = 0000
-[11135000] Count:         917 Conv_Debug = 0b3a
-[11145000] Count:         918 Conv_Debug = 0000
-[11145000] Count:         223 Maxpool_Debug = 0000
-[11155000] Count:         919 Conv_Debug = 0000
-[11165000] Count:         920 Conv_Debug = 014d
-[11165000] Count:         224 Maxpool_Debug = 11f9
-[11175000] Count:         921 Conv_Debug = 048d
-[11185000] Count:         922 Conv_Debug = 05a9
-[11185000] Count:         225 Maxpool_Debug = 0b3a
-[11195000] Count:         923 Conv_Debug = 037e
-[11205000] Count:         924 Conv_Debug = 0143
-[11205000] Count:         226 Maxpool_Debug = 014d
-[11215000] Count:         925 Conv_Debug = 0000
-[11225000] Count:         926 Conv_Debug = 0000
-[11225000] Count:         227 Maxpool_Debug = 05a9
-[11235000] Count:         927 Conv_Debug = 0000
-[11245000] Count:         928 Conv_Debug = 0000
-[11245000] Count:         228 Maxpool_Debug = 037e
-[11255000] Count:         929 Conv_Debug = 0000
-[11265000] Count:         930 Conv_Debug = 0000
-[11265000] Count:         229 Maxpool_Debug = 0000
-[11275000] Count:         931 Conv_Debug = 0000
-[11285000] Count:         932 Conv_Debug = 0000
-[11285000] Count:         230 Maxpool_Debug = 0000
-[11295000] Count:         933 Conv_Debug = 0000
-[11305000] Count:         934 Conv_Debug = 0000
-[11305000] Count:         231 Maxpool_Debug = 0000
-[11315000] Count:         935 Conv_Debug = 0000
-[11325000] Count:         936 Conv_Debug = 0000
-[11325000] Count:         232 Maxpool_Debug = 0000
-[11345000] Count:         233 Maxpool_Debug = 0000
-[11355000] Count:         937 Conv_Debug = 0000
-[11365000] Count:         938 Conv_Debug = 0000
-[11365000] Count:         234 Maxpool_Debug = 0000
-[11375000] Count:         939 Conv_Debug = 0000
-[11385000] Count:         940 Conv_Debug = 0000
-[11395000] Count:         941 Conv_Debug = 02cc
-[11405000] Count:         942 Conv_Debug = 1021
-[11415000] Count:         943 Conv_Debug = 0e5b
-[11425000] Count:         944 Conv_Debug = 06e5
-[11435000] Count:         945 Conv_Debug = 0cd5
-[11445000] Count:         946 Conv_Debug = 10ca
-[11455000] Count:         947 Conv_Debug = 14e0
-[11465000] Count:         948 Conv_Debug = 1622
-[11475000] Count:         949 Conv_Debug = 152c
-[11485000] Count:         950 Conv_Debug = 1303
-[11495000] Count:         951 Conv_Debug = 1005
-[11505000] Count:         952 Conv_Debug = 09df
-[11515000] Count:         953 Conv_Debug = 027e
-[11525000] Count:         954 Conv_Debug = 0000
-[11535000] Count:         955 Conv_Debug = 0000
-[11545000] Count:         956 Conv_Debug = 0000
-[11555000] Count:         957 Conv_Debug = 0000
-[11565000] Count:         958 Conv_Debug = 0000
-[11575000] Count:         959 Conv_Debug = 0000
-[11585000] Count:         960 Conv_Debug = 0000
-[11595000] Count:         961 Conv_Debug = 0000
-[11605000] Count:         962 Conv_Debug = 0000
-[11635000] Count:         963 Conv_Debug = 0000
-[11645000] Count:         964 Conv_Debug = 0000
-[11655000] Count:         965 Conv_Debug = 0000
-[11665000] Count:         966 Conv_Debug = 0000
-[11675000] Count:         967 Conv_Debug = 0169
-[11685000] Count:         968 Conv_Debug = 11e3
-[11685000] Count:         235 Maxpool_Debug = 0000
-[11695000] Count:         969 Conv_Debug = 160d
-[11705000] Count:         970 Conv_Debug = 138d
-[11705000] Count:         236 Maxpool_Debug = 0000
-[11715000] Count:         971 Conv_Debug = 144a
-[11725000] Count:         972 Conv_Debug = 0eb1
-[11725000] Count:         237 Maxpool_Debug = 11e3
-[11735000] Count:         973 Conv_Debug = 0b4c
-[11745000] Count:         974 Conv_Debug = 0ae5
-[11745000] Count:         238 Maxpool_Debug = 160d
-[11755000] Count:         975 Conv_Debug = 0c2d
-[11765000] Count:         976 Conv_Debug = 0e81
-[11765000] Count:         239 Maxpool_Debug = 144a
-[11775000] Count:         977 Conv_Debug = 1212
-[11785000] Count:         978 Conv_Debug = 14fa
-[11785000] Count:         240 Maxpool_Debug = 1622
-[11795000] Count:         979 Conv_Debug = 109e
-[11805000] Count:         980 Conv_Debug = 0868
-[11805000] Count:         241 Maxpool_Debug = 152c
-[11815000] Count:         981 Conv_Debug = 0000
-[11825000] Count:         982 Conv_Debug = 0000
-[11825000] Count:         242 Maxpool_Debug = 14fa
-[11835000] Count:         983 Conv_Debug = 0000
-[11845000] Count:         984 Conv_Debug = 0000
-[11845000] Count:         243 Maxpool_Debug = 109e
-[11855000] Count:         985 Conv_Debug = 0000
-[11865000] Count:         986 Conv_Debug = 0000
-[11865000] Count:         244 Maxpool_Debug = 0000
-[11875000] Count:         987 Conv_Debug = 0000
-[11885000] Count:         988 Conv_Debug = 0000
-[11885000] Count:         245 Maxpool_Debug = 0000
-[11905000] Count:         246 Maxpool_Debug = 0000
-[11915000] Count:         989 Conv_Debug = 0000
-[11925000] Count:         990 Conv_Debug = 0000
-[11925000] Count:         247 Maxpool_Debug = 0000
-[11935000] Count:         991 Conv_Debug = 0000
-[11945000] Count:         992 Conv_Debug = 0000
-[11955000] Count:         993 Conv_Debug = 0000
-[11965000] Count:         994 Conv_Debug = 094f
-[11975000] Count:         995 Conv_Debug = 133f
-[11985000] Count:         996 Conv_Debug = 0ed2
-[11995000] Count:         997 Conv_Debug = 0495
-[12005000] Count:         998 Conv_Debug = 0034
-[12015000] Count:         999 Conv_Debug = 0000
-[12025000] Count:        1000 Conv_Debug = 0000
-[12035000] Count:        1001 Conv_Debug = 0000
-[12045000] Count:        1002 Conv_Debug = 0182
-[12055000] Count:        1003 Conv_Debug = 040a
-[12065000] Count:        1004 Conv_Debug = 07c0
-[12075000] Count:        1005 Conv_Debug = 10d4
-[12085000] Count:        1006 Conv_Debug = 12db
-[12095000] Count:        1007 Conv_Debug = 094e
-[12105000] Count:        1008 Conv_Debug = 0000
-[12115000] Count:        1009 Conv_Debug = 0000
-[12125000] Count:        1010 Conv_Debug = 0000
-[12135000] Count:        1011 Conv_Debug = 0000
-[12145000] Count:        1012 Conv_Debug = 0000
-[12155000] Count:        1013 Conv_Debug = 0000
-[12165000] Count:        1014 Conv_Debug = 0000
-[12195000] Count:        1015 Conv_Debug = 0000
-[12205000] Count:        1016 Conv_Debug = 0000
-[12215000] Count:        1017 Conv_Debug = 0000
-[12225000] Count:        1018 Conv_Debug = 0000
-[12235000] Count:        1019 Conv_Debug = 0000
-[12245000] Count:        1020 Conv_Debug = 002c
-[12245000] Count:         248 Maxpool_Debug = 0000
-[12255000] Count:        1021 Conv_Debug = 0408
-[12265000] Count:        1022 Conv_Debug = 0000
-[12265000] Count:         249 Maxpool_Debug = 0000
-[12275000] Count:        1023 Conv_Debug = 0000
-[12285000] Count:        1024 Conv_Debug = 0000
-[12285000] Count:         250 Maxpool_Debug = 094f
-[12295000] Count:        1025 Conv_Debug = 0000
-[12305000] Count:        1026 Conv_Debug = 0000
-[12305000] Count:         251 Maxpool_Debug = 133f
-[12315000] Count:        1027 Conv_Debug = 0000
-[12325000] Count:        1028 Conv_Debug = 0000
-[12325000] Count:         252 Maxpool_Debug = 0495
-[12335000] Count:        1029 Conv_Debug = 0000
-[12345000] Count:        1030 Conv_Debug = 0000
-[12345000] Count:         253 Maxpool_Debug = 0000
-[12355000] Count:        1031 Conv_Debug = 0616
-[12365000] Count:        1032 Conv_Debug = 120e
-[12365000] Count:         254 Maxpool_Debug = 0182
-[12375000] Count:        1033 Conv_Debug = 0fb3
-[12385000] Count:        1034 Conv_Debug = 0158
-[12385000] Count:         255 Maxpool_Debug = 07c0
-[12395000] Count:        1035 Conv_Debug = 0000
-[12405000] Count:        1036 Conv_Debug = 0000
-[12405000] Count:         256 Maxpool_Debug = 12db
-[12415000] Count:        1037 Conv_Debug = 0000
-[12425000] Count:        1038 Conv_Debug = 0000
-[12425000] Count:         257 Maxpool_Debug = 0fb3
-[12435000] Count:        1039 Conv_Debug = 0000
-[12445000] Count:        1040 Conv_Debug = 0000
-[12445000] Count:         258 Maxpool_Debug = 0000
-[12465000] Count:         259 Maxpool_Debug = 0000
-[12475000] Count:        1041 Conv_Debug = 0000
-[12485000] Count:        1042 Conv_Debug = 0000
-[12485000] Count:         260 Maxpool_Debug = 0000
-[12495000] Count:        1043 Conv_Debug = 0000
-[12505000] Count:        1044 Conv_Debug = 0000
-[12515000] Count:        1045 Conv_Debug = 0000
-[12525000] Count:        1046 Conv_Debug = 0000
-[12535000] Count:        1047 Conv_Debug = 0000
-[12545000] Count:        1048 Conv_Debug = 0000
-[12555000] Count:        1049 Conv_Debug = 0000
-[12565000] Count:        1050 Conv_Debug = 0000
-[12575000] Count:        1051 Conv_Debug = 0000
-[12585000] Count:        1052 Conv_Debug = 0000
-[12595000] Count:        1053 Conv_Debug = 0000
-[12605000] Count:        1054 Conv_Debug = 0000
-[12615000] Count:        1055 Conv_Debug = 0000
-[12625000] Count:        1056 Conv_Debug = 0000
-[12635000] Count:        1057 Conv_Debug = 0000
-[12645000] Count:        1058 Conv_Debug = 0856
-[12655000] Count:        1059 Conv_Debug = 107f
-[12665000] Count:        1060 Conv_Debug = 07c8
-[12675000] Count:        1061 Conv_Debug = 0000
-[12685000] Count:        1062 Conv_Debug = 0000
-[12695000] Count:        1063 Conv_Debug = 0000
-[12705000] Count:        1064 Conv_Debug = 0000
-[12715000] Count:        1065 Conv_Debug = 0000
-[12725000] Count:        1066 Conv_Debug = 0000
-[12755000] Count:        1067 Conv_Debug = 0000
-[12765000] Count:        1068 Conv_Debug = 0000
-[12775000] Count:        1069 Conv_Debug = 0000
-[12785000] Count:        1070 Conv_Debug = 0000
-[12795000] Count:        1071 Conv_Debug = 0000
-[12805000] Count:        1072 Conv_Debug = 0000
-[12805000] Count:         261 Maxpool_Debug = 0000
-[12815000] Count:        1073 Conv_Debug = 0000
-[12825000] Count:        1074 Conv_Debug = 0000
-[12825000] Count:         262 Maxpool_Debug = 0000
-[12835000] Count:        1075 Conv_Debug = 0000
-[12845000] Count:        1076 Conv_Debug = 0000
-[12845000] Count:         263 Maxpool_Debug = 0000
-[12855000] Count:        1077 Conv_Debug = 0000
-[12865000] Count:        1078 Conv_Debug = 0000
-[12865000] Count:         264 Maxpool_Debug = 0000
-[12875000] Count:        1079 Conv_Debug = 0000
-[12885000] Count:        1080 Conv_Debug = 0000
-[12885000] Count:         265 Maxpool_Debug = 0000
-[12895000] Count:        1081 Conv_Debug = 0000
-[12905000] Count:        1082 Conv_Debug = 0000
-[12905000] Count:         266 Maxpool_Debug = 0000
-[12915000] Count:        1083 Conv_Debug = 0000
-[12925000] Count:        1084 Conv_Debug = 0321
-[12925000] Count:         267 Maxpool_Debug = 0000
-[12935000] Count:        1085 Conv_Debug = 130f
-[12945000] Count:        1086 Conv_Debug = 0a45
-[12945000] Count:         268 Maxpool_Debug = 0000
-[12955000] Count:        1087 Conv_Debug = 0000
-[12965000] Count:        1088 Conv_Debug = 0000
-[12965000] Count:         269 Maxpool_Debug = 0856
-[12975000] Count:        1089 Conv_Debug = 0000
-[12985000] Count:        1090 Conv_Debug = 0000
-[12985000] Count:         270 Maxpool_Debug = 130f
-[12995000] Count:        1091 Conv_Debug = 0000
-[13005000] Count:        1092 Conv_Debug = 0000
-[13005000] Count:         271 Maxpool_Debug = 0000
-[13025000] Count:         272 Maxpool_Debug = 0000
-[13035000] Count:        1093 Conv_Debug = 0000
-[13045000] Count:        1094 Conv_Debug = 0000
-[13045000] Count:         273 Maxpool_Debug = 0000
-[13055000] Count:        1095 Conv_Debug = 0000
-[13065000] Count:        1096 Conv_Debug = 0000
-[13075000] Count:        1097 Conv_Debug = 0000
-[13085000] Count:        1098 Conv_Debug = 0000
-[13095000] Count:        1099 Conv_Debug = 0000
-[13105000] Count:        1100 Conv_Debug = 0000
-[13115000] Count:        1101 Conv_Debug = 0000
-[13125000] Count:        1102 Conv_Debug = 0000
-[13135000] Count:        1103 Conv_Debug = 0000
-[13145000] Count:        1104 Conv_Debug = 0000
-[13155000] Count:        1105 Conv_Debug = 0000
-[13165000] Count:        1106 Conv_Debug = 0000
-[13175000] Count:        1107 Conv_Debug = 0000
-[13185000] Count:        1108 Conv_Debug = 0000
-[13195000] Count:        1109 Conv_Debug = 0000
-[13205000] Count:        1110 Conv_Debug = 070c
-[13215000] Count:        1111 Conv_Debug = 10c8
-[13225000] Count:        1112 Conv_Debug = 0838
-[13235000] Count:        1113 Conv_Debug = 0000
-[13245000] Count:        1114 Conv_Debug = 0000
-[13255000] Count:        1115 Conv_Debug = 0000
-[13265000] Count:        1116 Conv_Debug = 0000
-[13275000] Count:        1117 Conv_Debug = 0000
-[13285000] Count:        1118 Conv_Debug = 0000
-[13315000] Count:        1119 Conv_Debug = 0000
-[13325000] Count:        1120 Conv_Debug = 0000
-[13335000] Count:        1121 Conv_Debug = 0000
-[13345000] Count:        1122 Conv_Debug = 0000
-[13355000] Count:        1123 Conv_Debug = 0000
-[13365000] Count:        1124 Conv_Debug = 0425
-[13365000] Count:         274 Maxpool_Debug = 0000
-[13375000] Count:        1125 Conv_Debug = 0a35
-[13385000] Count:        1126 Conv_Debug = 07bb
-[13385000] Count:         275 Maxpool_Debug = 0000
-[13395000] Count:        1127 Conv_Debug = 0000
-[13405000] Count:        1128 Conv_Debug = 0000
-[13405000] Count:         276 Maxpool_Debug = 0425
-[13415000] Count:        1129 Conv_Debug = 0000
-[13425000] Count:        1130 Conv_Debug = 0000
-[13425000] Count:         277 Maxpool_Debug = 0a35
-[13435000] Count:        1131 Conv_Debug = 0000
-[13445000] Count:        1132 Conv_Debug = 0000
-[13445000] Count:         278 Maxpool_Debug = 0000
-[13455000] Count:        1133 Conv_Debug = 0000
-[13465000] Count:        1134 Conv_Debug = 0000
-[13465000] Count:         279 Maxpool_Debug = 0000
-[13475000] Count:        1135 Conv_Debug = 0123
-[13485000] Count:        1136 Conv_Debug = 0f87
-[13485000] Count:         280 Maxpool_Debug = 0000
-[13495000] Count:        1137 Conv_Debug = 103f
-[13505000] Count:        1138 Conv_Debug = 0571
-[13505000] Count:         281 Maxpool_Debug = 0000
-[13515000] Count:        1139 Conv_Debug = 0000
-[13525000] Count:        1140 Conv_Debug = 0000
-[13525000] Count:         282 Maxpool_Debug = 0f87
-[13535000] Count:        1141 Conv_Debug = 0000
-[13545000] Count:        1142 Conv_Debug = 0000
-[13545000] Count:         283 Maxpool_Debug = 10c8
-[13555000] Count:        1143 Conv_Debug = 0000
-[13565000] Count:        1144 Conv_Debug = 0000
-[13565000] Count:         284 Maxpool_Debug = 0000
-[13585000] Count:         285 Maxpool_Debug = 0000
-[13595000] Count:        1145 Conv_Debug = 0000
-[13605000] Count:        1146 Conv_Debug = 0000
-[13605000] Count:         286 Maxpool_Debug = 0000
-[13615000] Count:        1147 Conv_Debug = 0000
-[13625000] Count:        1148 Conv_Debug = 0000
-[13635000] Count:        1149 Conv_Debug = 0000
-[13645000] Count:        1150 Conv_Debug = 04be
-[13655000] Count:        1151 Conv_Debug = 142d
-[13665000] Count:        1152 Conv_Debug = 1072
-[13675000] Count:        1153 Conv_Debug = 04d6
-[13685000] Count:        1154 Conv_Debug = 0000
-[13695000] Count:        1155 Conv_Debug = 0000
-[13705000] Count:        1156 Conv_Debug = 0000
-[13715000] Count:        1157 Conv_Debug = 0000
-[13725000] Count:        1158 Conv_Debug = 0000
-[13735000] Count:        1159 Conv_Debug = 0000
-[13745000] Count:        1160 Conv_Debug = 0000
-[13755000] Count:        1161 Conv_Debug = 08f6
-[13765000] Count:        1162 Conv_Debug = 10e7
-[13775000] Count:        1163 Conv_Debug = 0c11
-[13785000] Count:        1164 Conv_Debug = 0000
-[13795000] Count:        1165 Conv_Debug = 0000
-[13805000] Count:        1166 Conv_Debug = 0000
-[13815000] Count:        1167 Conv_Debug = 0000
-[13825000] Count:        1168 Conv_Debug = 0000
-[13835000] Count:        1169 Conv_Debug = 0000
-[13845000] Count:        1170 Conv_Debug = 0000
-[13875000] Count:        1171 Conv_Debug = 0000
-[13885000] Count:        1172 Conv_Debug = 0000
-[13895000] Count:        1173 Conv_Debug = 0000
-[13905000] Count:        1174 Conv_Debug = 0000
-[13915000] Count:        1175 Conv_Debug = 0000
-[13925000] Count:        1176 Conv_Debug = 0000
-[13925000] Count:         287 Maxpool_Debug = 0000
-[13935000] Count:        1177 Conv_Debug = 0859
-[13945000] Count:        1178 Conv_Debug = 1377
-[13945000] Count:         288 Maxpool_Debug = 0000
-[13955000] Count:        1179 Conv_Debug = 11e6
-[13965000] Count:        1180 Conv_Debug = 099f
-[13965000] Count:         289 Maxpool_Debug = 04be
-[13975000] Count:        1181 Conv_Debug = 01b3
-[13985000] Count:        1182 Conv_Debug = 0000
-[13985000] Count:         290 Maxpool_Debug = 142d
-[13995000] Count:        1183 Conv_Debug = 0000
-[14005000] Count:        1184 Conv_Debug = 0000
-[14005000] Count:         291 Maxpool_Debug = 11e6
-[14015000] Count:        1185 Conv_Debug = 0000
-[14025000] Count:        1186 Conv_Debug = 07c4
-[14025000] Count:         292 Maxpool_Debug = 01b3
-[14035000] Count:        1187 Conv_Debug = 0f60
-[14045000] Count:        1188 Conv_Debug = 0eba
-[14045000] Count:         293 Maxpool_Debug = 0000
-[14055000] Count:        1189 Conv_Debug = 027e
-[14065000] Count:        1190 Conv_Debug = 0000
-[14065000] Count:         294 Maxpool_Debug = 07c4
-[14075000] Count:        1191 Conv_Debug = 0000
-[14085000] Count:        1192 Conv_Debug = 0000
-[14085000] Count:         295 Maxpool_Debug = 10e7
-[14095000] Count:        1193 Conv_Debug = 0000
-[14105000] Count:        1194 Conv_Debug = 0000
-[14105000] Count:         296 Maxpool_Debug = 0c11
-[14115000] Count:        1195 Conv_Debug = 0000
-[14125000] Count:        1196 Conv_Debug = 0000
-[14125000] Count:         297 Maxpool_Debug = 0000
-[14145000] Count:         298 Maxpool_Debug = 0000
-[14155000] Count:        1197 Conv_Debug = 0000
-[14165000] Count:        1198 Conv_Debug = 0000
-[14165000] Count:         299 Maxpool_Debug = 0000
-[14175000] Count:        1199 Conv_Debug = 0000
-[14185000] Count:        1200 Conv_Debug = 0000
-[14195000] Count:        1201 Conv_Debug = 0000
-[14205000] Count:        1202 Conv_Debug = 0000
-[14215000] Count:        1203 Conv_Debug = 0000
-[14225000] Count:        1204 Conv_Debug = 07f5
-[14235000] Count:        1205 Conv_Debug = 11e0
-[14245000] Count:        1206 Conv_Debug = 156f
-[14255000] Count:        1207 Conv_Debug = 0fe2
-[14265000] Count:        1208 Conv_Debug = 0ae9
-[14275000] Count:        1209 Conv_Debug = 092e
-[14285000] Count:        1210 Conv_Debug = 0b23
-[14295000] Count:        1211 Conv_Debug = 0ea7
-[14305000] Count:        1212 Conv_Debug = 1147
-[14315000] Count:        1213 Conv_Debug = 101e
-[14325000] Count:        1214 Conv_Debug = 053d
-[14335000] Count:        1215 Conv_Debug = 0000
-[14345000] Count:        1216 Conv_Debug = 0000
-[14355000] Count:        1217 Conv_Debug = 0000
-[14365000] Count:        1218 Conv_Debug = 0000
-[14375000] Count:        1219 Conv_Debug = 0000
-[14385000] Count:        1220 Conv_Debug = 0000
-[14395000] Count:        1221 Conv_Debug = 0000
-[14405000] Count:        1222 Conv_Debug = 0000
-[14435000] Count:        1223 Conv_Debug = 0000
-[14445000] Count:        1224 Conv_Debug = 0000
-[14455000] Count:        1225 Conv_Debug = 0000
-[14465000] Count:        1226 Conv_Debug = 0000
-[14475000] Count:        1227 Conv_Debug = 0000
-[14485000] Count:        1228 Conv_Debug = 0000
-[14485000] Count:         300 Maxpool_Debug = 0000
-[14495000] Count:        1229 Conv_Debug = 0000
-[14505000] Count:        1230 Conv_Debug = 0000
-[14505000] Count:         301 Maxpool_Debug = 0000
-[14515000] Count:        1231 Conv_Debug = 051a
-[14525000] Count:        1232 Conv_Debug = 09bc
-[14525000] Count:         302 Maxpool_Debug = 0000
-[14535000] Count:        1233 Conv_Debug = 0f27
-[14545000] Count:        1234 Conv_Debug = 1357
-[14545000] Count:         303 Maxpool_Debug = 07f5
-[14555000] Count:        1235 Conv_Debug = 142c
-[14565000] Count:        1236 Conv_Debug = 13cd
-[14565000] Count:         304 Maxpool_Debug = 156f
-[14575000] Count:        1237 Conv_Debug = 1223
-[14585000] Count:        1238 Conv_Debug = 0bfc
-[14585000] Count:         305 Maxpool_Debug = 1357
-[14595000] Count:        1239 Conv_Debug = 0274
-[14605000] Count:        1240 Conv_Debug = 0000
-[14605000] Count:         306 Maxpool_Debug = 142c
-[14615000] Count:        1241 Conv_Debug = 0000
-[14625000] Count:        1242 Conv_Debug = 0000
-[14625000] Count:         307 Maxpool_Debug = 1223
-[14635000] Count:        1243 Conv_Debug = 0000
-[14645000] Count:        1244 Conv_Debug = 0000
-[14645000] Count:         308 Maxpool_Debug = 101e
-[14655000] Count:        1245 Conv_Debug = 0000
-[14665000] Count:        1246 Conv_Debug = 0000
-[14665000] Count:         309 Maxpool_Debug = 0000
-[14675000] Count:        1247 Conv_Debug = 0000
-[14685000] Count:        1248 Conv_Debug = 0000
-[14685000] Count:         310 Maxpool_Debug = 0000
-[14705000] Count:         311 Maxpool_Debug = 0000
-[14715000] Count:        1249 Conv_Debug = 0000
-[14725000] Count:        1250 Conv_Debug = 0000
-[14725000] Count:         312 Maxpool_Debug = 0000
-[14735000] Count:        1251 Conv_Debug = 0000
-[14745000] Count:        1252 Conv_Debug = 0000
-[14755000] Count:        1253 Conv_Debug = 0000
-[14765000] Count:        1254 Conv_Debug = 0000
-[14775000] Count:        1255 Conv_Debug = 0000
-[14785000] Count:        1256 Conv_Debug = 0000
-[14795000] Count:        1257 Conv_Debug = 0000
-[14805000] Count:        1258 Conv_Debug = 0000
-[14815000] Count:        1259 Conv_Debug = 0375
-[14825000] Count:        1260 Conv_Debug = 0559
-[14835000] Count:        1261 Conv_Debug = 04ff
-[14845000] Count:        1262 Conv_Debug = 047c
-[14855000] Count:        1263 Conv_Debug = 031a
-[14865000] Count:        1264 Conv_Debug = 0000
-[14875000] Count:        1265 Conv_Debug = 0000
-[14885000] Count:        1266 Conv_Debug = 0000
-[14895000] Count:        1267 Conv_Debug = 0000
-[14905000] Count:        1268 Conv_Debug = 0000
-[14915000] Count:        1269 Conv_Debug = 0000
-[14925000] Count:        1270 Conv_Debug = 0000
-[14935000] Count:        1271 Conv_Debug = 0000
-[14945000] Count:        1272 Conv_Debug = 0000
-[14955000] Count:        1273 Conv_Debug = 0000
-[14965000] Count:        1274 Conv_Debug = 0000
-[14995000] Count:        1275 Conv_Debug = 0000
-[15005000] Count:        1276 Conv_Debug = 0000
-[15015000] Count:        1277 Conv_Debug = 0000
-[15025000] Count:        1278 Conv_Debug = 0000
-[15035000] Count:        1279 Conv_Debug = 0000
-[15045000] Count:        1280 Conv_Debug = 0000
-[15045000] Count:         313 Maxpool_Debug = 0000
-[15055000] Count:        1281 Conv_Debug = 0000
-[15065000] Count:        1282 Conv_Debug = 0000
-[15065000] Count:         314 Maxpool_Debug = 0000
-[15075000] Count:        1283 Conv_Debug = 0000
-[15085000] Count:        1284 Conv_Debug = 0000
-[15085000] Count:         315 Maxpool_Debug = 0000
-[15095000] Count:        1285 Conv_Debug = 0000
-[15105000] Count:        1286 Conv_Debug = 0000
-[15105000] Count:         316 Maxpool_Debug = 0000
-[15115000] Count:        1287 Conv_Debug = 0000
-[15125000] Count:        1288 Conv_Debug = 0000
-[15125000] Count:         317 Maxpool_Debug = 0000
-[15135000] Count:        1289 Conv_Debug = 0000
-[15145000] Count:        1290 Conv_Debug = 0000
-[15145000] Count:         318 Maxpool_Debug = 0559
-[15155000] Count:        1291 Conv_Debug = 0000
-[15165000] Count:        1292 Conv_Debug = 0000
-[15165000] Count:         319 Maxpool_Debug = 04ff
-[15175000] Count:        1293 Conv_Debug = 0000
-[15185000] Count:        1294 Conv_Debug = 0000
-[15185000] Count:         320 Maxpool_Debug = 031a
-[15195000] Count:        1295 Conv_Debug = 0000
-[15205000] Count:        1296 Conv_Debug = 0000
-[15205000] Count:         321 Maxpool_Debug = 0000
-[15215000] Count:        1297 Conv_Debug = 0000
-[15225000] Count:        1298 Conv_Debug = 0000
-[15225000] Count:         322 Maxpool_Debug = 0000
-[15235000] Count:        1299 Conv_Debug = 0000
-[15245000] Count:        1300 Conv_Debug = 0000
-[15245000] Count:         323 Maxpool_Debug = 0000
-[15265000] Count:         324 Maxpool_Debug = 0000
-[15275000] Count:        1301 Conv_Debug = 0000
-[15285000] Count:        1302 Conv_Debug = 0000
-[15285000] Count:         325 Maxpool_Debug = 0000
-[15295000] Count:        1303 Conv_Debug = 0000
-[15305000] Count:        1304 Conv_Debug = 0000
-[15315000] Count:        1305 Conv_Debug = 0000
-[15325000] Count:        1306 Conv_Debug = 0000
-[15335000] Count:        1307 Conv_Debug = 0000
-[15345000] Count:        1308 Conv_Debug = 0000
-[15355000] Count:        1309 Conv_Debug = 0000
-[15365000] Count:        1310 Conv_Debug = 0000
-[15375000] Count:        1311 Conv_Debug = 0000
-[15385000] Count:        1312 Conv_Debug = 0000
-[15395000] Count:        1313 Conv_Debug = 0000
-[15405000] Count:        1314 Conv_Debug = 0000
-[15415000] Count:        1315 Conv_Debug = 0000
-[15425000] Count:        1316 Conv_Debug = 0000
-[15435000] Count:        1317 Conv_Debug = 0000
-[15445000] Count:        1318 Conv_Debug = 0000
-[15455000] Count:        1319 Conv_Debug = 0000
-[15465000] Count:        1320 Conv_Debug = 0000
-[15475000] Count:        1321 Conv_Debug = 0000
-[15485000] Count:        1322 Conv_Debug = 0000
-[15495000] Count:        1323 Conv_Debug = 0000
-[15505000] Count:        1324 Conv_Debug = 0000
-[15515000] Count:        1325 Conv_Debug = 0000
-[15525000] Count:        1326 Conv_Debug = 0000
-[15555000] Count:        1327 Conv_Debug = 0000
-[15565000] Count:        1328 Conv_Debug = 0000
-[15575000] Count:        1329 Conv_Debug = 0000
-[15585000] Count:        1330 Conv_Debug = 0000
-[15595000] Count:        1331 Conv_Debug = 0000
-[15605000] Count:        1332 Conv_Debug = 0000
-[15605000] Count:         326 Maxpool_Debug = 0000
-[15615000] Count:        1333 Conv_Debug = 0000
-[15625000] Count:        1334 Conv_Debug = 0000
-[15625000] Count:         327 Maxpool_Debug = 0000
-[15635000] Count:        1335 Conv_Debug = 0000
-[15645000] Count:        1336 Conv_Debug = 0000
-[15645000] Count:         328 Maxpool_Debug = 0000
-[15655000] Count:        1337 Conv_Debug = 0000
-[15665000] Count:        1338 Conv_Debug = 0000
-[15665000] Count:         329 Maxpool_Debug = 0000
-[15675000] Count:        1339 Conv_Debug = 0000
-[15685000] Count:        1340 Conv_Debug = 0000
-[15685000] Count:         330 Maxpool_Debug = 0000
-[15695000] Count:        1341 Conv_Debug = 0000
-[15705000] Count:        1342 Conv_Debug = 0000
-[15705000] Count:         331 Maxpool_Debug = 0000
-[15715000] Count:        1343 Conv_Debug = 0000
-[15725000] Count:        1344 Conv_Debug = 0000
-[15725000] Count:         332 Maxpool_Debug = 0000
-[15735000] Count:        1345 Conv_Debug = 0000
-[15745000] Count:        1346 Conv_Debug = 0000
-[15745000] Count:         333 Maxpool_Debug = 0000
-[15755000] Count:        1347 Conv_Debug = 0000
-[15765000] Count:        1348 Conv_Debug = 0000
-[15765000] Count:         334 Maxpool_Debug = 0000
-[15775000] Count:        1349 Conv_Debug = 0000
-[15785000] Count:        1350 Conv_Debug = 0000
-[15785000] Count:         335 Maxpool_Debug = 0000
-[15795000] Count:        1351 Conv_Debug = 0000
-[15805000] Count:        1352 Conv_Debug = 0000
-[15805000] Count:         336 Maxpool_Debug = 0000
-[15825000] Count:         337 Maxpool_Debug = 0000
-[15845000] Count:         338 Maxpool_Debug = 0000
-[15895000] Count:           2 x1_out_d = 7fff7fff504e7fff000000007fff000000007fff7fff00007fff2783000000000000221d7fff7011000000007fff7fff00007fff7fff000025e37fff000034a0000000007fff7fff00007fff7fff00000000000000000000000060fe00007fff0000000009aa7fff0000000000000000000025d80000000000007fff00000000 (valid = ffffffffffffffff)
           0   0000000000000000
           1   0000000000000000
           2   0111111111111111
           3   0000000000000000
           4   0000000000000000
           5   0000000000000000
-          6   0010010111011000
+          6   0000000000000000
+          7   0000000000000000
+          8   0100000110001110
+          9   0000000000000000
+         10   0000000000000000
+         11   0000000100010011
+         12   0000000000000000
+         13   0000000000000000
+         14   0011111101000100
+         15   0000000000000000
+         16   0000000000000000
+         17   0000100110011110
+         18   0000000000000000
+         19   0000000000000000
+         20   0000000000000000
+         21   0000000000000000
+         22   0000000000000000
+         23   0000000000000000
+         24   0000000000000000
+         25   0000000000000000
+         26   0001100100110111
+         27   0000000000000000
+         28   0000000000000000
+         29   0000000000000000
+         30   0000000000000000
+         31   0000000000000000
+         32   0000000000000000
+         33   0000000000000000
+         34   0000000011110111
+         35   0000000000000000
+         36   0111111111111111
+         37   0000000000000000
+         38   0000000000000000
+         39   0011000110000011
+         40   0000000000000000
+         41   0111111111111111
+         42   0000000000000000
+         43   0000000000000000
+         44   0011011001100011
+         45   0000000000000000
+         46   0000000000000000
+         47   0000000000000000
+         48   0000000000000000
+         49   0000000000000000
+         50   0000000000000000
+         51   0111111111111111
+         52   0000000000000000
+         53   0010111101110000
+         54   0000000000000000
+         55   0100101111101000
+         56   0011010010000100
+         57   0010010010110110
+         58   0000000000000000
+         59   0000000000000000
+         60   0111111111111111
+         61   0000000000000000
+         62   0000011111101111
+         63   0011001101110111
+          0   0111111111111111
+          1   0000000000000000
+          2   0000000000000000
+          3   0000000000000000
+          4   0101001011100111
+          5   0100000000011010
+          6   0000000000000000
+          7   0010111110100000
+          8   0000000000000000
+          9   0000000000000000
+         10   0000000000000000
+         11   0111111111111111
+         12   0000000000000000
+         13   0000000000000000
+         14   0000000000000000
+         15   0000000000000000
+         16   0000000000000000
+         17   0000000000000000
+         18   0111111111111111
+         19   0000000000000000
+         20   0000000000000000
+         21   0000000000000000
+         22   0000000000000000
+         23   0000000000000000
+         24   0000000000000000
+         25   0000000000000000
+         26   0000000000000000
+         27   0000000000000000
+         28   0000000000000000
+         29   0000000000000000
+         30   0000000000000000
+         31   0000000000000000
+          0   0000000000000000
+          1   0101110111100101
+          2   0001111000001101
+          3   0000000000000000
+          4   0000000000000000
+          5   0000000000000000
+          6   0000000000000000
+          7   0000000000000000
+          8   0000000000000000
+          9   0000000000000000
+          0   0000000000000000
+          1   0000000000000000
+          2   0000101010111101
+          3   0000000000000000
+          4   0000000000000000
+          5   0000000000000000
+          6   0000000000000000
           7   0000000000000000
           8   0000000000000000
           9   0000000000000000
          10   0000000000000000
          11   0000000000000000
-         12   0111111111111111
-         13   0000100110101010
+         12   0000000000000000
+         13   0000000000000000
+         14   0111111111111111
+         15   0000000000000000
+         16   0000000000000000
+         17   0000000000000000
+         18   0000000000000000
+         19   0000000000000000
+         20   0000000000000000
+         21   0000100000011100
+         22   0000000000000000
+         23   0000000000000000
+         24   0000000000000000
+         25   0000001010000100
+         26   0000000000000000
+         27   0000000000000000
+         28   0000000000000000
+         29   0111111111111111
+         30   0000000000000000
+         31   0000000000000000
+         32   0000000000000000
+         33   0000000000000000
+         34   0000000000000000
+         35   0000000000000000
+         36   0000000000000000
+         37   0000000000000000
+         38   0000000000000000
+         39   0111110001001010
+         40   0000000000000000
+         41   0000000000000000
+         42   0110000010110010
+         43   0000000000000000
+         44   0000000000000000
+         45   0000000000000000
+         46   0001010101001011
+         47   0000000000000000
+         48   0000000000000000
+         49   0000000000000000
+         50   0010110011110100
+         51   0000000000000000
+         52   0000000000000000
+         53   0000000000000000
+         54   0000000000000000
+         55   0111111111111111
+         56   0000000000000000
+         57   0000000000000000
+         58   0000000000000000
+         59   0000000000000000
+         60   0111010010110111
+         61   0000000000000000
+         62   0000000000000000
+         63   0000100010011111
+          0   0111111111111111
+          1   0000000000000000
+          2   0000000000000000
+          3   0000000000000000
+          4   0000000000000000
+          5   0000000000000000
+          6   0000000000000000
+          7   0111111111111111
+          8   0000000000000000
+          9   0111111111111111
+         10   0000000000000000
+         11   0000000000000000
+         12   0000000000000000
+         13   0000000000000000
          14   0000000000000000
          15   0000000000000000
-         16   0111111111111111
+         16   0000000000000000
          17   0000000000000000
-         18   0110000011111110
-         
+         18   0111111111111111
+         19   0000000000000000
+         20   0111111111111111
+         21   0111111111111111
+         22   0000000000000000
+         23   0000000000000000
+         24   0000000000000000
+         25   0000000000000000
+         26   0000000000000000
+         27   0000000000000000
+         28   0111111111111111
+         29   0000000000000000
+         30   0000000000000000
+         31   0000000000000000
+          0   0000000000000000
+          1   0000000000000000
+          2   0111111111111111
+          3   0011111110011010
+          4   0000000000000000
+          5   0000000000000000
+          6   0000000000000000
+          7   0000000000000000
+          8   0000000000000000
+          9   0000000000000000
+          0   0000000000000000
+          1   0000000000000000
+          2   0000000000000000
+          3   0000000000000000
+          4   0111001010101100
+          5   0000000000000000
+          6   0000000000000000
+          7   0000000000000000
+          8   0000000000000000
+          9   0000000000000000
+         10   0000000000000000
+         11   0000000000000000
+         12   0000000000000000
+         13   0000000000000000
+         14   0001010110101100
+         15   0000000000000000
+         16   0000000000000000
+         17   0000000000000000
+         18   0000000000000000
+         19   0000000000000000
+         20   0000000000000000
+         21   0010010111101110
+         22   0000000000000000
+         23   0000000000000000
+         24   0000000000000000
+         25   0101100100000011
+         26   0000000000000000
+         27   0000000000000000
+         28   0000110110110111
+         29   0010100111110101
+         30   0000000000000000
+         31   0000000000000000
+         32   0000000000000000
+         33   0000000000000000
+         34   0000000000000000
+         35   0000000000000000
+         36   0000000000000000
+         37   0111111111111111
+         38   0000000000000000
+         39   0111110000110111
+         40   0000000000000000
+         41   0000000000000000
+         42   0101011001100000
+         43   0000000000000000
+         44   0101001111110110
+         45   0000000000000000
+         46   0000000000000000
+         47   0111111111111111
+         48   0000000000000000
+         49   0000000000000000
+         50   0000000000000000
+         51   0000000000000000
+         52   0000000000000000
+         53   0000000000000000
+         54   0000000000000000
+         55   0000001000100111
+         56   0000000000000000
+         57   0000000000000000
+         58   0000000000000000
+         59   0000000000000000
+         60   0110101010100001
+         61   0000000000000000
+         62   0000000000000000
+         63   0000000000000000
+          0   0000000000000000
+          1   0000000000000000
+          2   0000000000000000
+          3   0000000000000000
+          4   0100101111111001
+          5   0000000000000000
+          6   0000000000000000
+          7   0111111111111111
+          8   0000000000000000
+          9   0000000000000000
+         10   0000000011110000
+         11   0111111111111111
+         12   0000000000000000
+         13   0000000000000000
+         14   0000000000000000
+         15   0000000000000000
+         16   0000000000000000
+         17   0000000000000000
+         18   0000000000000000
+         19   0000000000000000
+         20   0000000000000000
+         21   0111111111111111
+         22   0111111111111111
+         23   0000000000000000
+         24   0000000000000000
+         25   0000000000000000
+         26   0000000000000000
+         27   0000000000000000
+         28   0000000000000000
+         29   0000000000000000
+         30   0111111111111111
+         31   0000000000000000
+          0   0000000000000000
+          1   0000000000000000
+          2   0000000000000000
+          3   0101000101100110
+          4   0000000000000000
+          5   0101101000001001
+          6   0000000000000000
+          7   0000000000000000
+          8   0100101101010001
+          9   0000000000000000
+          0   0000000000000000
+          1   0000000000000000
+          2   0000000000000000
+          3   0000000000000000
+          4   0111111111111111
+          5   0000000000000000
+          6   0000000000000000
+          7   0000000000000000
+          8   0000000000000000
+          9   0000000000000000
+         10   0000000000000000
+         11   0000000000000000
+         12   0000000000000000
+         13   0111111111111111
+         14   0000000000000000
+         15   0000000000000000
+         16   0000000000000000
+         17   0000000000000000
+         18   0000000000000000
+         19   0000000000000000
+         20   0000000000000000
+         21   0010011000110001
+         22   0010001111101000
+         23   0000000000000000
+         24   0000000000000000
+         25   0000000000000000
+         26   0000000000000000
+         27   0000000000000000
+         28   0000000000000000
+         29   0000000000000000
+         30   0000000000000000
+         31   0000000000000000
+         32   0000000000000000
+         33   0110101100111011
+         34   0111111111111111
+         35   0001100010110010
+         36   0011110111111010
+         37   0000000000000000
+         38   0000010100011001
+         39   0000100001100111
+         40   0000000000000000
+         41   0000000000000000
+         42   0000001111000111
+         43   0000000000000000
+         44   0000000000000000
+         45   0000000000000000
+         46   0000000000000000
+         47   0000000000000000
+         48   0000000000000000
+         49   0000000000000000
+         50   0000000000000000
+         51   0000000000000000
+         52   0000000000000000
+         53   0000000000000000
+         54   0000000000000000
+         55   0000000000000000
+         56   0000000000000000
+         57   0000000000000000
+         58   0011110100000111
+         59   0100011010001111
+         60   0000000000000000
+         61   0111111111111111
+         62   0101010000110101
+         63   0000101110101010
+          0   0000000000000000
+          1   0000000000000000
+          2   0111101000111101
+          3   0111111111111111
+          4   0111111111111111
+          5   0000000000000000
+          6   0000000000000000
+          7   0000000000000000
+          8   0000000000000000
+          9   0000000000000000
+         10   0010100110010111
+         11   0000000000000000
+         12   0111111111111111
+         13   0111111111111111
+         14   0000000000000000
+         15   0000000000000000
+         16   0000000000000000
+         17   0000000000000000
+         18   0000000000000000
+         19   0111111111111111
+         20   0000000000000000
+         21   0000000000000000
+         22   0000000000000000
+         23   0000000000000000
+         24   0000000000000000
+         25   0000000000000000
+         26   0000000000000000
+         27   0000000000000000
+         28   0111111111111111
+         29   0000000000000000
+         30   0100001100111000
+         31   0111111111111111
+          0   0000000000000000
+          1   0000000000000000
+          2   0000000000000000
+          3   0000000000000000
+          4   0111111111111111
+          5   0000000000000000
+          6   0000000000000000
+          7   0000000000000000
+          8   0000000000000000
+          9   0111111111111111
+          0   0000000000000000
+          1   0000000000000000
+          2   0101110100110110
+          3   0000000000000000
+          4   0111111111111111
+          5   0000000000000000
+          6   0000000000000000
+          7   0000000000000000
+          8   0000000000000000
+          9   0000000000000000
+         10   0000000000000000
+         11   0000000000000000
+         12   0001011011100001
+         13   0000000000000000
+         14   0010010101001010
+         15   0000000000000000
+         16   0000000000000000
+         17   0000000000000000
+         18   0000000000000000
+         19   0000000000000000
+         20   0000000000000000
+         21   0111111111111111
+         22   0111111100010101
+         23   0000000000000000
+         24   0000000000000000
+         25   0111111111111111
+         26   0000000000000000
+         27   0000000000000000
+         28   0000000000000000
+         29   0000000000000000
+         30   0000000000000000
+         31   0000000000000000
+         32   0000000000000000
+         33   0111111111111111
+         34   0000000000000000
+         35   0001010001111001
+         36   0000000000000000
+         37   0111111111101000
+         38   0000000000000000
+         39   0000000000000000
+         40   0000000000000000
+         41   0000000000000000
+         42   0000000000000000
+         43   0000000000000000
+         44   0000000000000000
+         45   0100000100110000
+         46   0000000000000000
+         47   0011011101001100
+         48   0000000000000000
+         49   0000000000000000
+         50   0100000001010110
+         51   0000110000011011
+         52   0000000000000000
+         53   0000000000000000
+         54   0000000000000000
+         55   0000000000000000
+         56   0000000000000000
+         57   0000000000000000
+         58   0000000000000000
+         59   0000000000000000
+         60   0111111111111111
+         61   0000000000000000
+         62   0000100100000000
+         63   0000000000000000
+          0   0000000000000000
+          1   0000000000000000
+          2   0000000000000000
+          3   0000000000000000
+          4   0000000000000000
+          5   0000000000000000
+          6   0000000000000000
+          7   0000000000000000
+          8   0000000000000000
+          9   0000000000000000
+         10   0000000000000000
+         11   0111111111111111
+         12   0000000000000000
+         13   0000000000000000
+         14   0010110111100001
+         15   0000000000000000
+         16   0000000000000000
+         17   0000000000000000
+         18   0000000000000000
+         19   0000000000000000
+         20   0000000000000000
+         21   0000000000000000
+         22   0110001111001010
+         23   0000000000000000
+         24   0000000000000000
+         25   0000000000000000
+         26   0000000000000000
+         27   0000000000000000
+         28   0000000000000000
+         29   0000000000000000
+         30   0111111111111111
+         31   0000000000000000
+          0   0000000000000000
+          1   0000000000000000
+          2   0000000000000000
+          3   0000110111101110
+          4   0000000000000000
+          5   0111011000110100
+          6   0000000000000000
+          7   0000000000000000
+          8   0000100011001100
+          9   0000000100111010
+          0   0000000000000000
+          1   0000000000000000
+          2   0100101000011000
+          3   0000000000000000
+          4   0111111111111111
+          5   0000000000000000
+          6   0000000000000000
+          7   0000000000000000
+          8   0010111101011001
+          9   0000000000000000
+         10   0000000000000000
+         11   0000000000000000
+         12   0100010010111000
+         13   0000000000000000
+         14   0000000000000000
+         15   0000000000000000
+         16   0000000000000000
+         17   0010011010110001
+         18   0000000000000000
+         19   0000000000000000
+         20   0000000000000000
+         21   0111111111111111
+         22   0111111111111111
+         23   0000101100100100
+         24   0000000000000000
+         25   0110110111100110
+         26   0000000000000000
+         27   0000000000000000
+         28   0000000000000000
+         29   0000000000000000
+         30   0000000000000000
+         31   0000000000000000
+         32   0001001100101001
+         33   0101001010010110
+         34   0000000000000000
+         35   0000000110001111
+         36   0000000000000000
+         37   0001100110000000
+         38   0000000000000000
+         39   0101111011100101
+         40   0000000000000000
+         41   0000000000000000
+         42   0000000000000000
+         43   0000000000000000
+         44   0000000000000000
+         45   0000000000000000
+         46   0000000000000000
+         47   0011111010001100
+         48   0000000000000000
+         49   0000000000000000
+         50   0000000000000000
+         51   0000000000000000
+         52   0000000000000000
+         53   0000000000000000
+         54   0000000000000000
+         55   0000000000000000
+         56   0000000000000000
+         57   0000000000000000
+         58   0000000000000000
+         59   0000000000000000
+         60   0001101101110010
+         61   0000000000000000
+         62   0000000000000000
+         63   0000000000000000
+          0   0000000000000000
+          1   0000000000000000
+          2   0000000000000000
+          3   0000000000000000
+          4   0111111111111111
+          5   0000000000000000
+          6   0000000000000000
+          7   0000000000000000
+          8   0000000000000000
+          9   0000000000000000
+         10   0000000000000000
+         11   0111111111111111
+         12   0111111111111111
+         13   0111111111111111
+         14   0000000000000000
+         15   0000000000000000
+         16   0000000000000000
+         17   0000000000000000
+         18   0000000000000000
+         19   0000000000000000
+         20   0000000000000000
+         21   0000000000000000
+         22   0111000010111000
+         23   0000000000000000
+         24   0000000000000000
+         25   0000000000000000
+         26   0000000000000000
+         27   0000000000000000
+         28   0000000000000000
+         29   0000000000000000
+         30   0111111111111111
+         31   0000000000000000
+          0   0000000000000000
+          1   0000000000000000
+          2   0000000000000000
+          3   0000000000000000
+          4   0000000000000000
+          5   0100111111101100
+          6   0010010001111001
+          7   0000000000000000
+          8   0000000000000000
+          9   0001011010110100
+          0   0000000000000000
+          1   0000000000000000
+          2   0000000000000000
+          3   0000000000000000
+          4   0111111111111111
+          5   0000000000000000
+          6   0010010010010011
+          7   0000000000000000
+          8   0000000000000000
+          9   0000000000000000
+         10   0111111111111111
+         11   0000000000000000
+         12   0000000000000000
+         13   0000000000000000
+         14   0000000000000000
+         15   0000000000000000
+         16   0000000000000000
+         17   0000000000000000
+         18   0000000000000000
+         19   0000000000000000
+         20   0000000000000000
+         21   0000000000000000
+         22   0000000000000000
+         23   0010101111110100
+         24   0000000000000000
+         25   0011110000110000
+         26   0000000000000000
+         27   0000000000000000
+         28   0000000000000000
+         29   0000000000000000
+         30   0000000000000000
+         31   0000000000000000
+         32   0000000000000000
+         33   0111111111111111
+         34   0101010011011010
+         35   0000000000000000
+         36   0000000000000000
+         37   0000000000000000
+         38   0000000000000000
+         39   0111001011100001
+         40   0000000000000000
+         41   0000000000000000
+         42   0111111111111111
+         43   0000000000000000
+         44   0000000000000000
+         45   0000000000000000
+         46   0000000000000000
+         47   0000000000000000
+         48   0000000000000000
+         49   0000000000000000
+         50   0000000000000000
+         51   0000000000000000
+         52   0000000000000000
+         53   0000000000000000
+         54   0000000000000000
+         55   0000000000000000
+         56   0000000000000000
+         57   0000000000000000
+         58   0000000000000000
+         59   0000000000000000
+         60   0111111111111111
+         61   0101001101010010
+         62   0000000000000000
+         63   0001101011111101
+          0   0000000000000000
+          1   0000000000000000
+          2   0111111111111111
+          3   0100100011001001
+          4   0111000100100000
+          5   0000000000000000
+          6   0000000000000000
+          7   0000000000000000
+          8   0000000000000000
+          9   0000000000000000
+         10   0000000000000000
+         11   0000000000000000
+         12   0000111011000101
+         13   0000000000000000
+         14   0000000000000000
+         15   0000000000000000
+         16   0000000000000000
+         17   0000000000000000
+         18   0000000000000000
+         19   0000000000000000
+         20   0111111111111111
+         21   0000000000000000
+         22   0110101010110110
+         23   0000000000000000
+         24   0000000000000000
+         25   0000000000000000
+         26   0000000000000000
+         27   0000000000000000
+         28   0111111111111111
+         29   0000000000000000
+         30   0000000000000000
+         31   0111111111111111
+          0   0000000000000000
+          1   0000000000000000
+          2   0000000000000000
+          3   0000000000000000
+          4   0000000000000000
+          5   0000000000000000
+          6   0000000000000000
+          7   0100011101000011
+          8   0101101110101010
+          9   0110010101111000
+          0   0000000000000000
+          1   0000000000000000
+          2   0000000000000000
+          3   0000000000000000
+          4   0011011010101110
+          5   0000000000000000
+          6   0000000000000000
+          7   0000000000000000
+          8   0010110010000111
+          9   0000000000000000
+         10   0000000000000000
+         11   0000000000000000
+         12   0000000000000000
+         13   0000000000000000
+         14   0000000000000000
+         15   0000000000000000
+         16   0000000000000000
+         17   0101111000010000
+         18   0000000000000000
+         19   0000000000000000
+         20   0000000000000000
+         21   0000100110010100
+         22   0000000000000000
+         23   0001011011111010
+         24   0000000000000000
+         25   0111111111111111
+         26   0000000000000000
+         27   0000000000000000
+         28   0101011000010011
+         29   0000000000000000
+         30   0000000000000000
+         31   0000000000000000
+         32   0000000000000000
+         33   0000011110101101
+         34   0011110111110001
+         35   0000000000000000
+         36   0011010111101000
+         37   0000000000000000
+         38   0000000000000000
+         39   0111111111111111
+         40   0000000000000000
+         41   0000000000000000
+         42   0100000000001100
+         43   0000000000000000
+         44   0000000000000000
+         45   0000000000000000
+         46   0000000000000000
+         47   0001100001001111
+         48   0000000000000000
+         49   0000000000000000
+         50   0000000000000000
+         51   0000000000000000
+         52   0000000000000000
+         53   0000000000000000
+         54   0000000000000000
+         55   0000000000000000
+         56   0000000000000000
+         57   0000000000000000
+         58   0000000000000000
+         59   0010111001000010
+         60   0101101111100111
+         61   0011111111000110
+         62   0000000000000000
+         63   0000000000000000
+          0   0111111111111111
+          1   0000000000000000
+          2   0000011101001110
+          3   0000000000000000
+          4   0111111111111111
+          5   0000000000000000
+          6   0000000000000000
+          7   0111111111111111
+          8   0000000000000000
+          9   0000000000000000
+         10   0111111111111111
+         11   0000000000000000
+         12   0000000000000000
+         13   0000000000000000
+         14   0000000000000000
+         15   0000000000000000
+         16   0000000000000000
+         17   0000000000000000
+         18   0000000000000000
+         19   0000000000000000
+         20   0000000000000000
+         21   0000000000000000
+         22   0111111111111111
+         23   0000000000000000
+         24   0000000000000000
+         25   0000000000000000
+         26   0000000000000000
+         27   0000000000000000
+         28   0000000000000000
+         29   0000000000000000
+         30   0111101011100101
+         31   0000000000000000
+          0   0000000000000000
+          1   0000000000000000
+          2   0000000000000000
+          3   0001010100101000
+          4   0000000000000000
+          5   0001100101000101
+          6   0000000000000000
+          7   0000000000000000
+          8   0111111111111111
+          9   0000000000000000
+          0   0000000000000000
+          1   0000000000000000
+          2   0000000000000000
+          3   0000000000000000
+          4   0000000000000000
+          5   0000000000000000
+          6   0000000000000000
+          7   0000000000000000
+          8   0000000000000000
+          9   0000000000000000
+         10   0000000000000000
+         11   0000000000000000
+         12   0010100101010001
+         13   0000000000000000
+         14   0001001011011110
+         15   0000000000000000
+         16   0000000000000000
+         17   0000000000000000
+         18   0000000000000000
+         19   0000000000000000
+         20   0000000000000000
+         21   0000000000000000
+         22   0000101111000001
+         23   0000000001111000
+         24   0000000000000000
+         25   0111111111111111
+         26   0000000000000000
+         27   0000000000000000
+         28   0101010010001001
+         29   0000000000000000
+         30   0000000000000000
+         31   0000000000000000
+         32   0000000000000000
+         33   0101110011010001
+         34   0111000001001011
+         35   0000000000000000
+         36   0101100011011111
+         37   0010110001010001
+         38   0000000000000000
+         39   0101101111101011
+         40   0000000000000000
+         41   0000000000000000
+         42   0111111111111111
+         43   0000000000000000
+         44   0000000000000000
+         45   0000000000000000
+         46   0000000000000000
+         47   0000000000000000
+         48   0000000000000000
+         49   0000000000000000
+         50   0000000000000000
+         51   0000000000000000
+         52   0000000000000000
+         53   0000000000000000
+         54   0000000000000000
+         55   0000000000000000
+         56   0000000000000000
+         57   0000000000000000
+         58   0000000000000000
+         59   0000000000000000
+         60   0111011010100101
+         61   0000000000000000
+         62   0011001010011010
+         63   0000000000000000
+          0   0010011000011000
+          1   0000000000000000
+          2   0110111010111110
+          3   0000000000000000
+          4   0000000000000000
+          5   0000000000000000
+          6   0000000000000000
+          7   0111111111111111
+          8   0000000000000000
+          9   0000000000000000
+         10   0000000000000000
+         11   0111100000100010
+         12   0000000000000000
+         13   0000000000000000
+         14   0000000000000000
+         15   0000000000000000
+         16   0000000000000000
+         17   0000000000000000
+         18   0000000000000000
+         19   0000000000000000
+         20   0001100001010110
+         21   0000000000000000
+         22   0111111111111111
+         23   0000000000000000
+         24   0000000000000000
+         25   0000000000000000
+         26   0000000000000000
+         27   0000000000000000
+         28   0111111111111111
+         29   0000000000000000
+         30   0000000000000000
+         31   0111111111111111
+          0   0000000000000000
+          1   0000000000000000
+          2   0000000000000000
+          3   0111111111111111
+          4   0000000000000000
+          5   0000000000000000
+          6   0000000000000000
+          7   0000000000000000
+          8   0011011110100110
+          9   0110100100000011
+$finish called at time : 84620 ns : File "E:/Projects-/VivadoProjs/CNN_2/CNN_2.srcs/sim_1/new/AllNumbersTest.v" Line 135

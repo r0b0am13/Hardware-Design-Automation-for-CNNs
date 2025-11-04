@@ -14,10 +14,10 @@
       "Convolution_0": "",
       "Maxpool_0": "",
       "ConvSlider": "",
-      "zyNet_0": "",
       "ConvWeightBiasModule_0": "",
       "MaxSlider": "",
-      "DataConverter_0": ""
+      "DataConverter_0": "",
+      "zyNet_0": ""
     },
     "ports": {
       "Pixel_In": {
@@ -271,6 +271,116 @@
           },
           "kernel_valid": {
             "direction": "O"
+          }
+        }
+      },
+      "ConvWeightBiasModule_0": {
+        "vlnv": "xilinx.com:module_ref:ConvWeightBiasModule:1.0",
+        "xci_name": "Full_CNN_ConvWeightBiasModule_0_0",
+        "xci_path": "ip\\Full_CNN_ConvWeightBiasModule_0_0\\Full_CNN_ConvWeightBiasModule_0_0.xci",
+        "inst_hier_path": "ConvWeightBiasModule_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "ConvWeightBiasModule",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "Weights": {
+            "direction": "O",
+            "left": "143",
+            "right": "0"
+          },
+          "Bias": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          }
+        }
+      },
+      "MaxSlider": {
+        "vlnv": "xilinx.com:module_ref:ImageBuf_KernelSlider:1.0",
+        "xci_name": "Full_CNN_ConvSlider_0",
+        "xci_path": "ip\\Full_CNN_ConvSlider_0\\Full_CNN_ConvSlider_0.xci",
+        "inst_hier_path": "MaxSlider",
+        "parameters": {
+          "COLUMN_NUM": {
+            "value": "26"
+          },
+          "DATA_WIDTH": {
+            "value": "16"
+          },
+          "KERNEL_SIZE": {
+            "value": "2"
+          },
+          "ROW_NUM": {
+            "value": "26"
+          },
+          "STRIDE": {
+            "value": "2"
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "ImageBuf_KernelSlider",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clock": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "Full_CNN_clock",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "data_valid": {
+            "direction": "I"
+          },
+          "sreset_n": {
+            "direction": "I"
+          },
+          "data_in": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "data_out": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          },
+          "kernel_out": {
+            "direction": "O",
+            "left": "63",
+            "right": "0"
+          },
+          "kernel_valid": {
+            "direction": "O"
+          }
+        }
+      },
+      "DataConverter_0": {
+        "vlnv": "xilinx.com:module_ref:DataConverter:1.0",
+        "xci_name": "Full_CNN_DataConverter_0_0",
+        "xci_path": "ip\\Full_CNN_DataConverter_0_0\\Full_CNN_DataConverter_0_0.xci",
+        "inst_hier_path": "DataConverter_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "DataConverter",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "data_in": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "data_out": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
           }
         }
       },
@@ -570,116 +680,6 @@
           "x3_out_d": {
             "direction": "O",
             "left": "159",
-            "right": "0"
-          }
-        }
-      },
-      "ConvWeightBiasModule_0": {
-        "vlnv": "xilinx.com:module_ref:ConvWeightBiasModule:1.0",
-        "xci_name": "Full_CNN_ConvWeightBiasModule_0_0",
-        "xci_path": "ip\\Full_CNN_ConvWeightBiasModule_0_0\\Full_CNN_ConvWeightBiasModule_0_0.xci",
-        "inst_hier_path": "ConvWeightBiasModule_0",
-        "reference_info": {
-          "ref_type": "hdl",
-          "ref_name": "ConvWeightBiasModule",
-          "boundary_crc": "0x0"
-        },
-        "ports": {
-          "Weights": {
-            "direction": "O",
-            "left": "143",
-            "right": "0"
-          },
-          "Bias": {
-            "direction": "O",
-            "left": "15",
-            "right": "0"
-          }
-        }
-      },
-      "MaxSlider": {
-        "vlnv": "xilinx.com:module_ref:ImageBuf_KernelSlider:1.0",
-        "xci_name": "Full_CNN_ConvSlider_0",
-        "xci_path": "ip\\Full_CNN_ConvSlider_0\\Full_CNN_ConvSlider_0.xci",
-        "inst_hier_path": "MaxSlider",
-        "parameters": {
-          "COLUMN_NUM": {
-            "value": "26"
-          },
-          "DATA_WIDTH": {
-            "value": "16"
-          },
-          "KERNEL_SIZE": {
-            "value": "2"
-          },
-          "ROW_NUM": {
-            "value": "26"
-          },
-          "STRIDE": {
-            "value": "2"
-          }
-        },
-        "reference_info": {
-          "ref_type": "hdl",
-          "ref_name": "ImageBuf_KernelSlider",
-          "boundary_crc": "0x0"
-        },
-        "ports": {
-          "clock": {
-            "type": "clk",
-            "direction": "I",
-            "parameters": {
-              "CLK_DOMAIN": {
-                "value": "Full_CNN_clock",
-                "value_src": "default_prop"
-              }
-            }
-          },
-          "data_valid": {
-            "direction": "I"
-          },
-          "sreset_n": {
-            "direction": "I"
-          },
-          "data_in": {
-            "direction": "I",
-            "left": "15",
-            "right": "0"
-          },
-          "data_out": {
-            "direction": "O",
-            "left": "15",
-            "right": "0"
-          },
-          "kernel_out": {
-            "direction": "O",
-            "left": "63",
-            "right": "0"
-          },
-          "kernel_valid": {
-            "direction": "O"
-          }
-        }
-      },
-      "DataConverter_0": {
-        "vlnv": "xilinx.com:module_ref:DataConverter:1.0",
-        "xci_name": "Full_CNN_DataConverter_0_0",
-        "xci_path": "ip\\Full_CNN_DataConverter_0_0\\Full_CNN_DataConverter_0_0.xci",
-        "inst_hier_path": "DataConverter_0",
-        "reference_info": {
-          "ref_type": "hdl",
-          "ref_name": "DataConverter",
-          "boundary_crc": "0x0"
-        },
-        "ports": {
-          "data_in": {
-            "direction": "I",
-            "left": "7",
-            "right": "0"
-          },
-          "data_out": {
-            "direction": "O",
-            "left": "15",
             "right": "0"
           }
         }
