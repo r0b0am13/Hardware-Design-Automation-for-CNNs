@@ -1,15 +1,15 @@
 `timescale 1ns / 1ps
 
-module Convolution#(
-
+module ConvBlock_SIC#( //This module just does sum(weights[i]*inputs[i]). No bias is added in this specific block
+    
     parameter KERNEL_SIZE = 3,
     parameter DATA_WIDTH  = 16,
     parameter FRACTION_SIZE = 14,
     parameter SIGNED = 1,
-    parameter ACTIVATION = 1,
-    parameter GUARD_TYPE = 2 // 0 - No guard (basically saturates at each stage
+    parameter GUARD_TYPE =3 // 0 - No guard (basically saturates at each stage
                              // 1 - Adder Guard (only saturates at mult stage and final adder stage)
                              // 2 - Adder + Mult Guard (saturates at the final stage only)
+                             // 3 - Guard and dont saturate.(External saturation)
     
     )(
     
@@ -18,33 +18,29 @@ module Convolution#(
     input  wire                     sreset_n,
     input  wire [KERNEL_SIZE*KERNEL_SIZE*DATA_WIDTH-1:0] kernel_in,
     input  wire [KERNEL_SIZE*KERNEL_SIZE*DATA_WIDTH-1:0] weights,
-    input  wire [DATA_WIDTH-1:0]    bias,
-    output wire [DATA_WIDTH-1:0]    conv_out,
+    output wire [(GUARD_TYPE == 3)?(2*DATA_WIDTH-1+$clog2(KERNEL_SIZE*KERNEL_SIZE)):(DATA_WIDTH-1):0]    conv_out,
     output wire                     conv_valid
     
     );
     
     localparam INTEGER_SIZE = DATA_WIDTH - FRACTION_SIZE;
-    localparam MULT_GUARD = (GUARD_TYPE == 2);
-    localparam ADDER_GUARD = (GUARD_TYPE == 1 || GUARD_TYPE ==2);
+    localparam MULT_GUARD = (GUARD_TYPE == 2 || GUARD_TYPE == 3);
+    localparam ADDER_GUARD = (GUARD_TYPE == 1 || GUARD_TYPE == 2 || GUARD_TYPE == 3);
        
     //Split into usable chunks
     reg [DATA_WIDTH-1:0] inputLayer [0:KERNEL_SIZE*KERNEL_SIZE-1];
     reg [DATA_WIDTH-1:0] weightLayer [0:KERNEL_SIZE*KERNEL_SIZE-1];
-    reg [DATA_WIDTH-1:0] BiasReg;
     genvar i,j,k;
     integer l,m,n;
     generate
         always @(posedge clock) begin
             if(!sreset_n) begin
-                BiasReg <=0;
                 for(l=0; l<KERNEL_SIZE*KERNEL_SIZE;l=l+1) begin
                    inputLayer[KERNEL_SIZE*KERNEL_SIZE-l-1] <= 0;
                    weightLayer[KERNEL_SIZE*KERNEL_SIZE-l-1] <= 0;
                 end
             end
             else begin
-                BiasReg <= bias;
                 for(l=0; l<KERNEL_SIZE*KERNEL_SIZE;l=l+1) begin
                    inputLayer[KERNEL_SIZE*KERNEL_SIZE-l-1] <= kernel_in[(l+1)*DATA_WIDTH-1-:DATA_WIDTH];
                    weightLayer[KERNEL_SIZE*KERNEL_SIZE-l-1] <= weights[(l+1)*DATA_WIDTH-1-:DATA_WIDTH];
@@ -56,8 +52,8 @@ module Convolution#(
    
     //Multiplier stage
    
-    wire [DATA_WIDTH-1 + (MULT_GUARD==1 ? DATA_WIDTH : 0) :0] MultWire [0:KERNEL_SIZE*KERNEL_SIZE];//last one will be assigned to bias value
-    reg [DATA_WIDTH-1 + (MULT_GUARD==1 ? DATA_WIDTH : 0) :0] MultReg [0:KERNEL_SIZE*KERNEL_SIZE];
+    wire [DATA_WIDTH-1 + (MULT_GUARD==1 ? DATA_WIDTH : 0) :0] MultWire [0:KERNEL_SIZE*KERNEL_SIZE-1];
+    reg [DATA_WIDTH-1 + (MULT_GUARD==1 ? DATA_WIDTH : 0) :0] MultReg [0:KERNEL_SIZE*KERNEL_SIZE-1];
    
     generate
    
@@ -73,32 +69,27 @@ module Convolution#(
                 .Y(MultWire[i])
             );
         end
-        if(MULT_GUARD==1)
-            assign MultWire[KERNEL_SIZE*KERNEL_SIZE] = {{INTEGER_SIZE{BiasReg[DATA_WIDTH-1]}},BiasReg,{FRACTION_SIZE{1'b0}}};
-        else
-            assign MultWire[KERNEL_SIZE*KERNEL_SIZE] = BiasReg;
         
     endgenerate
    
     always @(posedge clock) begin
         if(!sreset_n) begin
-            for(l=0; l<KERNEL_SIZE*KERNEL_SIZE+1; l=l+1) begin
+            for(l=0; l<KERNEL_SIZE*KERNEL_SIZE; l=l+1) begin
                 MultReg[l] <=0;
             end
         end
         else begin
-            for(l=0; l<KERNEL_SIZE*KERNEL_SIZE+1; l=l+1) begin
+            for(l=0; l<KERNEL_SIZE*KERNEL_SIZE; l=l+1) begin
                 MultReg[l] <=MultWire[l];
             end
         end
     end
     
    //Binary Adder Stage
-   localparam NUM_INP = KERNEL_SIZE*KERNEL_SIZE+1;
+   localparam NUM_INP = KERNEL_SIZE*KERNEL_SIZE; //No bias
    localparam STAGES = $clog2(NUM_INP);
    generate
         for(i = 0; i<STAGES; i = i+1) begin : gen_stage
-        
             localparam stage_input = STAGE_WIDTH(NUM_INP,i);
             localparam adder_num = stage_input >> 1;
             localparam only_wire = stage_input % 2;
@@ -138,7 +129,7 @@ module Convolution#(
                 if(j==adder_num) begin
                     if(only_wire ==1) begin
                         if(i==0) begin
-                            assign wire_array[j] = (SIGNED == 1) ? $signed(MultReg[2*j]) : MultReg[2*j];
+                            assign wire_array[j] = MultReg[2*j];
                         end
                         else begin
                             assign wire_array[j] = (SIGNED == 1) ? $signed(gen_stage[i-1].reg_array[2*j]) : gen_stage[i-1].reg_array[2*j];
@@ -156,9 +147,15 @@ module Convolution#(
             end
         end
         
-        //Saturation Logics
-        wire [DATA_WIDTH-1:0] conv_before_activation;
-        if(GUARD_TYPE == 2) begin
+        //Saturation Logics (should only happen if guard is not 3 (since 3 means send it out and saturate externally)
+        
+        wire [(GUARD_TYPE == 3)?(2*DATA_WIDTH-1+STAGES):(DATA_WIDTH-1):0] conv_before_activation;
+        
+        if(GUARD_TYPE == 3) begin 
+            assign conv_before_activation = $signed(gen_stage[STAGES-1].reg_array[0]);
+        end
+        
+        else if(GUARD_TYPE == 2) begin
             wire [2*DATA_WIDTH-1+STAGES:0] shifted_val;
             if(SIGNED==1) begin
                 assign shifted_val = $signed(gen_stage[STAGES-1].reg_array[0]) >>> FRACTION_SIZE;
@@ -199,29 +196,16 @@ module Convolution#(
         else begin
             assign conv_before_activation = gen_stage[STAGES-1].reg_array[0][DATA_WIDTH-1:0];
         end
-        wire [DATA_WIDTH-1:0] conv_out_wire;
-        //ACTIVATION_PART
-        if(SIGNED==1) begin
-            if(ACTIVATION==1) begin
-                assign conv_out_wire = conv_before_activation[DATA_WIDTH-1] ? 0 : conv_before_activation;
-            end
-            else begin
-                assign conv_out_wire = conv_before_activation;
-            end
-        end
-        else begin
-            assign conv_out_wire = conv_before_activation;
-        end
         
-        reg [DATA_WIDTH-1:0] conv_out_reg;
+        reg [(GUARD_TYPE == 3)?(2*DATA_WIDTH-1+STAGES):(DATA_WIDTH-1):0] conv_out_reg;
         
         always @(posedge clock) begin
             if(!sreset_n)
                     conv_out_reg <= 0;
                 else
-                    conv_out_reg <= conv_out_wire;
+                    conv_out_reg <= conv_before_activation;
         end
-        
+
         assign conv_out = conv_out_reg;
         
     endgenerate
