@@ -5,6 +5,8 @@ module ConvolChnl#(
     parameter KERNEL_SIZE = 3,
     parameter INPUT_CHANNELS = 1,
     parameter OUTPUT_CHANNELS = 1,
+    parameter WEIGHT_FILE = "c0_weights.mif",
+    parameter BIAS_FILE = "c0_bias.mif",
     parameter DATA_WIDTH  = 16,
     parameter FRACTION_SIZE = 14,
     parameter SIGNED = 1,
@@ -31,8 +33,8 @@ ConvMemory #(
     .INPUT_CHANNELS(INPUT_CHANNELS),
     .OUTPUT_CHANNELS(OUTPUT_CHANNELS),
     .DATA_WIDTH(DATA_WIDTH),
-    .WEIGHT_FILE("c0_weights.mif"), 
-    .BIAS_FILE("c0_bias.mif")       
+    .WEIGHT_FILE(WEIGHT_FILE), 
+    .BIAS_FILE(BIAS_FILE)       
 ) ConvMemory_inst (
     .Weights(Weights),
     .Biases(Biases)
