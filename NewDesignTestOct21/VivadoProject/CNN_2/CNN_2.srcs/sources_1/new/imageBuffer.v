@@ -7,7 +7,6 @@ module ImageBuf_KernelSlider#(
     parameter COLUMN_NUM    = 5,
     parameter ROW_NUM = 5,
     parameter STRIDE = 1
-    
     )(
     
     input  wire                     clock,

@@ -1,0 +1,266 @@
+{
+  "Hardware_model": {
+    "top": {
+      "module": "CNN",
+      "hardware parameters": {
+        "DATA_WIDTH": 16,
+        "FRACTION_SIZE": 14,
+        "SIGNED": 1,
+        "GUARD_TYPE": 2
+      },
+      "inputs": {
+        "clock": 1,
+        "sreset_n": 1,
+        "data_in": "DATA_WIDTH",
+        "data_valid": 1
+      },
+      "outputs": {
+        "class_idx": "log2(NUM_INPUTS)",
+        "class_valid": 1
+      },
+      "ImageBuffer_Conv1": {
+        "module": "ImageBufferChnl",
+        "parameters": {
+          "KERNEL_SIZE": 3,
+          "DATA_WIDTH": "DATA_WIDTH",
+          "COLUMN_NUM": 28,
+          "ROW_NUM": 28,
+          "STRIDE": 1,
+          "CHANNELS": 1
+        },
+        "inputs": {
+          "clock": {
+            "name": "clock",
+            "width": 1
+          },
+          "sreset_n": {
+            "name": "sreset_n",
+            "width": 1
+          },
+          "data_valid": {
+            "name": "data_valid",
+            "width": 1
+          },
+          "data_in": {
+            "name": "data_in",
+            "width": "DATA_WIDTH"
+          }
+        },
+        "outputs": {
+          "data_out": {
+            "name": "ImageBuffer_Conv1_out",
+            "width": "DATA_WIDTH"
+          },
+          "kernel_out": {
+            "name": "kernel_out_ImageBuffer_Conv1",
+            "width": "DATA_WIDTH * 3 * 3"
+          },
+          "kernel_valid": {
+            "name": "kernel_valid_ImageBuffer_Conv1",
+            "width": 1
+          }
+        }
+      },
+      "Conv1": {
+        "module": "ConvChnl",
+        "parameters": {
+          "KERNEL_SIZE": 3,
+          "CHANNELS": 1,
+          "DATA_WIDTH": "DATA_WIDTH",
+          "FRACTION_SIZE": "FRACTION_SIZE",
+          "SIGNED": "SIGNED",
+          "ACTIVATION": "relu",
+          "GUARD_TYPE": "GUARD_TYPE"
+        },
+        "files": {
+          "weights_file": "conv_L1_weights.mif",
+          "biases_file": "conv_L1_biases.mif"
+        },
+        "inputs": {
+          "clock": {
+            "name": "clock",
+            "width": 1
+          },
+          "sreset_n": {
+            "name": "sreset_n",
+            "width": 1
+          },
+          "data_valid": {
+            "name": "kernel_valid_ImageBuffer_Conv1",
+            "width": 1
+          },
+          "kernel_in": {
+            "name": "kernel_out_ImageBuffer_Conv1",
+            "width": "DATA_WIDTH * 3 * 3"
+          }
+        },
+        "outputs": {
+          "conv_out": {
+            "name": "Conv1_out",
+            "width": "DATA_WIDTH"
+          },
+          "conv_valid": {
+            "name": "Conv1_valid",
+            "width": 1
+          }
+        }
+      },
+      "ImageBuffer_Maxpool2": {
+        "module": "ImageBufferChnl",
+        "parameters": {
+          "KERNEL_SIZE": 2,
+          "DATA_WIDTH": "DATA_WIDTH",
+          "COLUMN_NUM": 26,
+          "ROW_NUM": 26,
+          "STRIDE": 2,
+          "CHANNELS": 1
+        },
+        "inputs": {
+          "clock": {
+            "name": "clock",
+            "width": 1
+          },
+          "sreset_n": {
+            "name": "sreset_n",
+            "width": 1
+          },
+          "data_valid": {
+            "name": "Conv1_out_valid",
+            "width": 1
+          },
+          "data_in": {
+            "name": "Conv1_out",
+            "width": "DATA_WIDTH"
+          }
+        },
+        "outputs": {
+          "data_out": {
+            "name": "ImageBuffer_Maxpool2_out",
+            "width": "DATA_WIDTH"
+          },
+          "kernel_out": {
+            "name": "kernel_out_ImageBuffer_Maxpool2",
+            "width": "DATA_WIDTH * 2 * 2"
+          },
+          "kernel_valid": {
+            "name": "kernel_valid_ImageBuffer_Maxpool2",
+            "width": 1
+          }
+        }
+      },
+      "Maxpool2": {
+        "module": "MaxpoolChnl",
+        "parameters": {
+          "KERNEL_SIZE": 2,
+          "DATA_WIDTH": "DATA_WIDTH",
+          "SIGNED": "SIGNED",
+          "CHANNELS": 1
+        },
+        "inputs": {
+          "clock": {
+            "name": "clock",
+            "width": 1
+          },
+          "sreset_n": {
+            "name": "sreset_n",
+            "width": 1
+          },
+          "data_valid": {
+            "name": "kernel_valid_ImageBuffer_Maxpool2",
+            "width": 1
+          },
+          "kernel_in": {
+            "name": "kernel_out_ImageBuffer_Maxpool2",
+            "width": "DATA_WIDTH * 2 * 2"
+          }
+        },
+        "outputs": {
+          "maxp_out": {
+            "name": "Maxpool2_out",
+            "width": "DATA_WIDTH"
+          },
+          "maxp_valid": {
+            "name": "Maxpool2_valid",
+            "width": 1
+          }
+        }
+      },
+      "NN": {
+        "Build": true,
+        "globals": {
+          "DATA_WIDTH": "DATA_WIDTH",
+          "FRACTION_SIZE": "FRACTION_SIZE",
+          "SIGNED": "SIGNED"
+        },
+        "io": {
+          "input_signal": "Maxpool2_out",
+          "input_valid": "Maxpool2_out_valid",
+          "output_signal": "nn_out",
+          "output_valid": "nn_valid"
+        },
+        "layers": [
+          {
+            "name": "dense_L1",
+            "num_inputs": 169,
+            "num_neurons": 64,
+            "activation": "relu",
+            "weights_file": "weights_L1.mif",
+            "biases_file": "biases_L1.mif"
+          },
+          {
+            "name": "dense_L2",
+            "num_inputs": 64,
+            "num_neurons": 32,
+            "activation": "relu",
+            "weights_file": "weights_L2.mif",
+            "biases_file": "biases_L2.mif"
+          },
+          {
+            "name": "dense_L3",
+            "num_inputs": 32,
+            "num_neurons": 10,
+            "activation": "softmax",
+            "weights_file": "weights_L3.mif",
+            "biases_file": "biases_L3.mif"
+          }
+        ]
+      },
+      "maxFinder": {
+        "module": "maxFinder",
+        "parameters": {
+          "NUM_INPUTS": 10,
+          "DATA_WIDTH": "DATA_WIDTH",
+          "SIGNED": "SIGNED"
+        },
+        "inputs": {
+          "clock": {
+            "name": "clock",
+            "width": 1
+          },
+          "sreset_n": {
+            "name": "sreset_n",
+            "width": 1
+          },
+          "data_valid": {
+            "name": "nn_out_valid",
+            "width": 1
+          },
+          "data_in": {
+            "name": "nn_out",
+            "width": "DATA_WIDTH * 10"
+          }
+        },
+        "outputs": {
+          "class_idx": {
+            "name": "class_idx",
+            "width": "log2(NUM_INPUTS)"
+          },
+          "valid": {
+            "name": "class_valid",
+            "width": 1
+          }
+        }
+      }
+    }
+  }
+}

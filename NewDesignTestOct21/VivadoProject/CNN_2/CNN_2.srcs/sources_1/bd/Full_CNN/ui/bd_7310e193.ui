@@ -23,11 +23,11 @@ preplace portBus Maxpool_Debug -pg 1 -lvl 4 -x 1130 -y 350 -defaultsOSRD
 preplace portBus Conv_Debug -pg 1 -lvl 4 -x 1130 -y 200 -defaultsOSRD
 preplace inst Convolution_0 -pg 1 -lvl 3 -x 910 -y 210 -defaultsOSRD
 preplace inst Maxpool_0 -pg 1 -lvl 2 -x 520 -y 430 -defaultsOSRD
-preplace inst ConvSlider -pg 1 -lvl 2 -x 520 -y 90 -defaultsOSRD
 preplace inst ConvWeightBiasModule_0 -pg 1 -lvl 2 -x 520 -y 250 -defaultsOSRD
-preplace inst MaxSlider -pg 1 -lvl 1 -x 180 -y 460 -defaultsOSRD
 preplace inst DataConverter_0 -pg 1 -lvl 1 -x 180 -y 140 -defaultsOSRD
 preplace inst zyNet_0 -pg 1 -lvl 3 -x 910 -y 530 -defaultsOSRD
+preplace inst MaxSlider -pg 1 -lvl 1 -x 180 -y 460 -defaultsOSRD
+preplace inst ConvSlider -pg 1 -lvl 2 -x 520 -y 90 -defaultsOSRD
 preplace netloc DataConverter_0_out 1 1 1 320J 120n
 preplace netloc in_0_1 1 0 1 NJ 140
 preplace netloc clock_0_1 1 0 3 0 310 330 180 670
