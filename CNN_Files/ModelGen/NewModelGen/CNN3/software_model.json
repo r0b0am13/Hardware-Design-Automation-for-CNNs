@@ -1,0 +1,112 @@
+{
+  "model_name": "sequential",
+  "layers": [
+    {
+      "name": "conv2d",
+      "type": "Conv2D",
+      "input_shape": [
+        28,
+        28
+      ],
+      "input_channels": 3,
+      "output_shape": [
+        26,
+        26
+      ],
+      "output_channels": 2,
+      "filters": 2,
+      "kernel_size": 3,
+      "stride": 1,
+      "activation": "relu"
+    },
+    {
+      "name": "conv2d_1",
+      "type": "Conv2D",
+      "input_shape": [
+        26,
+        26
+      ],
+      "input_channels": 2,
+      "output_shape": [
+        24,
+        24
+      ],
+      "output_channels": 2,
+      "filters": 2,
+      "kernel_size": 3,
+      "stride": 1,
+      "activation": "relu"
+    },
+    {
+      "name": "max_pooling2d",
+      "type": "MaxPooling2D",
+      "input_shape": [
+        24,
+        24
+      ],
+      "input_channels": 2,
+      "output_shape": [
+        12,
+        12
+      ],
+      "output_channels": 2,
+      "pool_size": 2,
+      "stride": 2
+    },
+    {
+      "name": "flatten",
+      "type": "Flatten",
+      "input_shape": [
+        12,
+        12
+      ],
+      "input_channels": 2,
+      "output_shape": [
+        288
+      ],
+      "output_channels": 288
+    },
+    {
+      "name": "dense",
+      "type": "Dense",
+      "input_shape": [
+        288
+      ],
+      "input_channels": 2,
+      "output_shape": [
+        64
+      ],
+      "output_channels": 64,
+      "units": 64,
+      "activation": "relu"
+    },
+    {
+      "name": "dense_1",
+      "type": "Dense",
+      "input_shape": [
+        64
+      ],
+      "input_channels": 1,
+      "output_shape": [
+        32
+      ],
+      "output_channels": 32,
+      "units": 32,
+      "activation": "relu"
+    },
+    {
+      "name": "dense_2",
+      "type": "Dense",
+      "input_shape": [
+        32
+      ],
+      "input_channels": 1,
+      "output_shape": [
+        10
+      ],
+      "output_channels": 10,
+      "units": 10,
+      "activation": "softmax"
+    }
+  ]
+}

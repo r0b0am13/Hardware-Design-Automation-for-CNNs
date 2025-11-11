@@ -1,0 +1,1692 @@
+// =============================================================
+// Layer_1 — dense_L1, act=relu, neurons=64
+// =============================================================
+module Layer_1 #(
+    parameter NN = 64,
+    parameter numWeight = 169,
+    parameter dataWidth = 16,
+    parameter layerNum = 1,
+    parameter sigmoidSize = 10,
+    parameter weightIntWidth = 2,
+    parameter input_channels = 1,
+    parameter actType = "relu"
+)(
+    input           clk,
+    input           rst,
+    input           weightValid,
+    input           biasValid,
+    input  [31:0]   weightValue,
+    input  [31:0]   biasValue,
+    input  [31:0]   config_layer_num,
+    input  [31:0]   config_neuron_num,
+    input           x_valid,
+    input  [input_channels*dataWidth-1:0] x_in,
+    output [NN-1:0] o_valid,
+    output [NN*dataWidth-1:0] x_out
+);
+
+    neuron #(
+        .input_channels(input_channels),
+        .numWeight(numWeight),
+        .layerNo(1),
+        .neuronNo(0),
+        .dataWidth(dataWidth),
+        .sigmoidSize(sigmoidSize),
+        .weightIntWidth(weightIntWidth),
+        .actType(actType),
+        .weightFile("w_1_0.mif"),
+        .biasFile("b_1_0.mif")
+    ) n_0 (
+        .clk(clk),
+        .rst(rst),
+        .myinput(x_in),
+        .weightValid(weightValid),
+        .biasValid(biasValid),
+        .weightValue(weightValue),
+        .biasValue(biasValue),
+        .config_layer_num(config_layer_num),
+        .config_neuron_num(config_neuron_num),
+        .myinputValid(x_valid),
+        .out(x_out[0*dataWidth +: dataWidth]),
+        .outvalid(o_valid[0])
+    );
+
+    neuron #(
+        .input_channels(input_channels),
+        .numWeight(numWeight),
+        .layerNo(1),
+        .neuronNo(1),
+        .dataWidth(dataWidth),
+        .sigmoidSize(sigmoidSize),
+        .weightIntWidth(weightIntWidth),
+        .actType(actType),
+        .weightFile("w_1_1.mif"),
+        .biasFile("b_1_1.mif")
+    ) n_1 (
+        .clk(clk),
+        .rst(rst),
+        .myinput(x_in),
+        .weightValid(weightValid),
+        .biasValid(biasValid),
+        .weightValue(weightValue),
+        .biasValue(biasValue),
+        .config_layer_num(config_layer_num),
+        .config_neuron_num(config_neuron_num),
+        .myinputValid(x_valid),
+        .out(x_out[1*dataWidth +: dataWidth]),
+        .outvalid(o_valid[1])
+    );
+
+    neuron #(
+        .input_channels(input_channels),
+        .numWeight(numWeight),
+        .layerNo(1),
+        .neuronNo(2),
+        .dataWidth(dataWidth),
+        .sigmoidSize(sigmoidSize),
+        .weightIntWidth(weightIntWidth),
+        .actType(actType),
+        .weightFile("w_1_2.mif"),
+        .biasFile("b_1_2.mif")
+    ) n_2 (
+        .clk(clk),
+        .rst(rst),
+        .myinput(x_in),
+        .weightValid(weightValid),
+        .biasValid(biasValid),
+        .weightValue(weightValue),
+        .biasValue(biasValue),
+        .config_layer_num(config_layer_num),
+        .config_neuron_num(config_neuron_num),
+        .myinputValid(x_valid),
+        .out(x_out[2*dataWidth +: dataWidth]),
+        .outvalid(o_valid[2])
+    );
+
+    neuron #(
+        .input_channels(input_channels),
+        .numWeight(numWeight),
+        .layerNo(1),
+        .neuronNo(3),
+        .dataWidth(dataWidth),
+        .sigmoidSize(sigmoidSize),
+        .weightIntWidth(weightIntWidth),
+        .actType(actType),
+        .weightFile("w_1_3.mif"),
+        .biasFile("b_1_3.mif")
+    ) n_3 (
+        .clk(clk),
+        .rst(rst),
+        .myinput(x_in),
+        .weightValid(weightValid),
+        .biasValid(biasValid),
+        .weightValue(weightValue),
+        .biasValue(biasValue),
+        .config_layer_num(config_layer_num),
+        .config_neuron_num(config_neuron_num),
+        .myinputValid(x_valid),
+        .out(x_out[3*dataWidth +: dataWidth]),
+        .outvalid(o_valid[3])
+    );
+
+    neuron #(
+        .input_channels(input_channels),
+        .numWeight(numWeight),
+        .layerNo(1),
+        .neuronNo(4),
+        .dataWidth(dataWidth),
+        .sigmoidSize(sigmoidSize),
+        .weightIntWidth(weightIntWidth),
+        .actType(actType),
+        .weightFile("w_1_4.mif"),
+        .biasFile("b_1_4.mif")
+    ) n_4 (
+        .clk(clk),
+        .rst(rst),
+        .myinput(x_in),
+        .weightValid(weightValid),
+        .biasValid(biasValid),
+        .weightValue(weightValue),
+        .biasValue(biasValue),
+        .config_layer_num(config_layer_num),
+        .config_neuron_num(config_neuron_num),
+        .myinputValid(x_valid),
+        .out(x_out[4*dataWidth +: dataWidth]),
+        .outvalid(o_valid[4])
+    );
+
+    neuron #(
+        .input_channels(input_channels),
+        .numWeight(numWeight),
+        .layerNo(1),
+        .neuronNo(5),
+        .dataWidth(dataWidth),
+        .sigmoidSize(sigmoidSize),
+        .weightIntWidth(weightIntWidth),
+        .actType(actType),
+        .weightFile("w_1_5.mif"),
+        .biasFile("b_1_5.mif")
+    ) n_5 (
+        .clk(clk),
+        .rst(rst),
+        .myinput(x_in),
+        .weightValid(weightValid),
+        .biasValid(biasValid),
+        .weightValue(weightValue),
+        .biasValue(biasValue),
+        .config_layer_num(config_layer_num),
+        .config_neuron_num(config_neuron_num),
+        .myinputValid(x_valid),
+        .out(x_out[5*dataWidth +: dataWidth]),
+        .outvalid(o_valid[5])
+    );
+
+    neuron #(
+        .input_channels(input_channels),
+        .numWeight(numWeight),
+        .layerNo(1),
+        .neuronNo(6),
+        .dataWidth(dataWidth),
+        .sigmoidSize(sigmoidSize),
+        .weightIntWidth(weightIntWidth),
+        .actType(actType),
+        .weightFile("w_1_6.mif"),
+        .biasFile("b_1_6.mif")
+    ) n_6 (
+        .clk(clk),
+        .rst(rst),
+        .myinput(x_in),
+        .weightValid(weightValid),
+        .biasValid(biasValid),
+        .weightValue(weightValue),
+        .biasValue(biasValue),
+        .config_layer_num(config_layer_num),
+        .config_neuron_num(config_neuron_num),
+        .myinputValid(x_valid),
+        .out(x_out[6*dataWidth +: dataWidth]),
+        .outvalid(o_valid[6])
+    );
+
+    neuron #(
+        .input_channels(input_channels),
+        .numWeight(numWeight),
+        .layerNo(1),
+        .neuronNo(7),
+        .dataWidth(dataWidth),
+        .sigmoidSize(sigmoidSize),
+        .weightIntWidth(weightIntWidth),
+        .actType(actType),
+        .weightFile("w_1_7.mif"),
+        .biasFile("b_1_7.mif")
+    ) n_7 (
+        .clk(clk),
+        .rst(rst),
+        .myinput(x_in),
+        .weightValid(weightValid),
+        .biasValid(biasValid),
+        .weightValue(weightValue),
+        .biasValue(biasValue),
+        .config_layer_num(config_layer_num),
+        .config_neuron_num(config_neuron_num),
+        .myinputValid(x_valid),
+        .out(x_out[7*dataWidth +: dataWidth]),
+        .outvalid(o_valid[7])
+    );
+
+    neuron #(
+        .input_channels(input_channels),
+        .numWeight(numWeight),
+        .layerNo(1),
+        .neuronNo(8),
+        .dataWidth(dataWidth),
+        .sigmoidSize(sigmoidSize),
+        .weightIntWidth(weightIntWidth),
+        .actType(actType),
+        .weightFile("w_1_8.mif"),
+        .biasFile("b_1_8.mif")
+    ) n_8 (
+        .clk(clk),
+        .rst(rst),
+        .myinput(x_in),
+        .weightValid(weightValid),
+        .biasValid(biasValid),
+        .weightValue(weightValue),
+        .biasValue(biasValue),
+        .config_layer_num(config_layer_num),
+        .config_neuron_num(config_neuron_num),
+        .myinputValid(x_valid),
+        .out(x_out[8*dataWidth +: dataWidth]),
+        .outvalid(o_valid[8])
+    );
+
+    neuron #(
+        .input_channels(input_channels),
+        .numWeight(numWeight),
+        .layerNo(1),
+        .neuronNo(9),
+        .dataWidth(dataWidth),
+        .sigmoidSize(sigmoidSize),
+        .weightIntWidth(weightIntWidth),
+        .actType(actType),
+        .weightFile("w_1_9.mif"),
+        .biasFile("b_1_9.mif")
+    ) n_9 (
+        .clk(clk),
+        .rst(rst),
+        .myinput(x_in),
+        .weightValid(weightValid),
+        .biasValid(biasValid),
+        .weightValue(weightValue),
+        .biasValue(biasValue),
+        .config_layer_num(config_layer_num),
+        .config_neuron_num(config_neuron_num),
+        .myinputValid(x_valid),
+        .out(x_out[9*dataWidth +: dataWidth]),
+        .outvalid(o_valid[9])
+    );
+
+    neuron #(
+        .input_channels(input_channels),
+        .numWeight(numWeight),
+        .layerNo(1),
+        .neuronNo(10),
+        .dataWidth(dataWidth),
+        .sigmoidSize(sigmoidSize),
+        .weightIntWidth(weightIntWidth),
+        .actType(actType),
+        .weightFile("w_1_10.mif"),
+        .biasFile("b_1_10.mif")
+    ) n_10 (
+        .clk(clk),
+        .rst(rst),
+        .myinput(x_in),
+        .weightValid(weightValid),
+        .biasValid(biasValid),
+        .weightValue(weightValue),
+        .biasValue(biasValue),
+        .config_layer_num(config_layer_num),
+        .config_neuron_num(config_neuron_num),
+        .myinputValid(x_valid),
+        .out(x_out[10*dataWidth +: dataWidth]),
+        .outvalid(o_valid[10])
+    );
+
+    neuron #(
+        .input_channels(input_channels),
+        .numWeight(numWeight),
+        .layerNo(1),
+        .neuronNo(11),
+        .dataWidth(dataWidth),
+        .sigmoidSize(sigmoidSize),
+        .weightIntWidth(weightIntWidth),
+        .actType(actType),
+        .weightFile("w_1_11.mif"),
+        .biasFile("b_1_11.mif")
+    ) n_11 (
+        .clk(clk),
+        .rst(rst),
+        .myinput(x_in),
+        .weightValid(weightValid),
+        .biasValid(biasValid),
+        .weightValue(weightValue),
+        .biasValue(biasValue),
+        .config_layer_num(config_layer_num),
+        .config_neuron_num(config_neuron_num),
+        .myinputValid(x_valid),
+        .out(x_out[11*dataWidth +: dataWidth]),
+        .outvalid(o_valid[11])
+    );
+
+    neuron #(
+        .input_channels(input_channels),
+        .numWeight(numWeight),
+        .layerNo(1),
+        .neuronNo(12),
+        .dataWidth(dataWidth),
+        .sigmoidSize(sigmoidSize),
+        .weightIntWidth(weightIntWidth),
+        .actType(actType),
+        .weightFile("w_1_12.mif"),
+        .biasFile("b_1_12.mif")
+    ) n_12 (
+        .clk(clk),
+        .rst(rst),
+        .myinput(x_in),
+        .weightValid(weightValid),
+        .biasValid(biasValid),
+        .weightValue(weightValue),
+        .biasValue(biasValue),
+        .config_layer_num(config_layer_num),
+        .config_neuron_num(config_neuron_num),
+        .myinputValid(x_valid),
+        .out(x_out[12*dataWidth +: dataWidth]),
+        .outvalid(o_valid[12])
+    );
+
+    neuron #(
+        .input_channels(input_channels),
+        .numWeight(numWeight),
+        .layerNo(1),
+        .neuronNo(13),
+        .dataWidth(dataWidth),
+        .sigmoidSize(sigmoidSize),
+        .weightIntWidth(weightIntWidth),
+        .actType(actType),
+        .weightFile("w_1_13.mif"),
+        .biasFile("b_1_13.mif")
+    ) n_13 (
+        .clk(clk),
+        .rst(rst),
+        .myinput(x_in),
+        .weightValid(weightValid),
+        .biasValid(biasValid),
+        .weightValue(weightValue),
+        .biasValue(biasValue),
+        .config_layer_num(config_layer_num),
+        .config_neuron_num(config_neuron_num),
+        .myinputValid(x_valid),
+        .out(x_out[13*dataWidth +: dataWidth]),
+        .outvalid(o_valid[13])
+    );
+
+    neuron #(
+        .input_channels(input_channels),
+        .numWeight(numWeight),
+        .layerNo(1),
+        .neuronNo(14),
+        .dataWidth(dataWidth),
+        .sigmoidSize(sigmoidSize),
+        .weightIntWidth(weightIntWidth),
+        .actType(actType),
+        .weightFile("w_1_14.mif"),
+        .biasFile("b_1_14.mif")
+    ) n_14 (
+        .clk(clk),
+        .rst(rst),
+        .myinput(x_in),
+        .weightValid(weightValid),
+        .biasValid(biasValid),
+        .weightValue(weightValue),
+        .biasValue(biasValue),
+        .config_layer_num(config_layer_num),
+        .config_neuron_num(config_neuron_num),
+        .myinputValid(x_valid),
+        .out(x_out[14*dataWidth +: dataWidth]),
+        .outvalid(o_valid[14])
+    );
+
+    neuron #(
+        .input_channels(input_channels),
+        .numWeight(numWeight),
+        .layerNo(1),
+        .neuronNo(15),
+        .dataWidth(dataWidth),
+        .sigmoidSize(sigmoidSize),
+        .weightIntWidth(weightIntWidth),
+        .actType(actType),
+        .weightFile("w_1_15.mif"),
+        .biasFile("b_1_15.mif")
+    ) n_15 (
+        .clk(clk),
+        .rst(rst),
+        .myinput(x_in),
+        .weightValid(weightValid),
+        .biasValid(biasValid),
+        .weightValue(weightValue),
+        .biasValue(biasValue),
+        .config_layer_num(config_layer_num),
+        .config_neuron_num(config_neuron_num),
+        .myinputValid(x_valid),
+        .out(x_out[15*dataWidth +: dataWidth]),
+        .outvalid(o_valid[15])
+    );
+
+    neuron #(
+        .input_channels(input_channels),
+        .numWeight(numWeight),
+        .layerNo(1),
+        .neuronNo(16),
+        .dataWidth(dataWidth),
+        .sigmoidSize(sigmoidSize),
+        .weightIntWidth(weightIntWidth),
+        .actType(actType),
+        .weightFile("w_1_16.mif"),
+        .biasFile("b_1_16.mif")
+    ) n_16 (
+        .clk(clk),
+        .rst(rst),
+        .myinput(x_in),
+        .weightValid(weightValid),
+        .biasValid(biasValid),
+        .weightValue(weightValue),
+        .biasValue(biasValue),
+        .config_layer_num(config_layer_num),
+        .config_neuron_num(config_neuron_num),
+        .myinputValid(x_valid),
+        .out(x_out[16*dataWidth +: dataWidth]),
+        .outvalid(o_valid[16])
+    );
+
+    neuron #(
+        .input_channels(input_channels),
+        .numWeight(numWeight),
+        .layerNo(1),
+        .neuronNo(17),
+        .dataWidth(dataWidth),
+        .sigmoidSize(sigmoidSize),
+        .weightIntWidth(weightIntWidth),
+        .actType(actType),
+        .weightFile("w_1_17.mif"),
+        .biasFile("b_1_17.mif")
+    ) n_17 (
+        .clk(clk),
+        .rst(rst),
+        .myinput(x_in),
+        .weightValid(weightValid),
+        .biasValid(biasValid),
+        .weightValue(weightValue),
+        .biasValue(biasValue),
+        .config_layer_num(config_layer_num),
+        .config_neuron_num(config_neuron_num),
+        .myinputValid(x_valid),
+        .out(x_out[17*dataWidth +: dataWidth]),
+        .outvalid(o_valid[17])
+    );
+
+    neuron #(
+        .input_channels(input_channels),
+        .numWeight(numWeight),
+        .layerNo(1),
+        .neuronNo(18),
+        .dataWidth(dataWidth),
+        .sigmoidSize(sigmoidSize),
+        .weightIntWidth(weightIntWidth),
+        .actType(actType),
+        .weightFile("w_1_18.mif"),
+        .biasFile("b_1_18.mif")
+    ) n_18 (
+        .clk(clk),
+        .rst(rst),
+        .myinput(x_in),
+        .weightValid(weightValid),
+        .biasValid(biasValid),
+        .weightValue(weightValue),
+        .biasValue(biasValue),
+        .config_layer_num(config_layer_num),
+        .config_neuron_num(config_neuron_num),
+        .myinputValid(x_valid),
+        .out(x_out[18*dataWidth +: dataWidth]),
+        .outvalid(o_valid[18])
+    );
+
+    neuron #(
+        .input_channels(input_channels),
+        .numWeight(numWeight),
+        .layerNo(1),
+        .neuronNo(19),
+        .dataWidth(dataWidth),
+        .sigmoidSize(sigmoidSize),
+        .weightIntWidth(weightIntWidth),
+        .actType(actType),
+        .weightFile("w_1_19.mif"),
+        .biasFile("b_1_19.mif")
+    ) n_19 (
+        .clk(clk),
+        .rst(rst),
+        .myinput(x_in),
+        .weightValid(weightValid),
+        .biasValid(biasValid),
+        .weightValue(weightValue),
+        .biasValue(biasValue),
+        .config_layer_num(config_layer_num),
+        .config_neuron_num(config_neuron_num),
+        .myinputValid(x_valid),
+        .out(x_out[19*dataWidth +: dataWidth]),
+        .outvalid(o_valid[19])
+    );
+
+    neuron #(
+        .input_channels(input_channels),
+        .numWeight(numWeight),
+        .layerNo(1),
+        .neuronNo(20),
+        .dataWidth(dataWidth),
+        .sigmoidSize(sigmoidSize),
+        .weightIntWidth(weightIntWidth),
+        .actType(actType),
+        .weightFile("w_1_20.mif"),
+        .biasFile("b_1_20.mif")
+    ) n_20 (
+        .clk(clk),
+        .rst(rst),
+        .myinput(x_in),
+        .weightValid(weightValid),
+        .biasValid(biasValid),
+        .weightValue(weightValue),
+        .biasValue(biasValue),
+        .config_layer_num(config_layer_num),
+        .config_neuron_num(config_neuron_num),
+        .myinputValid(x_valid),
+        .out(x_out[20*dataWidth +: dataWidth]),
+        .outvalid(o_valid[20])
+    );
+
+    neuron #(
+        .input_channels(input_channels),
+        .numWeight(numWeight),
+        .layerNo(1),
+        .neuronNo(21),
+        .dataWidth(dataWidth),
+        .sigmoidSize(sigmoidSize),
+        .weightIntWidth(weightIntWidth),
+        .actType(actType),
+        .weightFile("w_1_21.mif"),
+        .biasFile("b_1_21.mif")
+    ) n_21 (
+        .clk(clk),
+        .rst(rst),
+        .myinput(x_in),
+        .weightValid(weightValid),
+        .biasValid(biasValid),
+        .weightValue(weightValue),
+        .biasValue(biasValue),
+        .config_layer_num(config_layer_num),
+        .config_neuron_num(config_neuron_num),
+        .myinputValid(x_valid),
+        .out(x_out[21*dataWidth +: dataWidth]),
+        .outvalid(o_valid[21])
+    );
+
+    neuron #(
+        .input_channels(input_channels),
+        .numWeight(numWeight),
+        .layerNo(1),
+        .neuronNo(22),
+        .dataWidth(dataWidth),
+        .sigmoidSize(sigmoidSize),
+        .weightIntWidth(weightIntWidth),
+        .actType(actType),
+        .weightFile("w_1_22.mif"),
+        .biasFile("b_1_22.mif")
+    ) n_22 (
+        .clk(clk),
+        .rst(rst),
+        .myinput(x_in),
+        .weightValid(weightValid),
+        .biasValid(biasValid),
+        .weightValue(weightValue),
+        .biasValue(biasValue),
+        .config_layer_num(config_layer_num),
+        .config_neuron_num(config_neuron_num),
+        .myinputValid(x_valid),
+        .out(x_out[22*dataWidth +: dataWidth]),
+        .outvalid(o_valid[22])
+    );
+
+    neuron #(
+        .input_channels(input_channels),
+        .numWeight(numWeight),
+        .layerNo(1),
+        .neuronNo(23),
+        .dataWidth(dataWidth),
+        .sigmoidSize(sigmoidSize),
+        .weightIntWidth(weightIntWidth),
+        .actType(actType),
+        .weightFile("w_1_23.mif"),
+        .biasFile("b_1_23.mif")
+    ) n_23 (
+        .clk(clk),
+        .rst(rst),
+        .myinput(x_in),
+        .weightValid(weightValid),
+        .biasValid(biasValid),
+        .weightValue(weightValue),
+        .biasValue(biasValue),
+        .config_layer_num(config_layer_num),
+        .config_neuron_num(config_neuron_num),
+        .myinputValid(x_valid),
+        .out(x_out[23*dataWidth +: dataWidth]),
+        .outvalid(o_valid[23])
+    );
+
+    neuron #(
+        .input_channels(input_channels),
+        .numWeight(numWeight),
+        .layerNo(1),
+        .neuronNo(24),
+        .dataWidth(dataWidth),
+        .sigmoidSize(sigmoidSize),
+        .weightIntWidth(weightIntWidth),
+        .actType(actType),
+        .weightFile("w_1_24.mif"),
+        .biasFile("b_1_24.mif")
+    ) n_24 (
+        .clk(clk),
+        .rst(rst),
+        .myinput(x_in),
+        .weightValid(weightValid),
+        .biasValid(biasValid),
+        .weightValue(weightValue),
+        .biasValue(biasValue),
+        .config_layer_num(config_layer_num),
+        .config_neuron_num(config_neuron_num),
+        .myinputValid(x_valid),
+        .out(x_out[24*dataWidth +: dataWidth]),
+        .outvalid(o_valid[24])
+    );
+
+    neuron #(
+        .input_channels(input_channels),
+        .numWeight(numWeight),
+        .layerNo(1),
+        .neuronNo(25),
+        .dataWidth(dataWidth),
+        .sigmoidSize(sigmoidSize),
+        .weightIntWidth(weightIntWidth),
+        .actType(actType),
+        .weightFile("w_1_25.mif"),
+        .biasFile("b_1_25.mif")
+    ) n_25 (
+        .clk(clk),
+        .rst(rst),
+        .myinput(x_in),
+        .weightValid(weightValid),
+        .biasValid(biasValid),
+        .weightValue(weightValue),
+        .biasValue(biasValue),
+        .config_layer_num(config_layer_num),
+        .config_neuron_num(config_neuron_num),
+        .myinputValid(x_valid),
+        .out(x_out[25*dataWidth +: dataWidth]),
+        .outvalid(o_valid[25])
+    );
+
+    neuron #(
+        .input_channels(input_channels),
+        .numWeight(numWeight),
+        .layerNo(1),
+        .neuronNo(26),
+        .dataWidth(dataWidth),
+        .sigmoidSize(sigmoidSize),
+        .weightIntWidth(weightIntWidth),
+        .actType(actType),
+        .weightFile("w_1_26.mif"),
+        .biasFile("b_1_26.mif")
+    ) n_26 (
+        .clk(clk),
+        .rst(rst),
+        .myinput(x_in),
+        .weightValid(weightValid),
+        .biasValid(biasValid),
+        .weightValue(weightValue),
+        .biasValue(biasValue),
+        .config_layer_num(config_layer_num),
+        .config_neuron_num(config_neuron_num),
+        .myinputValid(x_valid),
+        .out(x_out[26*dataWidth +: dataWidth]),
+        .outvalid(o_valid[26])
+    );
+
+    neuron #(
+        .input_channels(input_channels),
+        .numWeight(numWeight),
+        .layerNo(1),
+        .neuronNo(27),
+        .dataWidth(dataWidth),
+        .sigmoidSize(sigmoidSize),
+        .weightIntWidth(weightIntWidth),
+        .actType(actType),
+        .weightFile("w_1_27.mif"),
+        .biasFile("b_1_27.mif")
+    ) n_27 (
+        .clk(clk),
+        .rst(rst),
+        .myinput(x_in),
+        .weightValid(weightValid),
+        .biasValid(biasValid),
+        .weightValue(weightValue),
+        .biasValue(biasValue),
+        .config_layer_num(config_layer_num),
+        .config_neuron_num(config_neuron_num),
+        .myinputValid(x_valid),
+        .out(x_out[27*dataWidth +: dataWidth]),
+        .outvalid(o_valid[27])
+    );
+
+    neuron #(
+        .input_channels(input_channels),
+        .numWeight(numWeight),
+        .layerNo(1),
+        .neuronNo(28),
+        .dataWidth(dataWidth),
+        .sigmoidSize(sigmoidSize),
+        .weightIntWidth(weightIntWidth),
+        .actType(actType),
+        .weightFile("w_1_28.mif"),
+        .biasFile("b_1_28.mif")
+    ) n_28 (
+        .clk(clk),
+        .rst(rst),
+        .myinput(x_in),
+        .weightValid(weightValid),
+        .biasValid(biasValid),
+        .weightValue(weightValue),
+        .biasValue(biasValue),
+        .config_layer_num(config_layer_num),
+        .config_neuron_num(config_neuron_num),
+        .myinputValid(x_valid),
+        .out(x_out[28*dataWidth +: dataWidth]),
+        .outvalid(o_valid[28])
+    );
+
+    neuron #(
+        .input_channels(input_channels),
+        .numWeight(numWeight),
+        .layerNo(1),
+        .neuronNo(29),
+        .dataWidth(dataWidth),
+        .sigmoidSize(sigmoidSize),
+        .weightIntWidth(weightIntWidth),
+        .actType(actType),
+        .weightFile("w_1_29.mif"),
+        .biasFile("b_1_29.mif")
+    ) n_29 (
+        .clk(clk),
+        .rst(rst),
+        .myinput(x_in),
+        .weightValid(weightValid),
+        .biasValid(biasValid),
+        .weightValue(weightValue),
+        .biasValue(biasValue),
+        .config_layer_num(config_layer_num),
+        .config_neuron_num(config_neuron_num),
+        .myinputValid(x_valid),
+        .out(x_out[29*dataWidth +: dataWidth]),
+        .outvalid(o_valid[29])
+    );
+
+    neuron #(
+        .input_channels(input_channels),
+        .numWeight(numWeight),
+        .layerNo(1),
+        .neuronNo(30),
+        .dataWidth(dataWidth),
+        .sigmoidSize(sigmoidSize),
+        .weightIntWidth(weightIntWidth),
+        .actType(actType),
+        .weightFile("w_1_30.mif"),
+        .biasFile("b_1_30.mif")
+    ) n_30 (
+        .clk(clk),
+        .rst(rst),
+        .myinput(x_in),
+        .weightValid(weightValid),
+        .biasValid(biasValid),
+        .weightValue(weightValue),
+        .biasValue(biasValue),
+        .config_layer_num(config_layer_num),
+        .config_neuron_num(config_neuron_num),
+        .myinputValid(x_valid),
+        .out(x_out[30*dataWidth +: dataWidth]),
+        .outvalid(o_valid[30])
+    );
+
+    neuron #(
+        .input_channels(input_channels),
+        .numWeight(numWeight),
+        .layerNo(1),
+        .neuronNo(31),
+        .dataWidth(dataWidth),
+        .sigmoidSize(sigmoidSize),
+        .weightIntWidth(weightIntWidth),
+        .actType(actType),
+        .weightFile("w_1_31.mif"),
+        .biasFile("b_1_31.mif")
+    ) n_31 (
+        .clk(clk),
+        .rst(rst),
+        .myinput(x_in),
+        .weightValid(weightValid),
+        .biasValid(biasValid),
+        .weightValue(weightValue),
+        .biasValue(biasValue),
+        .config_layer_num(config_layer_num),
+        .config_neuron_num(config_neuron_num),
+        .myinputValid(x_valid),
+        .out(x_out[31*dataWidth +: dataWidth]),
+        .outvalid(o_valid[31])
+    );
+
+    neuron #(
+        .input_channels(input_channels),
+        .numWeight(numWeight),
+        .layerNo(1),
+        .neuronNo(32),
+        .dataWidth(dataWidth),
+        .sigmoidSize(sigmoidSize),
+        .weightIntWidth(weightIntWidth),
+        .actType(actType),
+        .weightFile("w_1_32.mif"),
+        .biasFile("b_1_32.mif")
+    ) n_32 (
+        .clk(clk),
+        .rst(rst),
+        .myinput(x_in),
+        .weightValid(weightValid),
+        .biasValid(biasValid),
+        .weightValue(weightValue),
+        .biasValue(biasValue),
+        .config_layer_num(config_layer_num),
+        .config_neuron_num(config_neuron_num),
+        .myinputValid(x_valid),
+        .out(x_out[32*dataWidth +: dataWidth]),
+        .outvalid(o_valid[32])
+    );
+
+    neuron #(
+        .input_channels(input_channels),
+        .numWeight(numWeight),
+        .layerNo(1),
+        .neuronNo(33),
+        .dataWidth(dataWidth),
+        .sigmoidSize(sigmoidSize),
+        .weightIntWidth(weightIntWidth),
+        .actType(actType),
+        .weightFile("w_1_33.mif"),
+        .biasFile("b_1_33.mif")
+    ) n_33 (
+        .clk(clk),
+        .rst(rst),
+        .myinput(x_in),
+        .weightValid(weightValid),
+        .biasValid(biasValid),
+        .weightValue(weightValue),
+        .biasValue(biasValue),
+        .config_layer_num(config_layer_num),
+        .config_neuron_num(config_neuron_num),
+        .myinputValid(x_valid),
+        .out(x_out[33*dataWidth +: dataWidth]),
+        .outvalid(o_valid[33])
+    );
+
+    neuron #(
+        .input_channels(input_channels),
+        .numWeight(numWeight),
+        .layerNo(1),
+        .neuronNo(34),
+        .dataWidth(dataWidth),
+        .sigmoidSize(sigmoidSize),
+        .weightIntWidth(weightIntWidth),
+        .actType(actType),
+        .weightFile("w_1_34.mif"),
+        .biasFile("b_1_34.mif")
+    ) n_34 (
+        .clk(clk),
+        .rst(rst),
+        .myinput(x_in),
+        .weightValid(weightValid),
+        .biasValid(biasValid),
+        .weightValue(weightValue),
+        .biasValue(biasValue),
+        .config_layer_num(config_layer_num),
+        .config_neuron_num(config_neuron_num),
+        .myinputValid(x_valid),
+        .out(x_out[34*dataWidth +: dataWidth]),
+        .outvalid(o_valid[34])
+    );
+
+    neuron #(
+        .input_channels(input_channels),
+        .numWeight(numWeight),
+        .layerNo(1),
+        .neuronNo(35),
+        .dataWidth(dataWidth),
+        .sigmoidSize(sigmoidSize),
+        .weightIntWidth(weightIntWidth),
+        .actType(actType),
+        .weightFile("w_1_35.mif"),
+        .biasFile("b_1_35.mif")
+    ) n_35 (
+        .clk(clk),
+        .rst(rst),
+        .myinput(x_in),
+        .weightValid(weightValid),
+        .biasValid(biasValid),
+        .weightValue(weightValue),
+        .biasValue(biasValue),
+        .config_layer_num(config_layer_num),
+        .config_neuron_num(config_neuron_num),
+        .myinputValid(x_valid),
+        .out(x_out[35*dataWidth +: dataWidth]),
+        .outvalid(o_valid[35])
+    );
+
+    neuron #(
+        .input_channels(input_channels),
+        .numWeight(numWeight),
+        .layerNo(1),
+        .neuronNo(36),
+        .dataWidth(dataWidth),
+        .sigmoidSize(sigmoidSize),
+        .weightIntWidth(weightIntWidth),
+        .actType(actType),
+        .weightFile("w_1_36.mif"),
+        .biasFile("b_1_36.mif")
+    ) n_36 (
+        .clk(clk),
+        .rst(rst),
+        .myinput(x_in),
+        .weightValid(weightValid),
+        .biasValid(biasValid),
+        .weightValue(weightValue),
+        .biasValue(biasValue),
+        .config_layer_num(config_layer_num),
+        .config_neuron_num(config_neuron_num),
+        .myinputValid(x_valid),
+        .out(x_out[36*dataWidth +: dataWidth]),
+        .outvalid(o_valid[36])
+    );
+
+    neuron #(
+        .input_channels(input_channels),
+        .numWeight(numWeight),
+        .layerNo(1),
+        .neuronNo(37),
+        .dataWidth(dataWidth),
+        .sigmoidSize(sigmoidSize),
+        .weightIntWidth(weightIntWidth),
+        .actType(actType),
+        .weightFile("w_1_37.mif"),
+        .biasFile("b_1_37.mif")
+    ) n_37 (
+        .clk(clk),
+        .rst(rst),
+        .myinput(x_in),
+        .weightValid(weightValid),
+        .biasValid(biasValid),
+        .weightValue(weightValue),
+        .biasValue(biasValue),
+        .config_layer_num(config_layer_num),
+        .config_neuron_num(config_neuron_num),
+        .myinputValid(x_valid),
+        .out(x_out[37*dataWidth +: dataWidth]),
+        .outvalid(o_valid[37])
+    );
+
+    neuron #(
+        .input_channels(input_channels),
+        .numWeight(numWeight),
+        .layerNo(1),
+        .neuronNo(38),
+        .dataWidth(dataWidth),
+        .sigmoidSize(sigmoidSize),
+        .weightIntWidth(weightIntWidth),
+        .actType(actType),
+        .weightFile("w_1_38.mif"),
+        .biasFile("b_1_38.mif")
+    ) n_38 (
+        .clk(clk),
+        .rst(rst),
+        .myinput(x_in),
+        .weightValid(weightValid),
+        .biasValid(biasValid),
+        .weightValue(weightValue),
+        .biasValue(biasValue),
+        .config_layer_num(config_layer_num),
+        .config_neuron_num(config_neuron_num),
+        .myinputValid(x_valid),
+        .out(x_out[38*dataWidth +: dataWidth]),
+        .outvalid(o_valid[38])
+    );
+
+    neuron #(
+        .input_channels(input_channels),
+        .numWeight(numWeight),
+        .layerNo(1),
+        .neuronNo(39),
+        .dataWidth(dataWidth),
+        .sigmoidSize(sigmoidSize),
+        .weightIntWidth(weightIntWidth),
+        .actType(actType),
+        .weightFile("w_1_39.mif"),
+        .biasFile("b_1_39.mif")
+    ) n_39 (
+        .clk(clk),
+        .rst(rst),
+        .myinput(x_in),
+        .weightValid(weightValid),
+        .biasValid(biasValid),
+        .weightValue(weightValue),
+        .biasValue(biasValue),
+        .config_layer_num(config_layer_num),
+        .config_neuron_num(config_neuron_num),
+        .myinputValid(x_valid),
+        .out(x_out[39*dataWidth +: dataWidth]),
+        .outvalid(o_valid[39])
+    );
+
+    neuron #(
+        .input_channels(input_channels),
+        .numWeight(numWeight),
+        .layerNo(1),
+        .neuronNo(40),
+        .dataWidth(dataWidth),
+        .sigmoidSize(sigmoidSize),
+        .weightIntWidth(weightIntWidth),
+        .actType(actType),
+        .weightFile("w_1_40.mif"),
+        .biasFile("b_1_40.mif")
+    ) n_40 (
+        .clk(clk),
+        .rst(rst),
+        .myinput(x_in),
+        .weightValid(weightValid),
+        .biasValid(biasValid),
+        .weightValue(weightValue),
+        .biasValue(biasValue),
+        .config_layer_num(config_layer_num),
+        .config_neuron_num(config_neuron_num),
+        .myinputValid(x_valid),
+        .out(x_out[40*dataWidth +: dataWidth]),
+        .outvalid(o_valid[40])
+    );
+
+    neuron #(
+        .input_channels(input_channels),
+        .numWeight(numWeight),
+        .layerNo(1),
+        .neuronNo(41),
+        .dataWidth(dataWidth),
+        .sigmoidSize(sigmoidSize),
+        .weightIntWidth(weightIntWidth),
+        .actType(actType),
+        .weightFile("w_1_41.mif"),
+        .biasFile("b_1_41.mif")
+    ) n_41 (
+        .clk(clk),
+        .rst(rst),
+        .myinput(x_in),
+        .weightValid(weightValid),
+        .biasValid(biasValid),
+        .weightValue(weightValue),
+        .biasValue(biasValue),
+        .config_layer_num(config_layer_num),
+        .config_neuron_num(config_neuron_num),
+        .myinputValid(x_valid),
+        .out(x_out[41*dataWidth +: dataWidth]),
+        .outvalid(o_valid[41])
+    );
+
+    neuron #(
+        .input_channels(input_channels),
+        .numWeight(numWeight),
+        .layerNo(1),
+        .neuronNo(42),
+        .dataWidth(dataWidth),
+        .sigmoidSize(sigmoidSize),
+        .weightIntWidth(weightIntWidth),
+        .actType(actType),
+        .weightFile("w_1_42.mif"),
+        .biasFile("b_1_42.mif")
+    ) n_42 (
+        .clk(clk),
+        .rst(rst),
+        .myinput(x_in),
+        .weightValid(weightValid),
+        .biasValid(biasValid),
+        .weightValue(weightValue),
+        .biasValue(biasValue),
+        .config_layer_num(config_layer_num),
+        .config_neuron_num(config_neuron_num),
+        .myinputValid(x_valid),
+        .out(x_out[42*dataWidth +: dataWidth]),
+        .outvalid(o_valid[42])
+    );
+
+    neuron #(
+        .input_channels(input_channels),
+        .numWeight(numWeight),
+        .layerNo(1),
+        .neuronNo(43),
+        .dataWidth(dataWidth),
+        .sigmoidSize(sigmoidSize),
+        .weightIntWidth(weightIntWidth),
+        .actType(actType),
+        .weightFile("w_1_43.mif"),
+        .biasFile("b_1_43.mif")
+    ) n_43 (
+        .clk(clk),
+        .rst(rst),
+        .myinput(x_in),
+        .weightValid(weightValid),
+        .biasValid(biasValid),
+        .weightValue(weightValue),
+        .biasValue(biasValue),
+        .config_layer_num(config_layer_num),
+        .config_neuron_num(config_neuron_num),
+        .myinputValid(x_valid),
+        .out(x_out[43*dataWidth +: dataWidth]),
+        .outvalid(o_valid[43])
+    );
+
+    neuron #(
+        .input_channels(input_channels),
+        .numWeight(numWeight),
+        .layerNo(1),
+        .neuronNo(44),
+        .dataWidth(dataWidth),
+        .sigmoidSize(sigmoidSize),
+        .weightIntWidth(weightIntWidth),
+        .actType(actType),
+        .weightFile("w_1_44.mif"),
+        .biasFile("b_1_44.mif")
+    ) n_44 (
+        .clk(clk),
+        .rst(rst),
+        .myinput(x_in),
+        .weightValid(weightValid),
+        .biasValid(biasValid),
+        .weightValue(weightValue),
+        .biasValue(biasValue),
+        .config_layer_num(config_layer_num),
+        .config_neuron_num(config_neuron_num),
+        .myinputValid(x_valid),
+        .out(x_out[44*dataWidth +: dataWidth]),
+        .outvalid(o_valid[44])
+    );
+
+    neuron #(
+        .input_channels(input_channels),
+        .numWeight(numWeight),
+        .layerNo(1),
+        .neuronNo(45),
+        .dataWidth(dataWidth),
+        .sigmoidSize(sigmoidSize),
+        .weightIntWidth(weightIntWidth),
+        .actType(actType),
+        .weightFile("w_1_45.mif"),
+        .biasFile("b_1_45.mif")
+    ) n_45 (
+        .clk(clk),
+        .rst(rst),
+        .myinput(x_in),
+        .weightValid(weightValid),
+        .biasValid(biasValid),
+        .weightValue(weightValue),
+        .biasValue(biasValue),
+        .config_layer_num(config_layer_num),
+        .config_neuron_num(config_neuron_num),
+        .myinputValid(x_valid),
+        .out(x_out[45*dataWidth +: dataWidth]),
+        .outvalid(o_valid[45])
+    );
+
+    neuron #(
+        .input_channels(input_channels),
+        .numWeight(numWeight),
+        .layerNo(1),
+        .neuronNo(46),
+        .dataWidth(dataWidth),
+        .sigmoidSize(sigmoidSize),
+        .weightIntWidth(weightIntWidth),
+        .actType(actType),
+        .weightFile("w_1_46.mif"),
+        .biasFile("b_1_46.mif")
+    ) n_46 (
+        .clk(clk),
+        .rst(rst),
+        .myinput(x_in),
+        .weightValid(weightValid),
+        .biasValid(biasValid),
+        .weightValue(weightValue),
+        .biasValue(biasValue),
+        .config_layer_num(config_layer_num),
+        .config_neuron_num(config_neuron_num),
+        .myinputValid(x_valid),
+        .out(x_out[46*dataWidth +: dataWidth]),
+        .outvalid(o_valid[46])
+    );
+
+    neuron #(
+        .input_channels(input_channels),
+        .numWeight(numWeight),
+        .layerNo(1),
+        .neuronNo(47),
+        .dataWidth(dataWidth),
+        .sigmoidSize(sigmoidSize),
+        .weightIntWidth(weightIntWidth),
+        .actType(actType),
+        .weightFile("w_1_47.mif"),
+        .biasFile("b_1_47.mif")
+    ) n_47 (
+        .clk(clk),
+        .rst(rst),
+        .myinput(x_in),
+        .weightValid(weightValid),
+        .biasValid(biasValid),
+        .weightValue(weightValue),
+        .biasValue(biasValue),
+        .config_layer_num(config_layer_num),
+        .config_neuron_num(config_neuron_num),
+        .myinputValid(x_valid),
+        .out(x_out[47*dataWidth +: dataWidth]),
+        .outvalid(o_valid[47])
+    );
+
+    neuron #(
+        .input_channels(input_channels),
+        .numWeight(numWeight),
+        .layerNo(1),
+        .neuronNo(48),
+        .dataWidth(dataWidth),
+        .sigmoidSize(sigmoidSize),
+        .weightIntWidth(weightIntWidth),
+        .actType(actType),
+        .weightFile("w_1_48.mif"),
+        .biasFile("b_1_48.mif")
+    ) n_48 (
+        .clk(clk),
+        .rst(rst),
+        .myinput(x_in),
+        .weightValid(weightValid),
+        .biasValid(biasValid),
+        .weightValue(weightValue),
+        .biasValue(biasValue),
+        .config_layer_num(config_layer_num),
+        .config_neuron_num(config_neuron_num),
+        .myinputValid(x_valid),
+        .out(x_out[48*dataWidth +: dataWidth]),
+        .outvalid(o_valid[48])
+    );
+
+    neuron #(
+        .input_channels(input_channels),
+        .numWeight(numWeight),
+        .layerNo(1),
+        .neuronNo(49),
+        .dataWidth(dataWidth),
+        .sigmoidSize(sigmoidSize),
+        .weightIntWidth(weightIntWidth),
+        .actType(actType),
+        .weightFile("w_1_49.mif"),
+        .biasFile("b_1_49.mif")
+    ) n_49 (
+        .clk(clk),
+        .rst(rst),
+        .myinput(x_in),
+        .weightValid(weightValid),
+        .biasValid(biasValid),
+        .weightValue(weightValue),
+        .biasValue(biasValue),
+        .config_layer_num(config_layer_num),
+        .config_neuron_num(config_neuron_num),
+        .myinputValid(x_valid),
+        .out(x_out[49*dataWidth +: dataWidth]),
+        .outvalid(o_valid[49])
+    );
+
+    neuron #(
+        .input_channels(input_channels),
+        .numWeight(numWeight),
+        .layerNo(1),
+        .neuronNo(50),
+        .dataWidth(dataWidth),
+        .sigmoidSize(sigmoidSize),
+        .weightIntWidth(weightIntWidth),
+        .actType(actType),
+        .weightFile("w_1_50.mif"),
+        .biasFile("b_1_50.mif")
+    ) n_50 (
+        .clk(clk),
+        .rst(rst),
+        .myinput(x_in),
+        .weightValid(weightValid),
+        .biasValid(biasValid),
+        .weightValue(weightValue),
+        .biasValue(biasValue),
+        .config_layer_num(config_layer_num),
+        .config_neuron_num(config_neuron_num),
+        .myinputValid(x_valid),
+        .out(x_out[50*dataWidth +: dataWidth]),
+        .outvalid(o_valid[50])
+    );
+
+    neuron #(
+        .input_channels(input_channels),
+        .numWeight(numWeight),
+        .layerNo(1),
+        .neuronNo(51),
+        .dataWidth(dataWidth),
+        .sigmoidSize(sigmoidSize),
+        .weightIntWidth(weightIntWidth),
+        .actType(actType),
+        .weightFile("w_1_51.mif"),
+        .biasFile("b_1_51.mif")
+    ) n_51 (
+        .clk(clk),
+        .rst(rst),
+        .myinput(x_in),
+        .weightValid(weightValid),
+        .biasValid(biasValid),
+        .weightValue(weightValue),
+        .biasValue(biasValue),
+        .config_layer_num(config_layer_num),
+        .config_neuron_num(config_neuron_num),
+        .myinputValid(x_valid),
+        .out(x_out[51*dataWidth +: dataWidth]),
+        .outvalid(o_valid[51])
+    );
+
+    neuron #(
+        .input_channels(input_channels),
+        .numWeight(numWeight),
+        .layerNo(1),
+        .neuronNo(52),
+        .dataWidth(dataWidth),
+        .sigmoidSize(sigmoidSize),
+        .weightIntWidth(weightIntWidth),
+        .actType(actType),
+        .weightFile("w_1_52.mif"),
+        .biasFile("b_1_52.mif")
+    ) n_52 (
+        .clk(clk),
+        .rst(rst),
+        .myinput(x_in),
+        .weightValid(weightValid),
+        .biasValid(biasValid),
+        .weightValue(weightValue),
+        .biasValue(biasValue),
+        .config_layer_num(config_layer_num),
+        .config_neuron_num(config_neuron_num),
+        .myinputValid(x_valid),
+        .out(x_out[52*dataWidth +: dataWidth]),
+        .outvalid(o_valid[52])
+    );
+
+    neuron #(
+        .input_channels(input_channels),
+        .numWeight(numWeight),
+        .layerNo(1),
+        .neuronNo(53),
+        .dataWidth(dataWidth),
+        .sigmoidSize(sigmoidSize),
+        .weightIntWidth(weightIntWidth),
+        .actType(actType),
+        .weightFile("w_1_53.mif"),
+        .biasFile("b_1_53.mif")
+    ) n_53 (
+        .clk(clk),
+        .rst(rst),
+        .myinput(x_in),
+        .weightValid(weightValid),
+        .biasValid(biasValid),
+        .weightValue(weightValue),
+        .biasValue(biasValue),
+        .config_layer_num(config_layer_num),
+        .config_neuron_num(config_neuron_num),
+        .myinputValid(x_valid),
+        .out(x_out[53*dataWidth +: dataWidth]),
+        .outvalid(o_valid[53])
+    );
+
+    neuron #(
+        .input_channels(input_channels),
+        .numWeight(numWeight),
+        .layerNo(1),
+        .neuronNo(54),
+        .dataWidth(dataWidth),
+        .sigmoidSize(sigmoidSize),
+        .weightIntWidth(weightIntWidth),
+        .actType(actType),
+        .weightFile("w_1_54.mif"),
+        .biasFile("b_1_54.mif")
+    ) n_54 (
+        .clk(clk),
+        .rst(rst),
+        .myinput(x_in),
+        .weightValid(weightValid),
+        .biasValid(biasValid),
+        .weightValue(weightValue),
+        .biasValue(biasValue),
+        .config_layer_num(config_layer_num),
+        .config_neuron_num(config_neuron_num),
+        .myinputValid(x_valid),
+        .out(x_out[54*dataWidth +: dataWidth]),
+        .outvalid(o_valid[54])
+    );
+
+    neuron #(
+        .input_channels(input_channels),
+        .numWeight(numWeight),
+        .layerNo(1),
+        .neuronNo(55),
+        .dataWidth(dataWidth),
+        .sigmoidSize(sigmoidSize),
+        .weightIntWidth(weightIntWidth),
+        .actType(actType),
+        .weightFile("w_1_55.mif"),
+        .biasFile("b_1_55.mif")
+    ) n_55 (
+        .clk(clk),
+        .rst(rst),
+        .myinput(x_in),
+        .weightValid(weightValid),
+        .biasValid(biasValid),
+        .weightValue(weightValue),
+        .biasValue(biasValue),
+        .config_layer_num(config_layer_num),
+        .config_neuron_num(config_neuron_num),
+        .myinputValid(x_valid),
+        .out(x_out[55*dataWidth +: dataWidth]),
+        .outvalid(o_valid[55])
+    );
+
+    neuron #(
+        .input_channels(input_channels),
+        .numWeight(numWeight),
+        .layerNo(1),
+        .neuronNo(56),
+        .dataWidth(dataWidth),
+        .sigmoidSize(sigmoidSize),
+        .weightIntWidth(weightIntWidth),
+        .actType(actType),
+        .weightFile("w_1_56.mif"),
+        .biasFile("b_1_56.mif")
+    ) n_56 (
+        .clk(clk),
+        .rst(rst),
+        .myinput(x_in),
+        .weightValid(weightValid),
+        .biasValid(biasValid),
+        .weightValue(weightValue),
+        .biasValue(biasValue),
+        .config_layer_num(config_layer_num),
+        .config_neuron_num(config_neuron_num),
+        .myinputValid(x_valid),
+        .out(x_out[56*dataWidth +: dataWidth]),
+        .outvalid(o_valid[56])
+    );
+
+    neuron #(
+        .input_channels(input_channels),
+        .numWeight(numWeight),
+        .layerNo(1),
+        .neuronNo(57),
+        .dataWidth(dataWidth),
+        .sigmoidSize(sigmoidSize),
+        .weightIntWidth(weightIntWidth),
+        .actType(actType),
+        .weightFile("w_1_57.mif"),
+        .biasFile("b_1_57.mif")
+    ) n_57 (
+        .clk(clk),
+        .rst(rst),
+        .myinput(x_in),
+        .weightValid(weightValid),
+        .biasValid(biasValid),
+        .weightValue(weightValue),
+        .biasValue(biasValue),
+        .config_layer_num(config_layer_num),
+        .config_neuron_num(config_neuron_num),
+        .myinputValid(x_valid),
+        .out(x_out[57*dataWidth +: dataWidth]),
+        .outvalid(o_valid[57])
+    );
+
+    neuron #(
+        .input_channels(input_channels),
+        .numWeight(numWeight),
+        .layerNo(1),
+        .neuronNo(58),
+        .dataWidth(dataWidth),
+        .sigmoidSize(sigmoidSize),
+        .weightIntWidth(weightIntWidth),
+        .actType(actType),
+        .weightFile("w_1_58.mif"),
+        .biasFile("b_1_58.mif")
+    ) n_58 (
+        .clk(clk),
+        .rst(rst),
+        .myinput(x_in),
+        .weightValid(weightValid),
+        .biasValid(biasValid),
+        .weightValue(weightValue),
+        .biasValue(biasValue),
+        .config_layer_num(config_layer_num),
+        .config_neuron_num(config_neuron_num),
+        .myinputValid(x_valid),
+        .out(x_out[58*dataWidth +: dataWidth]),
+        .outvalid(o_valid[58])
+    );
+
+    neuron #(
+        .input_channels(input_channels),
+        .numWeight(numWeight),
+        .layerNo(1),
+        .neuronNo(59),
+        .dataWidth(dataWidth),
+        .sigmoidSize(sigmoidSize),
+        .weightIntWidth(weightIntWidth),
+        .actType(actType),
+        .weightFile("w_1_59.mif"),
+        .biasFile("b_1_59.mif")
+    ) n_59 (
+        .clk(clk),
+        .rst(rst),
+        .myinput(x_in),
+        .weightValid(weightValid),
+        .biasValid(biasValid),
+        .weightValue(weightValue),
+        .biasValue(biasValue),
+        .config_layer_num(config_layer_num),
+        .config_neuron_num(config_neuron_num),
+        .myinputValid(x_valid),
+        .out(x_out[59*dataWidth +: dataWidth]),
+        .outvalid(o_valid[59])
+    );
+
+    neuron #(
+        .input_channels(input_channels),
+        .numWeight(numWeight),
+        .layerNo(1),
+        .neuronNo(60),
+        .dataWidth(dataWidth),
+        .sigmoidSize(sigmoidSize),
+        .weightIntWidth(weightIntWidth),
+        .actType(actType),
+        .weightFile("w_1_60.mif"),
+        .biasFile("b_1_60.mif")
+    ) n_60 (
+        .clk(clk),
+        .rst(rst),
+        .myinput(x_in),
+        .weightValid(weightValid),
+        .biasValid(biasValid),
+        .weightValue(weightValue),
+        .biasValue(biasValue),
+        .config_layer_num(config_layer_num),
+        .config_neuron_num(config_neuron_num),
+        .myinputValid(x_valid),
+        .out(x_out[60*dataWidth +: dataWidth]),
+        .outvalid(o_valid[60])
+    );
+
+    neuron #(
+        .input_channels(input_channels),
+        .numWeight(numWeight),
+        .layerNo(1),
+        .neuronNo(61),
+        .dataWidth(dataWidth),
+        .sigmoidSize(sigmoidSize),
+        .weightIntWidth(weightIntWidth),
+        .actType(actType),
+        .weightFile("w_1_61.mif"),
+        .biasFile("b_1_61.mif")
+    ) n_61 (
+        .clk(clk),
+        .rst(rst),
+        .myinput(x_in),
+        .weightValid(weightValid),
+        .biasValid(biasValid),
+        .weightValue(weightValue),
+        .biasValue(biasValue),
+        .config_layer_num(config_layer_num),
+        .config_neuron_num(config_neuron_num),
+        .myinputValid(x_valid),
+        .out(x_out[61*dataWidth +: dataWidth]),
+        .outvalid(o_valid[61])
+    );
+
+    neuron #(
+        .input_channels(input_channels),
+        .numWeight(numWeight),
+        .layerNo(1),
+        .neuronNo(62),
+        .dataWidth(dataWidth),
+        .sigmoidSize(sigmoidSize),
+        .weightIntWidth(weightIntWidth),
+        .actType(actType),
+        .weightFile("w_1_62.mif"),
+        .biasFile("b_1_62.mif")
+    ) n_62 (
+        .clk(clk),
+        .rst(rst),
+        .myinput(x_in),
+        .weightValid(weightValid),
+        .biasValid(biasValid),
+        .weightValue(weightValue),
+        .biasValue(biasValue),
+        .config_layer_num(config_layer_num),
+        .config_neuron_num(config_neuron_num),
+        .myinputValid(x_valid),
+        .out(x_out[62*dataWidth +: dataWidth]),
+        .outvalid(o_valid[62])
+    );
+
+    neuron #(
+        .input_channels(input_channels),
+        .numWeight(numWeight),
+        .layerNo(1),
+        .neuronNo(63),
+        .dataWidth(dataWidth),
+        .sigmoidSize(sigmoidSize),
+        .weightIntWidth(weightIntWidth),
+        .actType(actType),
+        .weightFile("w_1_63.mif"),
+        .biasFile("b_1_63.mif")
+    ) n_63 (
+        .clk(clk),
+        .rst(rst),
+        .myinput(x_in),
+        .weightValid(weightValid),
+        .biasValid(biasValid),
+        .weightValue(weightValue),
+        .biasValue(biasValue),
+        .config_layer_num(config_layer_num),
+        .config_neuron_num(config_neuron_num),
+        .myinputValid(x_valid),
+        .out(x_out[63*dataWidth +: dataWidth]),
+        .outvalid(o_valid[63])
+    );
+
+endmodule
