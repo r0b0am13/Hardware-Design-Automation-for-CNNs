@@ -129,10 +129,13 @@ module ConvBlock_SIC#( //This module just does sum(weights[i]*inputs[i]). No bia
                 if(j==adder_num) begin
                     if(only_wire ==1) begin
                         if(i==0) begin
-                            assign wire_array[j] = MultReg[2*j];
+                             assign wire_array[j] = (SIGNED == 1) ? $signed(MultReg[2*j]) :MultReg[2*j];
+                            //assign wire_array[j] = (SIGNED == 1) ? {MultReg[2*j][DATA_WIDTH-1 + (MULT_GUARD==1 ? DATA_WIDTH : 0)],MultReg[2*j]} : MultReg[2*j];
                         end
                         else begin
                             assign wire_array[j] = (SIGNED == 1) ? $signed(gen_stage[i-1].reg_array[2*j]) : gen_stage[i-1].reg_array[2*j];
+                            //assign wire_array[j] = (SIGNED == 1) ? {gen_stage[i-1].reg_array[2*j][DATA_WIDTH + (ADDER_GUARD ==1 ? (MULT_GUARD == 1 ? DATA_WIDTH+(i-1) : (i-1)) : -1)],
+                            //                                    gen_stage[i-1].reg_array[2*j]} : gen_stage[i-1].reg_array[2*j];
                         end
                     end
                 end

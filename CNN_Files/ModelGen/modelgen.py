@@ -78,6 +78,7 @@ def _infer_layer_shapes(model):
     return layer_shapes
 
 
+
 def _extract_layer_info(layer, in_shape, out_shape):
     ltype = layer.__class__.__name__
     cfg = layer.get_config()
@@ -351,6 +352,116 @@ class ModelGen:
         self.software_json = None
         self.hardware_json = None
 
+    def setInputFormat(self, in_width, in_frac, in_signed):
+        self.input_format = {
+            "width": in_width,
+            "fraction": in_frac,
+            "signed": in_signed
+        }
+        print(f"✓ Input format set: width={in_width}, frac={in_frac}, signed={in_signed}")
+    
+    def _generate_converter_wrapper(self):
+        """
+        Builds <project>.v only if setInputFormat() was called.
+        Also copies DataConverter.v and Data_MIC_Converter.v into hw/.
+        """
+
+        # 1. Check if user set input format
+        if not hasattr(self, "input_format"):
+            print("⚠ Input format not set — skipping wrapper generation.")
+            return
+
+        # --- Read hardware model ---
+        hw_json = json.loads(self.hardware_json_path.read_text())
+        top = hw_json["Hardware_model"]["top"]
+
+        project_name   = self.out_dir.name
+        cnn_top_name   = f"{project_name}_top"
+        hw_dir         = self.out_dir / "hw"
+        # Use the *same* resolution logic as build()
+        design_dir = self.out_dir / "designFiles"
+        if not design_dir.exists():
+            design_dir = Path("designFiles")      # works if run from root
+
+
+        # Get CNN data format
+        out_width  = top["hardware parameters"]["DATA_WIDTH"]
+        out_frac   = top["hardware parameters"]["FRACTION_SIZE"]
+        out_signed = top["hardware parameters"]["SIGNED"]
+
+        # Detect number of input channels
+        channels = 1
+        for k, blk in top.items():
+            if isinstance(blk, dict) and blk.get("module") == "Conv2D":
+                channels = blk["parameters"]["INPUT_CHANNELS"]
+                break
+
+        # User-provided input format
+        in_width  = self.input_format["width"]
+        in_frac   = self.input_format["fraction"]
+        in_signed = self.input_format["signed"]
+
+        # ---- Write wrapper RTL ----
+        wrapper_path = hw_dir / f"{project_name}.v"
+        lines = []
+
+        lines.append("// =============================================================")
+        lines.append(f"// Auto-generated wrapper for {cnn_top_name}")
+        lines.append("// Includes Data_MIC_Converter to adapt external input format")
+        lines.append("// =============================================================")
+        lines.append(f"module {project_name} (")
+        lines.append("    input  wire clock,")
+        lines.append("    input  wire sreset_n,")
+        lines.append(f"    input  wire [{channels*in_width-1}:0] data_in,")
+        lines.append("    input  wire data_valid,")
+        lines.append("    output wire [3:0] class_idx,")
+        lines.append("    output wire class_valid")
+        lines.append(");")
+        lines.append("")
+
+        lines.append(f"    wire [{channels*out_width-1}:0] cnn_input;")
+        lines.append("")
+        lines.append("    // Data converter")
+        lines.append("    Data_MIC_Converter #(")
+        lines.append(f"        .INPUT_DATAWIDTH({in_width}),")
+        lines.append(f"        .INPUT_FRACTION_WIDTH({in_frac}),")
+        lines.append(f"        .OUTPUT_DATAWIDTH({out_width}),")
+        lines.append(f"        .OUTPUT_FRACTION_WIDTH({out_frac}),")
+        lines.append(f"        .INPUT_SIGNED({in_signed}),")
+        lines.append(f"        .OUTPUT_SIGNED({out_signed}),")
+        lines.append(f"        .CHANNELS({channels})")
+        lines.append("    ) converter (")
+        lines.append("        .data_in(data_in),")
+        lines.append("        .data_out(cnn_input)")
+        lines.append("    );")
+        lines.append("")
+        lines.append("    // CNN core")
+        lines.append(f"    {cnn_top_name} core (")
+        lines.append("        .clock(clock),")
+        lines.append("        .sreset_n(sreset_n),")
+        lines.append("        .data_in(cnn_input),")
+        lines.append("        .data_valid(data_valid),")
+        lines.append("        .class_idx(class_idx),")
+        lines.append("        .class_valid(class_valid)")
+        lines.append("    );")
+        lines.append("")
+        lines.append("endmodule")
+
+        wrapper_path.write_text("\n".join(lines))
+        print(f"✓ Generated wrapper top: {wrapper_path}")
+
+        # 2. Copy converter dependencies ONLY when wrapper is generated
+        for fname in ["DataConverter.v", "Data_MIC_Converter.v"]:
+            src = design_dir / fname
+            dst = hw_dir / fname
+
+            if src.exists():
+                shutil.copy2(src, dst)
+                print(f"→ Copied {fname} to HW directory")
+            else:
+                print(f"⚠ Missing converter dependency: {fname} (expected in {design_dir})")
+
+    
     # ---------------- Stage 1 ----------------
     def generate_software_json(self, out_path=None):
         if out_path is None:
@@ -600,8 +711,8 @@ class ModelGen:
 
         # dependencies base (same as earlier)
         DEPENDENCY_BASE = {
-            "Conv2D": ["FP_Adder.v", "FP_Multiplier.v", "ConvMemory.v", "Conv_SIC.v", "Conv_MIC.v", "relu.v"],
-            "Max2D": ["FP_Comparator.v", "Maxpool.v"],
+            "Conv2D": ["FP_Adder.v", "FP_Multiplier.v", "ConvMemory.v","ConvolChnl.v", "Conv_SIC.v", "Conv_MIC.v","imageBuffer.v","imageBufferChnl.v","pixel_buffer.v","line_buffer.v"],
+            "Max2D": ["FP_Comparator.v", "Maxpool.v","imageBuffer.v","MaxpoolChnl.v","imageBufferChnl.v","pixel_buffer.v","line_buffer.v"],
             "neuron": ["FP_Adder.v", "FP_Multiplier.v", "Weight_Memory.v", "relu.v"],
             "maxFinder": []
         }
@@ -846,10 +957,9 @@ class ModelGen:
                     f"    );",
                     ""
                 ]
-                with open(RTL_DIR / f"{k}.v", "w") as f:
-                    f.write("\n".join(lines))
+                
                 prev_block_name, prev_block = k, blk
-                vprint(f"✓ Wrote {k}.v")
+                vprint(f"Skipping generation of wrapper {k}.v (using top-level Conv2D.v instead)")
 
             # Max2D
             elif mod.lower() == "max2d":
@@ -886,10 +996,8 @@ class ModelGen:
                     f"    );",
                     ""
                 ]
-                with open(RTL_DIR / f"{k}.v", "w") as f:
-                    f.write("\n".join(lines))
                 prev_block_name, prev_block = k, blk
-                vprint(f"✓ Wrote {k}.v")
+                vprint(f"Skipping generation of wrapper {k}.v (using top-level Max2D.v instead)")
 
             else:
                 # Generic shallow instantiation (declare outputs and instantiate)
@@ -930,10 +1038,10 @@ class ModelGen:
                     f"    );",
                     ""
                 ]
-                with open(RTL_DIR / f"{k}.v", "w") as f:
-                    f.write("\n".join(lines))
+                
                 prev_block_name, prev_block = k, blk
-                vprint(f"✓ Wrote {k}.v")
+                vprint(f"Skipping generation of wrapper {k}.v (using top-level Max2D.v instead)")
+
 
         # At this point prev_block is the block immediately before NN
         if prev_block is None:
@@ -977,7 +1085,18 @@ class ModelGen:
         tlines.append(f")(")
         tlines.append(f"    input wire clock,")
         tlines.append(f"    input wire sreset_n,")
-        tlines.append(f"    input wire [DATA_WIDTH-1:0] data_in,")
+        # Fix: core input must account for input channels
+        # Determine number of input channels for the core input bus
+        channels = 1
+        for k, blk in top.items():
+            if not isinstance(blk, dict):
+                continue
+            params = blk.get("parameters", {})
+            if "INPUT_CHANNELS" in params:
+                channels = params["INPUT_CHANNELS"]   # use the FIRST block that declares input channels
+                break
+        tlines.append(f"    input wire [{channels}*DATA_WIDTH-1:0] data_in,")
+
         tlines.append(f"    input wire data_valid,")
         tlines.append(f"    output wire [3:0] class_idx,")
         tlines.append(f"    output wire class_valid")
@@ -1230,3 +1349,5 @@ class ModelGen:
                 shutil.copy2(m, HW_DIR / m.name)
 
         vprint(f"📦 HW folder packaged: {HW_DIR.resolve()}")
+        self._generate_converter_wrapper()
+

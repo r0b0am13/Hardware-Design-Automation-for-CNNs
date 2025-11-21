@@ -3,7 +3,7 @@
 module Conv_MIC#( //This module just does sum(weights[i]*inputs[i]). No bias is added in this specific block
     
     parameter KERNEL_SIZE = 3,
-    parameter INPUT_CHANNELS = 3,
+    parameter INPUT_CHANNELS = 1,
     parameter DATA_WIDTH  = 16,
     parameter FRACTION_SIZE = 14,
     parameter SIGNED = 1,
@@ -28,7 +28,7 @@ module Conv_MIC#( //This module just does sum(weights[i]*inputs[i]). No bias is 
     
     localparam SC_STAGES = $clog2(KERNEL_SIZE*KERNEL_SIZE);
     localparam SC_WIDTH = DATA_WIDTH + (GUARD_TYPE==3 ? DATA_WIDTH+SC_STAGES : 0);
-    
+    localparam INTEGER_SIZE = DATA_WIDTH-FRACTION_SIZE;
     genvar i,j,k;
     integer l,m,n;
     
@@ -49,10 +49,10 @@ module Conv_MIC#( //This module just does sum(weights[i]*inputs[i]). No bias is 
     generate
         //Bias assignment logic
         if(SIGNED) begin
-            assign channel_outputs[INPUT_CHANNELS] = (GUARD_TYPE==3) ?{{SC_STAGES{bias[DATA_WIDTH-1]}},bias,{DATA_WIDTH{1'b0}}} : bias;
+            assign channel_outputs[INPUT_CHANNELS] = (GUARD_TYPE==3) ?{{(SC_STAGES+INTEGER_SIZE){bias[DATA_WIDTH-1]}},bias,{FRACTION_SIZE{1'b0}}} : bias;
         end
         else begin
-            assign channel_outputs[INPUT_CHANNELS] = (GUARD_TYPE==3) ? {{SC_STAGES{1'b0}},bias,{DATA_WIDTH{1'b0}}} : bias;
+            assign channel_outputs[INPUT_CHANNELS] = (GUARD_TYPE==3) ? {{(SC_STAGES+INTEGER_SIZE){1'b0}},bias,{FRACTION_SIZE{1'b0}}} : bias;
         end
         
         //SIC instance generation
@@ -121,9 +121,12 @@ module Conv_MIC#( //This module just does sum(weights[i]*inputs[i]). No bias is 
                     if(only_wire ==1) begin
                         if(i==0) begin
                             assign wire_array[j] = (SIGNED == 1) ?  $signed(channel_outputs[2*j]) : channel_outputs[2*j];
+                            //assign wire_array[j] = (SIGNED == 1) ?  {channel_outputs[2*j][SC_WIDTH-1],channel_outputs[2*j]} : channel_outputs[2*j];
                         end
                         else begin
                             assign wire_array[j] = (SIGNED == 1) ? $signed(gen_stage[i-1].reg_array[2*j]) : gen_stage[i-1].reg_array[2*j];
+                            //assign wire_array[j] = (SIGNED == 1) ? {gen_stage[i-1].reg_array[2*j][DATA_WIDTH + ((GUARD_TYPE==3) ? DATA_WIDTH+SC_STAGES+(i-1) : -1)],
+                            //                                    gen_stage[i-1].reg_array[2*j]} : gen_stage[i-1].reg_array[2*j];
                         end
                     end
                 end

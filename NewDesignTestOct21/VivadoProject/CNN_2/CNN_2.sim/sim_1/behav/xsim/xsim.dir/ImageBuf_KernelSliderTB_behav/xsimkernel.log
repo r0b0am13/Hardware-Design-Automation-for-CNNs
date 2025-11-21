@@ -1,7 +1,0 @@
-Running: xsim.dir/ImageBuf_KernelSliderTB_behav/xsimk.exe -simmode gui -wdb ImageBuf_KernelSliderTB_behav.wdb -simrunnum 0 -socket 49895
-Design successfully loaded
-Design Loading Memory Usage: 8488 KB (Peak: 8488 KB)
-Design Loading CPU Usage: 0 ms
-Simulation completed
-Simulation Memory Usage: 9716 KB (Peak: 9716 KB)
-Simulation CPU Usage: 0 ms
