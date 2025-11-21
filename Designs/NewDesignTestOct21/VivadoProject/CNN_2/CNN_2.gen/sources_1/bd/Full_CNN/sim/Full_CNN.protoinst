@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"Full_CNN": {
+			"proto_instances": {
+			}
+		}
+	}
+}

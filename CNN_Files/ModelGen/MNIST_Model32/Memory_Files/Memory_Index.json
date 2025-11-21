@@ -1,0 +1,770 @@
+{
+  "conv_blocks": [
+    {
+      "conv_block": 1,
+      "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\c_1_w.mif",
+      "biases_mif": "MNIST_Model32\\Memory_Files\\mif\\c_1_b.mif",
+      "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\c_1_w.csv",
+      "biases_csv": "MNIST_Model32\\Memory_Files\\csv\\c_1_b.csv"
+    }
+  ],
+  "nn_layers": [
+    {
+      "layer": 1,
+      "neurons": [
+        {
+          "neuron": 0,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_1_0.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_1_0.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_1_0.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_1_0.csv"
+        },
+        {
+          "neuron": 1,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_1_1.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_1_1.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_1_1.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_1_1.csv"
+        },
+        {
+          "neuron": 2,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_1_2.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_1_2.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_1_2.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_1_2.csv"
+        },
+        {
+          "neuron": 3,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_1_3.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_1_3.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_1_3.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_1_3.csv"
+        },
+        {
+          "neuron": 4,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_1_4.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_1_4.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_1_4.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_1_4.csv"
+        },
+        {
+          "neuron": 5,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_1_5.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_1_5.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_1_5.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_1_5.csv"
+        },
+        {
+          "neuron": 6,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_1_6.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_1_6.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_1_6.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_1_6.csv"
+        },
+        {
+          "neuron": 7,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_1_7.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_1_7.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_1_7.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_1_7.csv"
+        },
+        {
+          "neuron": 8,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_1_8.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_1_8.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_1_8.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_1_8.csv"
+        },
+        {
+          "neuron": 9,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_1_9.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_1_9.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_1_9.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_1_9.csv"
+        },
+        {
+          "neuron": 10,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_1_10.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_1_10.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_1_10.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_1_10.csv"
+        },
+        {
+          "neuron": 11,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_1_11.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_1_11.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_1_11.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_1_11.csv"
+        },
+        {
+          "neuron": 12,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_1_12.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_1_12.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_1_12.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_1_12.csv"
+        },
+        {
+          "neuron": 13,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_1_13.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_1_13.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_1_13.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_1_13.csv"
+        },
+        {
+          "neuron": 14,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_1_14.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_1_14.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_1_14.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_1_14.csv"
+        },
+        {
+          "neuron": 15,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_1_15.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_1_15.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_1_15.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_1_15.csv"
+        },
+        {
+          "neuron": 16,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_1_16.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_1_16.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_1_16.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_1_16.csv"
+        },
+        {
+          "neuron": 17,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_1_17.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_1_17.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_1_17.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_1_17.csv"
+        },
+        {
+          "neuron": 18,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_1_18.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_1_18.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_1_18.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_1_18.csv"
+        },
+        {
+          "neuron": 19,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_1_19.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_1_19.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_1_19.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_1_19.csv"
+        },
+        {
+          "neuron": 20,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_1_20.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_1_20.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_1_20.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_1_20.csv"
+        },
+        {
+          "neuron": 21,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_1_21.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_1_21.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_1_21.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_1_21.csv"
+        },
+        {
+          "neuron": 22,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_1_22.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_1_22.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_1_22.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_1_22.csv"
+        },
+        {
+          "neuron": 23,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_1_23.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_1_23.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_1_23.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_1_23.csv"
+        },
+        {
+          "neuron": 24,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_1_24.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_1_24.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_1_24.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_1_24.csv"
+        },
+        {
+          "neuron": 25,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_1_25.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_1_25.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_1_25.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_1_25.csv"
+        },
+        {
+          "neuron": 26,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_1_26.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_1_26.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_1_26.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_1_26.csv"
+        },
+        {
+          "neuron": 27,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_1_27.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_1_27.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_1_27.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_1_27.csv"
+        },
+        {
+          "neuron": 28,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_1_28.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_1_28.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_1_28.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_1_28.csv"
+        },
+        {
+          "neuron": 29,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_1_29.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_1_29.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_1_29.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_1_29.csv"
+        },
+        {
+          "neuron": 30,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_1_30.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_1_30.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_1_30.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_1_30.csv"
+        },
+        {
+          "neuron": 31,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_1_31.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_1_31.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_1_31.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_1_31.csv"
+        },
+        {
+          "neuron": 32,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_1_32.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_1_32.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_1_32.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_1_32.csv"
+        },
+        {
+          "neuron": 33,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_1_33.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_1_33.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_1_33.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_1_33.csv"
+        },
+        {
+          "neuron": 34,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_1_34.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_1_34.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_1_34.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_1_34.csv"
+        },
+        {
+          "neuron": 35,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_1_35.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_1_35.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_1_35.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_1_35.csv"
+        },
+        {
+          "neuron": 36,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_1_36.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_1_36.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_1_36.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_1_36.csv"
+        },
+        {
+          "neuron": 37,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_1_37.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_1_37.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_1_37.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_1_37.csv"
+        },
+        {
+          "neuron": 38,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_1_38.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_1_38.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_1_38.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_1_38.csv"
+        },
+        {
+          "neuron": 39,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_1_39.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_1_39.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_1_39.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_1_39.csv"
+        },
+        {
+          "neuron": 40,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_1_40.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_1_40.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_1_40.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_1_40.csv"
+        },
+        {
+          "neuron": 41,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_1_41.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_1_41.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_1_41.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_1_41.csv"
+        },
+        {
+          "neuron": 42,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_1_42.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_1_42.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_1_42.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_1_42.csv"
+        },
+        {
+          "neuron": 43,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_1_43.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_1_43.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_1_43.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_1_43.csv"
+        },
+        {
+          "neuron": 44,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_1_44.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_1_44.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_1_44.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_1_44.csv"
+        },
+        {
+          "neuron": 45,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_1_45.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_1_45.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_1_45.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_1_45.csv"
+        },
+        {
+          "neuron": 46,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_1_46.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_1_46.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_1_46.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_1_46.csv"
+        },
+        {
+          "neuron": 47,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_1_47.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_1_47.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_1_47.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_1_47.csv"
+        },
+        {
+          "neuron": 48,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_1_48.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_1_48.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_1_48.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_1_48.csv"
+        },
+        {
+          "neuron": 49,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_1_49.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_1_49.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_1_49.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_1_49.csv"
+        },
+        {
+          "neuron": 50,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_1_50.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_1_50.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_1_50.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_1_50.csv"
+        },
+        {
+          "neuron": 51,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_1_51.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_1_51.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_1_51.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_1_51.csv"
+        },
+        {
+          "neuron": 52,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_1_52.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_1_52.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_1_52.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_1_52.csv"
+        },
+        {
+          "neuron": 53,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_1_53.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_1_53.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_1_53.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_1_53.csv"
+        },
+        {
+          "neuron": 54,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_1_54.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_1_54.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_1_54.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_1_54.csv"
+        },
+        {
+          "neuron": 55,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_1_55.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_1_55.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_1_55.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_1_55.csv"
+        },
+        {
+          "neuron": 56,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_1_56.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_1_56.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_1_56.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_1_56.csv"
+        },
+        {
+          "neuron": 57,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_1_57.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_1_57.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_1_57.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_1_57.csv"
+        },
+        {
+          "neuron": 58,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_1_58.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_1_58.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_1_58.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_1_58.csv"
+        },
+        {
+          "neuron": 59,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_1_59.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_1_59.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_1_59.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_1_59.csv"
+        },
+        {
+          "neuron": 60,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_1_60.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_1_60.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_1_60.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_1_60.csv"
+        },
+        {
+          "neuron": 61,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_1_61.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_1_61.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_1_61.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_1_61.csv"
+        },
+        {
+          "neuron": 62,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_1_62.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_1_62.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_1_62.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_1_62.csv"
+        },
+        {
+          "neuron": 63,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_1_63.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_1_63.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_1_63.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_1_63.csv"
+        }
+      ]
+    },
+    {
+      "layer": 2,
+      "neurons": [
+        {
+          "neuron": 0,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_2_0.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_2_0.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_2_0.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_2_0.csv"
+        },
+        {
+          "neuron": 1,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_2_1.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_2_1.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_2_1.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_2_1.csv"
+        },
+        {
+          "neuron": 2,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_2_2.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_2_2.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_2_2.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_2_2.csv"
+        },
+        {
+          "neuron": 3,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_2_3.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_2_3.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_2_3.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_2_3.csv"
+        },
+        {
+          "neuron": 4,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_2_4.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_2_4.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_2_4.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_2_4.csv"
+        },
+        {
+          "neuron": 5,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_2_5.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_2_5.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_2_5.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_2_5.csv"
+        },
+        {
+          "neuron": 6,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_2_6.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_2_6.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_2_6.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_2_6.csv"
+        },
+        {
+          "neuron": 7,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_2_7.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_2_7.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_2_7.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_2_7.csv"
+        },
+        {
+          "neuron": 8,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_2_8.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_2_8.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_2_8.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_2_8.csv"
+        },
+        {
+          "neuron": 9,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_2_9.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_2_9.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_2_9.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_2_9.csv"
+        },
+        {
+          "neuron": 10,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_2_10.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_2_10.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_2_10.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_2_10.csv"
+        },
+        {
+          "neuron": 11,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_2_11.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_2_11.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_2_11.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_2_11.csv"
+        },
+        {
+          "neuron": 12,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_2_12.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_2_12.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_2_12.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_2_12.csv"
+        },
+        {
+          "neuron": 13,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_2_13.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_2_13.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_2_13.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_2_13.csv"
+        },
+        {
+          "neuron": 14,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_2_14.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_2_14.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_2_14.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_2_14.csv"
+        },
+        {
+          "neuron": 15,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_2_15.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_2_15.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_2_15.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_2_15.csv"
+        },
+        {
+          "neuron": 16,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_2_16.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_2_16.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_2_16.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_2_16.csv"
+        },
+        {
+          "neuron": 17,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_2_17.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_2_17.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_2_17.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_2_17.csv"
+        },
+        {
+          "neuron": 18,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_2_18.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_2_18.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_2_18.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_2_18.csv"
+        },
+        {
+          "neuron": 19,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_2_19.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_2_19.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_2_19.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_2_19.csv"
+        },
+        {
+          "neuron": 20,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_2_20.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_2_20.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_2_20.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_2_20.csv"
+        },
+        {
+          "neuron": 21,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_2_21.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_2_21.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_2_21.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_2_21.csv"
+        },
+        {
+          "neuron": 22,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_2_22.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_2_22.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_2_22.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_2_22.csv"
+        },
+        {
+          "neuron": 23,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_2_23.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_2_23.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_2_23.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_2_23.csv"
+        },
+        {
+          "neuron": 24,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_2_24.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_2_24.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_2_24.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_2_24.csv"
+        },
+        {
+          "neuron": 25,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_2_25.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_2_25.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_2_25.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_2_25.csv"
+        },
+        {
+          "neuron": 26,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_2_26.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_2_26.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_2_26.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_2_26.csv"
+        },
+        {
+          "neuron": 27,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_2_27.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_2_27.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_2_27.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_2_27.csv"
+        },
+        {
+          "neuron": 28,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_2_28.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_2_28.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_2_28.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_2_28.csv"
+        },
+        {
+          "neuron": 29,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_2_29.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_2_29.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_2_29.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_2_29.csv"
+        },
+        {
+          "neuron": 30,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_2_30.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_2_30.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_2_30.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_2_30.csv"
+        },
+        {
+          "neuron": 31,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_2_31.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_2_31.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_2_31.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_2_31.csv"
+        }
+      ]
+    },
+    {
+      "layer": 3,
+      "neurons": [
+        {
+          "neuron": 0,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_3_0.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_3_0.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_3_0.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_3_0.csv"
+        },
+        {
+          "neuron": 1,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_3_1.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_3_1.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_3_1.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_3_1.csv"
+        },
+        {
+          "neuron": 2,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_3_2.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_3_2.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_3_2.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_3_2.csv"
+        },
+        {
+          "neuron": 3,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_3_3.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_3_3.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_3_3.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_3_3.csv"
+        },
+        {
+          "neuron": 4,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_3_4.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_3_4.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_3_4.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_3_4.csv"
+        },
+        {
+          "neuron": 5,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_3_5.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_3_5.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_3_5.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_3_5.csv"
+        },
+        {
+          "neuron": 6,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_3_6.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_3_6.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_3_6.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_3_6.csv"
+        },
+        {
+          "neuron": 7,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_3_7.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_3_7.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_3_7.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_3_7.csv"
+        },
+        {
+          "neuron": 8,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_3_8.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_3_8.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_3_8.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_3_8.csv"
+        },
+        {
+          "neuron": 9,
+          "weights_mif": "MNIST_Model32\\Memory_Files\\mif\\w_3_9.mif",
+          "bias_mif": "MNIST_Model32\\Memory_Files\\mif\\b_3_9.mif",
+          "weights_csv": "MNIST_Model32\\Memory_Files\\csv\\w_3_9.csv",
+          "bias_csv": "MNIST_Model32\\Memory_Files\\csv\\b_3_9.csv"
+        }
+      ]
+    }
+  ]
+}

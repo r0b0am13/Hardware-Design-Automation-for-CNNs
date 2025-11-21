@@ -1,0 +1,164 @@
+{
+  "model_name": "sequential",
+  "layers": [
+    {
+      "name": "conv2d",
+      "type": "Conv2D",
+      "input_shape": [
+        32,
+        32
+      ],
+      "input_channels": 1,
+      "output_shape": [
+        30,
+        30
+      ],
+      "output_channels": 16,
+      "filters": 16,
+      "kernel_size": 3,
+      "stride": 1,
+      "activation": "relu"
+    },
+    {
+      "name": "conv2d_1",
+      "type": "Conv2D",
+      "input_shape": [
+        30,
+        30
+      ],
+      "input_channels": 16,
+      "output_shape": [
+        28,
+        28
+      ],
+      "output_channels": 16,
+      "filters": 16,
+      "kernel_size": 3,
+      "stride": 1,
+      "activation": "relu"
+    },
+    {
+      "name": "max_pooling2d",
+      "type": "MaxPooling2D",
+      "input_shape": [
+        28,
+        28
+      ],
+      "input_channels": 16,
+      "output_shape": [
+        14,
+        14
+      ],
+      "output_channels": 16,
+      "pool_size": 2,
+      "stride": 2
+    },
+    {
+      "name": "conv2d_2",
+      "type": "Conv2D",
+      "input_shape": [
+        14,
+        14
+      ],
+      "input_channels": 16,
+      "output_shape": [
+        12,
+        12
+      ],
+      "output_channels": 32,
+      "filters": 32,
+      "kernel_size": 3,
+      "stride": 1,
+      "activation": "relu"
+    },
+    {
+      "name": "conv2d_3",
+      "type": "Conv2D",
+      "input_shape": [
+        12,
+        12
+      ],
+      "input_channels": 32,
+      "output_shape": [
+        10,
+        10
+      ],
+      "output_channels": 1,
+      "filters": 1,
+      "kernel_size": 3,
+      "stride": 1,
+      "activation": "relu"
+    },
+    {
+      "name": "max_pooling2d_1",
+      "type": "MaxPooling2D",
+      "input_shape": [
+        10,
+        10
+      ],
+      "input_channels": 1,
+      "output_shape": [
+        5,
+        5
+      ],
+      "output_channels": 1,
+      "pool_size": 2,
+      "stride": 2
+    },
+    {
+      "name": "flatten",
+      "type": "Flatten",
+      "input_shape": [
+        5,
+        5
+      ],
+      "input_channels": 1,
+      "output_shape": [
+        25
+      ],
+      "output_channels": 25
+    },
+    {
+      "name": "dense",
+      "type": "Dense",
+      "input_shape": [
+        25
+      ],
+      "input_channels": 1,
+      "output_shape": [
+        128
+      ],
+      "output_channels": 128,
+      "units": 128,
+      "activation": "relu"
+    },
+    {
+      "name": "dense_1",
+      "type": "Dense",
+      "input_shape": [
+        128
+      ],
+      "input_channels": 1,
+      "output_shape": [
+        64
+      ],
+      "output_channels": 64,
+      "units": 64,
+      "activation": "relu"
+    },
+    {
+      "name": "dense_2",
+      "type": "Dense",
+      "input_shape": [
+        64
+      ],
+      "input_channels": 1,
+      "output_shape": [
+        10
+      ],
+      "output_channels": 10,
+      "units": 10,
+      "activation": "softmax"
+    }
+  ]
+}

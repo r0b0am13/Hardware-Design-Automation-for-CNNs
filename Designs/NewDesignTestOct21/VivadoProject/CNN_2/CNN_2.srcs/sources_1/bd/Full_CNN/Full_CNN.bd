@@ -1,0 +1,794 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x9C7B1C1576DF6D53",
+      "device": "xc7z020clg484-1",
+      "gen_directory": "../../../../CNN_2.gen/sources_1/bd/Full_CNN",
+      "name": "Full_CNN",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2020.2"
+    },
+    "design_tree": {
+      "Convolution_0": "",
+      "Maxpool_0": "",
+      "ConvWeightBiasModule_0": "",
+      "DataConverter_0": "",
+      "zyNet_0": "",
+      "MaxSlider": "",
+      "ConvSlider": ""
+    },
+    "ports": {
+      "Pixel_In": {
+        "direction": "I",
+        "left": "7",
+        "right": "0"
+      },
+      "clock": {
+        "type": "clk",
+        "direction": "I"
+      },
+      "data_in_valid": {
+        "direction": "I"
+      },
+      "reset_n": {
+        "direction": "I"
+      },
+      "x1_out_d": {
+        "direction": "O",
+        "left": "1023",
+        "right": "0"
+      },
+      "o1_valid_d": {
+        "direction": "O",
+        "left": "63",
+        "right": "0"
+      },
+      "x2_out_d": {
+        "direction": "O",
+        "left": "511",
+        "right": "0"
+      },
+      "o2_valid_d": {
+        "direction": "O",
+        "left": "31",
+        "right": "0"
+      },
+      "x3_out_d": {
+        "direction": "O",
+        "left": "159",
+        "right": "0"
+      },
+      "out_valid_final": {
+        "direction": "O"
+      },
+      "o3_valid_d": {
+        "direction": "O",
+        "left": "9",
+        "right": "0"
+      },
+      "out_final": {
+        "direction": "O",
+        "left": "31",
+        "right": "0"
+      },
+      "Maxpool_Debug": {
+        "direction": "O",
+        "left": "15",
+        "right": "0"
+      },
+      "Maxpool_valid_Debug": {
+        "direction": "O"
+      },
+      "Conv_valid_Debug": {
+        "direction": "O"
+      },
+      "Conv_Debug": {
+        "direction": "O",
+        "left": "15",
+        "right": "0"
+      }
+    },
+    "components": {
+      "Convolution_0": {
+        "vlnv": "xilinx.com:module_ref:Convolution:1.0",
+        "xci_name": "Full_CNN_Convolution_0_0",
+        "xci_path": "ip\\Full_CNN_Convolution_0_0\\Full_CNN_Convolution_0_0.xci",
+        "inst_hier_path": "Convolution_0",
+        "parameters": {
+          "ACTIVATION": {
+            "value": "1"
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Convolution",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clock": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "Full_CNN_clock",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "data_valid": {
+            "direction": "I"
+          },
+          "sreset_n": {
+            "direction": "I"
+          },
+          "kernel_in": {
+            "direction": "I",
+            "left": "143",
+            "right": "0"
+          },
+          "weights": {
+            "direction": "I",
+            "left": "143",
+            "right": "0"
+          },
+          "bias": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "conv_out": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          },
+          "conv_valid": {
+            "direction": "O"
+          }
+        }
+      },
+      "Maxpool_0": {
+        "vlnv": "xilinx.com:module_ref:Maxpool:1.0",
+        "xci_name": "Full_CNN_Maxpool_0_0",
+        "xci_path": "ip\\Full_CNN_Maxpool_0_0\\Full_CNN_Maxpool_0_0.xci",
+        "inst_hier_path": "Maxpool_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Maxpool",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clock": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "Full_CNN_clock",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "data_valid": {
+            "direction": "I"
+          },
+          "sreset_n": {
+            "direction": "I"
+          },
+          "kernel_in": {
+            "direction": "I",
+            "left": "63",
+            "right": "0"
+          },
+          "maxp_out": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          },
+          "maxp_valid": {
+            "direction": "O"
+          }
+        }
+      },
+      "ConvWeightBiasModule_0": {
+        "vlnv": "xilinx.com:module_ref:ConvWeightBiasModule:1.0",
+        "xci_name": "Full_CNN_ConvWeightBiasModule_0_0",
+        "xci_path": "ip\\Full_CNN_ConvWeightBiasModule_0_0\\Full_CNN_ConvWeightBiasModule_0_0.xci",
+        "inst_hier_path": "ConvWeightBiasModule_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "ConvWeightBiasModule",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "Weights": {
+            "direction": "O",
+            "left": "143",
+            "right": "0"
+          },
+          "Bias": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          }
+        }
+      },
+      "DataConverter_0": {
+        "vlnv": "xilinx.com:module_ref:DataConverter:1.0",
+        "xci_name": "Full_CNN_DataConverter_0_0",
+        "xci_path": "ip\\Full_CNN_DataConverter_0_0\\Full_CNN_DataConverter_0_0.xci",
+        "inst_hier_path": "DataConverter_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "DataConverter",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "data_in": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "data_out": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          }
+        }
+      },
+      "zyNet_0": {
+        "vlnv": "xilinx.com:module_ref:zyNet:1.0",
+        "xci_name": "Full_CNN_zyNet_0_0",
+        "xci_path": "ip\\Full_CNN_zyNet_0_0\\Full_CNN_zyNet_0_0.xci",
+        "inst_hier_path": "zyNet_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "zyNet",
+          "boundary_crc": "0x0"
+        },
+        "interface_ports": {
+          "s_axi": {
+            "mode": "Slave",
+            "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
+            "parameters": {
+              "DATA_WIDTH": {
+                "value": "32",
+                "value_src": "auto"
+              },
+              "PROTOCOL": {
+                "value": "AXI4LITE",
+                "value_src": "constant"
+              },
+              "ID_WIDTH": {
+                "value": "0",
+                "value_src": "constant"
+              },
+              "ADDR_WIDTH": {
+                "value": "5",
+                "value_src": "auto"
+              },
+              "AWUSER_WIDTH": {
+                "value": "0",
+                "value_src": "constant"
+              },
+              "ARUSER_WIDTH": {
+                "value": "0",
+                "value_src": "constant"
+              },
+              "WUSER_WIDTH": {
+                "value": "0",
+                "value_src": "constant"
+              },
+              "RUSER_WIDTH": {
+                "value": "0",
+                "value_src": "constant"
+              },
+              "BUSER_WIDTH": {
+                "value": "0",
+                "value_src": "constant"
+              },
+              "READ_WRITE_MODE": {
+                "value": "READ_WRITE",
+                "value_src": "constant"
+              },
+              "HAS_BURST": {
+                "value": "0",
+                "value_src": "constant"
+              },
+              "HAS_LOCK": {
+                "value": "0",
+                "value_src": "constant"
+              },
+              "HAS_PROT": {
+                "value": "1",
+                "value_src": "constant"
+              },
+              "HAS_CACHE": {
+                "value": "0",
+                "value_src": "constant"
+              },
+              "HAS_QOS": {
+                "value": "0",
+                "value_src": "constant"
+              },
+              "HAS_REGION": {
+                "value": "0",
+                "value_src": "constant"
+              },
+              "HAS_WSTRB": {
+                "value": "1",
+                "value_src": "constant"
+              },
+              "HAS_BRESP": {
+                "value": "1",
+                "value_src": "constant"
+              },
+              "HAS_RRESP": {
+                "value": "1",
+                "value_src": "constant"
+              },
+              "SUPPORTS_NARROW_BURST": {
+                "value": "0",
+                "value_src": "auto"
+              },
+              "NUM_READ_OUTSTANDING": {
+                "value": "1",
+                "value_src": "auto"
+              },
+              "NUM_WRITE_OUTSTANDING": {
+                "value": "1",
+                "value_src": "auto"
+              },
+              "MAX_BURST_LENGTH": {
+                "value": "1",
+                "value_src": "auto"
+              }
+            },
+            "port_maps": {
+              "AWADDR": {
+                "physical_name": "s_axi_awaddr",
+                "direction": "I",
+                "left": "4",
+                "right": "0"
+              },
+              "AWPROT": {
+                "physical_name": "s_axi_awprot",
+                "direction": "I",
+                "left": "2",
+                "right": "0"
+              },
+              "AWVALID": {
+                "physical_name": "s_axi_awvalid",
+                "direction": "I"
+              },
+              "AWREADY": {
+                "physical_name": "s_axi_awready",
+                "direction": "O"
+              },
+              "WDATA": {
+                "physical_name": "s_axi_wdata",
+                "direction": "I",
+                "left": "31",
+                "right": "0"
+              },
+              "WSTRB": {
+                "physical_name": "s_axi_wstrb",
+                "direction": "I",
+                "left": "3",
+                "right": "0"
+              },
+              "WVALID": {
+                "physical_name": "s_axi_wvalid",
+                "direction": "I"
+              },
+              "WREADY": {
+                "physical_name": "s_axi_wready",
+                "direction": "O"
+              },
+              "BRESP": {
+                "physical_name": "s_axi_bresp",
+                "direction": "O",
+                "left": "1",
+                "right": "0"
+              },
+              "BVALID": {
+                "physical_name": "s_axi_bvalid",
+                "direction": "O"
+              },
+              "BREADY": {
+                "physical_name": "s_axi_bready",
+                "direction": "I"
+              },
+              "ARADDR": {
+                "physical_name": "s_axi_araddr",
+                "direction": "I",
+                "left": "4",
+                "right": "0"
+              },
+              "ARPROT": {
+                "physical_name": "s_axi_arprot",
+                "direction": "I",
+                "left": "2",
+                "right": "0"
+              },
+              "ARVALID": {
+                "physical_name": "s_axi_arvalid",
+                "direction": "I"
+              },
+              "ARREADY": {
+                "physical_name": "s_axi_arready",
+                "direction": "O"
+              },
+              "RDATA": {
+                "physical_name": "s_axi_rdata",
+                "direction": "O",
+                "left": "31",
+                "right": "0"
+              },
+              "RRESP": {
+                "physical_name": "s_axi_rresp",
+                "direction": "O",
+                "left": "1",
+                "right": "0"
+              },
+              "RVALID": {
+                "physical_name": "s_axi_rvalid",
+                "direction": "O"
+              },
+              "RREADY": {
+                "physical_name": "s_axi_rready",
+                "direction": "I"
+              }
+            }
+          }
+        },
+        "ports": {
+          "s_axi_aclk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_BUSIF": {
+                "value": "s_axi",
+                "value_src": "constant"
+              },
+              "ASSOCIATED_RESET": {
+                "value": "s_axi_aresetn",
+                "value_src": "constant"
+              }
+            }
+          },
+          "s_axi_aresetn": {
+            "type": "rst",
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_LOW",
+                "value_src": "constant"
+              }
+            }
+          },
+          "axis_in_data": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "axis_in_data_valid": {
+            "direction": "I"
+          },
+          "axis_in_data_ready": {
+            "direction": "O"
+          },
+          "intr": {
+            "type": "intr",
+            "direction": "O",
+            "parameters": {
+              "SENSITIVITY": {
+                "value": "LEVEL_HIGH",
+                "value_src": "constant"
+              }
+            }
+          },
+          "out_final": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "out_valid_final": {
+            "direction": "O"
+          },
+          "o1_valid_d": {
+            "direction": "O",
+            "left": "63",
+            "right": "0"
+          },
+          "x1_out_d": {
+            "direction": "O",
+            "left": "1023",
+            "right": "0"
+          },
+          "o2_valid_d": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "x2_out_d": {
+            "direction": "O",
+            "left": "511",
+            "right": "0"
+          },
+          "o3_valid_d": {
+            "direction": "O",
+            "left": "9",
+            "right": "0"
+          },
+          "x3_out_d": {
+            "direction": "O",
+            "left": "159",
+            "right": "0"
+          }
+        }
+      },
+      "MaxSlider": {
+        "vlnv": "xilinx.com:module_ref:ImageBuf_KernelSlider:1.0",
+        "xci_name": "Full_CNN_ConvSlider_0",
+        "xci_path": "ip\\Full_CNN_ConvSlider_0\\Full_CNN_ConvSlider_0.xci",
+        "inst_hier_path": "MaxSlider",
+        "parameters": {
+          "COLUMN_NUM": {
+            "value": "26"
+          },
+          "DATA_WIDTH": {
+            "value": "16"
+          },
+          "KERNEL_SIZE": {
+            "value": "2"
+          },
+          "ROW_NUM": {
+            "value": "26"
+          },
+          "STRIDE": {
+            "value": "2"
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "ImageBuf_KernelSlider",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clock": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "data_valid": {
+            "direction": "I"
+          },
+          "sreset_n": {
+            "direction": "I"
+          },
+          "data_in": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "data_out": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          },
+          "kernel_out": {
+            "direction": "O",
+            "left": "63",
+            "right": "0"
+          },
+          "kernel_valid": {
+            "direction": "O"
+          }
+        }
+      },
+      "ConvSlider": {
+        "vlnv": "xilinx.com:module_ref:ImageBuf_KernelSlider:1.0",
+        "xci_name": "Full_CNN_ImageBuf_KernelSlider_0_0",
+        "xci_path": "ip\\Full_CNN_ImageBuf_KernelSlider_0_0\\Full_CNN_ImageBuf_KernelSlider_0_0.xci",
+        "inst_hier_path": "ConvSlider",
+        "parameters": {
+          "COLUMN_NUM": {
+            "value": "28"
+          },
+          "DATA_WIDTH": {
+            "value": "16"
+          },
+          "ROW_NUM": {
+            "value": "28"
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "ImageBuf_KernelSlider",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clock": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "data_valid": {
+            "direction": "I"
+          },
+          "sreset_n": {
+            "direction": "I"
+          },
+          "data_in": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "data_out": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          },
+          "kernel_out": {
+            "direction": "O",
+            "left": "143",
+            "right": "0"
+          },
+          "kernel_valid": {
+            "direction": "O"
+          }
+        }
+      }
+    },
+    "nets": {
+      "DataConverter_0_out": {
+        "ports": [
+          "DataConverter_0/data_out",
+          "ConvSlider/data_in"
+        ]
+      },
+      "in_0_1": {
+        "ports": [
+          "Pixel_In",
+          "DataConverter_0/data_in"
+        ]
+      },
+      "clock_0_1": {
+        "ports": [
+          "clock",
+          "Convolution_0/clock",
+          "Maxpool_0/clock",
+          "zyNet_0/s_axi_aclk",
+          "MaxSlider/clock",
+          "ConvSlider/clock"
+        ]
+      },
+      "data_valid_0_1": {
+        "ports": [
+          "data_in_valid",
+          "ConvSlider/data_valid"
+        ]
+      },
+      "ConvSlider_kernel_out": {
+        "ports": [
+          "ConvSlider/kernel_out",
+          "Convolution_0/kernel_in"
+        ]
+      },
+      "ConvSlider_kernel_valid": {
+        "ports": [
+          "ConvSlider/kernel_valid",
+          "Convolution_0/data_valid"
+        ]
+      },
+      "zyNet_0_x1_out_d": {
+        "ports": [
+          "zyNet_0/x1_out_d",
+          "x1_out_d"
+        ]
+      },
+      "zyNet_0_o1_valid_d": {
+        "ports": [
+          "zyNet_0/o1_valid_d",
+          "o1_valid_d"
+        ]
+      },
+      "zyNet_0_x2_out_d": {
+        "ports": [
+          "zyNet_0/x2_out_d",
+          "x2_out_d"
+        ]
+      },
+      "zyNet_0_o2_valid_d": {
+        "ports": [
+          "zyNet_0/o2_valid_d",
+          "o2_valid_d"
+        ]
+      },
+      "zyNet_0_x3_out_d": {
+        "ports": [
+          "zyNet_0/x3_out_d",
+          "x3_out_d"
+        ]
+      },
+      "zyNet_0_out_valid_final": {
+        "ports": [
+          "zyNet_0/out_valid_final",
+          "out_valid_final"
+        ]
+      },
+      "zyNet_0_o3_valid_d": {
+        "ports": [
+          "zyNet_0/o3_valid_d",
+          "o3_valid_d"
+        ]
+      },
+      "zyNet_0_out_final": {
+        "ports": [
+          "zyNet_0/out_final",
+          "out_final"
+        ]
+      },
+      "MaxSlider_kernel_out": {
+        "ports": [
+          "MaxSlider/kernel_out",
+          "Maxpool_0/kernel_in"
+        ]
+      },
+      "MaxSlider_kernel_valid": {
+        "ports": [
+          "MaxSlider/kernel_valid",
+          "Maxpool_0/data_valid"
+        ]
+      },
+      "ConvWeightBiasModule_0_Weights": {
+        "ports": [
+          "ConvWeightBiasModule_0/Weights",
+          "Convolution_0/weights"
+        ]
+      },
+      "ConvWeightBiasModule_0_Bias": {
+        "ports": [
+          "ConvWeightBiasModule_0/Bias",
+          "Convolution_0/bias"
+        ]
+      },
+      "reset_n_1": {
+        "ports": [
+          "reset_n",
+          "Convolution_0/sreset_n",
+          "Maxpool_0/sreset_n",
+          "zyNet_0/s_axi_aresetn",
+          "MaxSlider/sreset_n",
+          "ConvSlider/sreset_n"
+        ]
+      },
+      "Maxpool_0_maxp_out": {
+        "ports": [
+          "Maxpool_0/maxp_out",
+          "Maxpool_Debug",
+          "zyNet_0/axis_in_data"
+        ]
+      },
+      "Maxpool_0_maxp_valid": {
+        "ports": [
+          "Maxpool_0/maxp_valid",
+          "Maxpool_valid_Debug",
+          "zyNet_0/axis_in_data_valid"
+        ]
+      },
+      "Convolution_0_conv_valid": {
+        "ports": [
+          "Convolution_0/conv_valid",
+          "Conv_valid_Debug",
+          "MaxSlider/data_valid"
+        ]
+      },
+      "Convolution_0_conv_out": {
+        "ports": [
+          "Convolution_0/conv_out",
+          "Conv_Debug",
+          "MaxSlider/data_in"
+        ]
+      }
+    }
+  }
+}

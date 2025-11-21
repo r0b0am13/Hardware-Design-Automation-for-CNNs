@@ -1,0 +1,1463 @@
+{
+  "conv_blocks": [
+    {
+      "conv_block": 1,
+      "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\c_1_w.mif",
+      "biases_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\c_1_b.mif",
+      "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\c_1_w.csv",
+      "biases_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\c_1_b.csv"
+    },
+    {
+      "conv_block": 2,
+      "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\c_2_w.mif",
+      "biases_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\c_2_b.mif",
+      "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\c_2_w.csv",
+      "biases_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\c_2_b.csv"
+    },
+    {
+      "conv_block": 3,
+      "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\c_3_w.mif",
+      "biases_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\c_3_b.mif",
+      "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\c_3_w.csv",
+      "biases_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\c_3_b.csv"
+    },
+    {
+      "conv_block": 4,
+      "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\c_4_w.mif",
+      "biases_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\c_4_b.mif",
+      "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\c_4_w.csv",
+      "biases_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\c_4_b.csv"
+    }
+  ],
+  "nn_layers": [
+    {
+      "layer": 1,
+      "neurons": [
+        {
+          "neuron": 0,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_0.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_0.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_0.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_0.csv"
+        },
+        {
+          "neuron": 1,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_1.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_1.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_1.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_1.csv"
+        },
+        {
+          "neuron": 2,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_2.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_2.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_2.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_2.csv"
+        },
+        {
+          "neuron": 3,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_3.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_3.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_3.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_3.csv"
+        },
+        {
+          "neuron": 4,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_4.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_4.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_4.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_4.csv"
+        },
+        {
+          "neuron": 5,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_5.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_5.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_5.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_5.csv"
+        },
+        {
+          "neuron": 6,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_6.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_6.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_6.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_6.csv"
+        },
+        {
+          "neuron": 7,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_7.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_7.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_7.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_7.csv"
+        },
+        {
+          "neuron": 8,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_8.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_8.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_8.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_8.csv"
+        },
+        {
+          "neuron": 9,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_9.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_9.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_9.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_9.csv"
+        },
+        {
+          "neuron": 10,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_10.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_10.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_10.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_10.csv"
+        },
+        {
+          "neuron": 11,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_11.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_11.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_11.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_11.csv"
+        },
+        {
+          "neuron": 12,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_12.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_12.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_12.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_12.csv"
+        },
+        {
+          "neuron": 13,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_13.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_13.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_13.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_13.csv"
+        },
+        {
+          "neuron": 14,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_14.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_14.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_14.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_14.csv"
+        },
+        {
+          "neuron": 15,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_15.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_15.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_15.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_15.csv"
+        },
+        {
+          "neuron": 16,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_16.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_16.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_16.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_16.csv"
+        },
+        {
+          "neuron": 17,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_17.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_17.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_17.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_17.csv"
+        },
+        {
+          "neuron": 18,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_18.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_18.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_18.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_18.csv"
+        },
+        {
+          "neuron": 19,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_19.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_19.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_19.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_19.csv"
+        },
+        {
+          "neuron": 20,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_20.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_20.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_20.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_20.csv"
+        },
+        {
+          "neuron": 21,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_21.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_21.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_21.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_21.csv"
+        },
+        {
+          "neuron": 22,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_22.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_22.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_22.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_22.csv"
+        },
+        {
+          "neuron": 23,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_23.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_23.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_23.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_23.csv"
+        },
+        {
+          "neuron": 24,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_24.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_24.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_24.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_24.csv"
+        },
+        {
+          "neuron": 25,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_25.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_25.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_25.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_25.csv"
+        },
+        {
+          "neuron": 26,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_26.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_26.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_26.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_26.csv"
+        },
+        {
+          "neuron": 27,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_27.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_27.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_27.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_27.csv"
+        },
+        {
+          "neuron": 28,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_28.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_28.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_28.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_28.csv"
+        },
+        {
+          "neuron": 29,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_29.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_29.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_29.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_29.csv"
+        },
+        {
+          "neuron": 30,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_30.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_30.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_30.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_30.csv"
+        },
+        {
+          "neuron": 31,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_31.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_31.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_31.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_31.csv"
+        },
+        {
+          "neuron": 32,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_32.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_32.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_32.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_32.csv"
+        },
+        {
+          "neuron": 33,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_33.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_33.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_33.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_33.csv"
+        },
+        {
+          "neuron": 34,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_34.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_34.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_34.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_34.csv"
+        },
+        {
+          "neuron": 35,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_35.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_35.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_35.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_35.csv"
+        },
+        {
+          "neuron": 36,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_36.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_36.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_36.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_36.csv"
+        },
+        {
+          "neuron": 37,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_37.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_37.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_37.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_37.csv"
+        },
+        {
+          "neuron": 38,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_38.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_38.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_38.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_38.csv"
+        },
+        {
+          "neuron": 39,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_39.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_39.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_39.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_39.csv"
+        },
+        {
+          "neuron": 40,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_40.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_40.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_40.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_40.csv"
+        },
+        {
+          "neuron": 41,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_41.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_41.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_41.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_41.csv"
+        },
+        {
+          "neuron": 42,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_42.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_42.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_42.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_42.csv"
+        },
+        {
+          "neuron": 43,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_43.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_43.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_43.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_43.csv"
+        },
+        {
+          "neuron": 44,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_44.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_44.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_44.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_44.csv"
+        },
+        {
+          "neuron": 45,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_45.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_45.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_45.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_45.csv"
+        },
+        {
+          "neuron": 46,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_46.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_46.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_46.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_46.csv"
+        },
+        {
+          "neuron": 47,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_47.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_47.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_47.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_47.csv"
+        },
+        {
+          "neuron": 48,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_48.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_48.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_48.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_48.csv"
+        },
+        {
+          "neuron": 49,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_49.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_49.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_49.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_49.csv"
+        },
+        {
+          "neuron": 50,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_50.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_50.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_50.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_50.csv"
+        },
+        {
+          "neuron": 51,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_51.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_51.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_51.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_51.csv"
+        },
+        {
+          "neuron": 52,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_52.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_52.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_52.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_52.csv"
+        },
+        {
+          "neuron": 53,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_53.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_53.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_53.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_53.csv"
+        },
+        {
+          "neuron": 54,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_54.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_54.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_54.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_54.csv"
+        },
+        {
+          "neuron": 55,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_55.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_55.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_55.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_55.csv"
+        },
+        {
+          "neuron": 56,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_56.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_56.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_56.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_56.csv"
+        },
+        {
+          "neuron": 57,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_57.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_57.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_57.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_57.csv"
+        },
+        {
+          "neuron": 58,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_58.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_58.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_58.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_58.csv"
+        },
+        {
+          "neuron": 59,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_59.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_59.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_59.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_59.csv"
+        },
+        {
+          "neuron": 60,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_60.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_60.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_60.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_60.csv"
+        },
+        {
+          "neuron": 61,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_61.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_61.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_61.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_61.csv"
+        },
+        {
+          "neuron": 62,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_62.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_62.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_62.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_62.csv"
+        },
+        {
+          "neuron": 63,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_63.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_63.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_63.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_63.csv"
+        },
+        {
+          "neuron": 64,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_64.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_64.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_64.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_64.csv"
+        },
+        {
+          "neuron": 65,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_65.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_65.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_65.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_65.csv"
+        },
+        {
+          "neuron": 66,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_66.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_66.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_66.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_66.csv"
+        },
+        {
+          "neuron": 67,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_67.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_67.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_67.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_67.csv"
+        },
+        {
+          "neuron": 68,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_68.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_68.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_68.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_68.csv"
+        },
+        {
+          "neuron": 69,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_69.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_69.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_69.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_69.csv"
+        },
+        {
+          "neuron": 70,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_70.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_70.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_70.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_70.csv"
+        },
+        {
+          "neuron": 71,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_71.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_71.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_71.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_71.csv"
+        },
+        {
+          "neuron": 72,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_72.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_72.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_72.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_72.csv"
+        },
+        {
+          "neuron": 73,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_73.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_73.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_73.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_73.csv"
+        },
+        {
+          "neuron": 74,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_74.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_74.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_74.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_74.csv"
+        },
+        {
+          "neuron": 75,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_75.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_75.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_75.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_75.csv"
+        },
+        {
+          "neuron": 76,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_76.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_76.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_76.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_76.csv"
+        },
+        {
+          "neuron": 77,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_77.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_77.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_77.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_77.csv"
+        },
+        {
+          "neuron": 78,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_78.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_78.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_78.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_78.csv"
+        },
+        {
+          "neuron": 79,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_79.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_79.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_79.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_79.csv"
+        },
+        {
+          "neuron": 80,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_80.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_80.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_80.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_80.csv"
+        },
+        {
+          "neuron": 81,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_81.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_81.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_81.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_81.csv"
+        },
+        {
+          "neuron": 82,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_82.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_82.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_82.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_82.csv"
+        },
+        {
+          "neuron": 83,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_83.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_83.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_83.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_83.csv"
+        },
+        {
+          "neuron": 84,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_84.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_84.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_84.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_84.csv"
+        },
+        {
+          "neuron": 85,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_85.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_85.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_85.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_85.csv"
+        },
+        {
+          "neuron": 86,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_86.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_86.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_86.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_86.csv"
+        },
+        {
+          "neuron": 87,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_87.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_87.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_87.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_87.csv"
+        },
+        {
+          "neuron": 88,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_88.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_88.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_88.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_88.csv"
+        },
+        {
+          "neuron": 89,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_89.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_89.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_89.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_89.csv"
+        },
+        {
+          "neuron": 90,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_90.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_90.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_90.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_90.csv"
+        },
+        {
+          "neuron": 91,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_91.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_91.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_91.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_91.csv"
+        },
+        {
+          "neuron": 92,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_92.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_92.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_92.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_92.csv"
+        },
+        {
+          "neuron": 93,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_93.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_93.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_93.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_93.csv"
+        },
+        {
+          "neuron": 94,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_94.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_94.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_94.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_94.csv"
+        },
+        {
+          "neuron": 95,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_95.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_95.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_95.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_95.csv"
+        },
+        {
+          "neuron": 96,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_96.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_96.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_96.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_96.csv"
+        },
+        {
+          "neuron": 97,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_97.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_97.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_97.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_97.csv"
+        },
+        {
+          "neuron": 98,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_98.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_98.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_98.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_98.csv"
+        },
+        {
+          "neuron": 99,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_99.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_99.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_99.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_99.csv"
+        },
+        {
+          "neuron": 100,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_100.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_100.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_100.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_100.csv"
+        },
+        {
+          "neuron": 101,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_101.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_101.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_101.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_101.csv"
+        },
+        {
+          "neuron": 102,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_102.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_102.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_102.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_102.csv"
+        },
+        {
+          "neuron": 103,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_103.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_103.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_103.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_103.csv"
+        },
+        {
+          "neuron": 104,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_104.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_104.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_104.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_104.csv"
+        },
+        {
+          "neuron": 105,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_105.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_105.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_105.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_105.csv"
+        },
+        {
+          "neuron": 106,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_106.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_106.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_106.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_106.csv"
+        },
+        {
+          "neuron": 107,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_107.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_107.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_107.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_107.csv"
+        },
+        {
+          "neuron": 108,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_108.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_108.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_108.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_108.csv"
+        },
+        {
+          "neuron": 109,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_109.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_109.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_109.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_109.csv"
+        },
+        {
+          "neuron": 110,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_110.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_110.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_110.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_110.csv"
+        },
+        {
+          "neuron": 111,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_111.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_111.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_111.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_111.csv"
+        },
+        {
+          "neuron": 112,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_112.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_112.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_112.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_112.csv"
+        },
+        {
+          "neuron": 113,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_113.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_113.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_113.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_113.csv"
+        },
+        {
+          "neuron": 114,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_114.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_114.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_114.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_114.csv"
+        },
+        {
+          "neuron": 115,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_115.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_115.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_115.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_115.csv"
+        },
+        {
+          "neuron": 116,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_116.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_116.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_116.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_116.csv"
+        },
+        {
+          "neuron": 117,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_117.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_117.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_117.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_117.csv"
+        },
+        {
+          "neuron": 118,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_118.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_118.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_118.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_118.csv"
+        },
+        {
+          "neuron": 119,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_119.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_119.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_119.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_119.csv"
+        },
+        {
+          "neuron": 120,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_120.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_120.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_120.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_120.csv"
+        },
+        {
+          "neuron": 121,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_121.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_121.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_121.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_121.csv"
+        },
+        {
+          "neuron": 122,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_122.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_122.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_122.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_122.csv"
+        },
+        {
+          "neuron": 123,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_123.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_123.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_123.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_123.csv"
+        },
+        {
+          "neuron": 124,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_124.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_124.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_124.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_124.csv"
+        },
+        {
+          "neuron": 125,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_125.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_125.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_125.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_125.csv"
+        },
+        {
+          "neuron": 126,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_126.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_126.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_126.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_126.csv"
+        },
+        {
+          "neuron": 127,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_1_127.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_1_127.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_1_127.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_1_127.csv"
+        }
+      ]
+    },
+    {
+      "layer": 2,
+      "neurons": [
+        {
+          "neuron": 0,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_2_0.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_2_0.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_2_0.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_2_0.csv"
+        },
+        {
+          "neuron": 1,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_2_1.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_2_1.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_2_1.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_2_1.csv"
+        },
+        {
+          "neuron": 2,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_2_2.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_2_2.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_2_2.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_2_2.csv"
+        },
+        {
+          "neuron": 3,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_2_3.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_2_3.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_2_3.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_2_3.csv"
+        },
+        {
+          "neuron": 4,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_2_4.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_2_4.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_2_4.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_2_4.csv"
+        },
+        {
+          "neuron": 5,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_2_5.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_2_5.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_2_5.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_2_5.csv"
+        },
+        {
+          "neuron": 6,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_2_6.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_2_6.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_2_6.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_2_6.csv"
+        },
+        {
+          "neuron": 7,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_2_7.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_2_7.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_2_7.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_2_7.csv"
+        },
+        {
+          "neuron": 8,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_2_8.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_2_8.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_2_8.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_2_8.csv"
+        },
+        {
+          "neuron": 9,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_2_9.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_2_9.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_2_9.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_2_9.csv"
+        },
+        {
+          "neuron": 10,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_2_10.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_2_10.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_2_10.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_2_10.csv"
+        },
+        {
+          "neuron": 11,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_2_11.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_2_11.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_2_11.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_2_11.csv"
+        },
+        {
+          "neuron": 12,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_2_12.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_2_12.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_2_12.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_2_12.csv"
+        },
+        {
+          "neuron": 13,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_2_13.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_2_13.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_2_13.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_2_13.csv"
+        },
+        {
+          "neuron": 14,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_2_14.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_2_14.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_2_14.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_2_14.csv"
+        },
+        {
+          "neuron": 15,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_2_15.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_2_15.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_2_15.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_2_15.csv"
+        },
+        {
+          "neuron": 16,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_2_16.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_2_16.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_2_16.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_2_16.csv"
+        },
+        {
+          "neuron": 17,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_2_17.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_2_17.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_2_17.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_2_17.csv"
+        },
+        {
+          "neuron": 18,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_2_18.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_2_18.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_2_18.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_2_18.csv"
+        },
+        {
+          "neuron": 19,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_2_19.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_2_19.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_2_19.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_2_19.csv"
+        },
+        {
+          "neuron": 20,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_2_20.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_2_20.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_2_20.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_2_20.csv"
+        },
+        {
+          "neuron": 21,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_2_21.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_2_21.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_2_21.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_2_21.csv"
+        },
+        {
+          "neuron": 22,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_2_22.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_2_22.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_2_22.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_2_22.csv"
+        },
+        {
+          "neuron": 23,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_2_23.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_2_23.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_2_23.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_2_23.csv"
+        },
+        {
+          "neuron": 24,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_2_24.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_2_24.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_2_24.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_2_24.csv"
+        },
+        {
+          "neuron": 25,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_2_25.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_2_25.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_2_25.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_2_25.csv"
+        },
+        {
+          "neuron": 26,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_2_26.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_2_26.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_2_26.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_2_26.csv"
+        },
+        {
+          "neuron": 27,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_2_27.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_2_27.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_2_27.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_2_27.csv"
+        },
+        {
+          "neuron": 28,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_2_28.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_2_28.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_2_28.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_2_28.csv"
+        },
+        {
+          "neuron": 29,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_2_29.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_2_29.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_2_29.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_2_29.csv"
+        },
+        {
+          "neuron": 30,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_2_30.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_2_30.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_2_30.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_2_30.csv"
+        },
+        {
+          "neuron": 31,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_2_31.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_2_31.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_2_31.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_2_31.csv"
+        },
+        {
+          "neuron": 32,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_2_32.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_2_32.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_2_32.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_2_32.csv"
+        },
+        {
+          "neuron": 33,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_2_33.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_2_33.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_2_33.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_2_33.csv"
+        },
+        {
+          "neuron": 34,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_2_34.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_2_34.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_2_34.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_2_34.csv"
+        },
+        {
+          "neuron": 35,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_2_35.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_2_35.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_2_35.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_2_35.csv"
+        },
+        {
+          "neuron": 36,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_2_36.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_2_36.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_2_36.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_2_36.csv"
+        },
+        {
+          "neuron": 37,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_2_37.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_2_37.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_2_37.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_2_37.csv"
+        },
+        {
+          "neuron": 38,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_2_38.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_2_38.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_2_38.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_2_38.csv"
+        },
+        {
+          "neuron": 39,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_2_39.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_2_39.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_2_39.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_2_39.csv"
+        },
+        {
+          "neuron": 40,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_2_40.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_2_40.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_2_40.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_2_40.csv"
+        },
+        {
+          "neuron": 41,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_2_41.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_2_41.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_2_41.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_2_41.csv"
+        },
+        {
+          "neuron": 42,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_2_42.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_2_42.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_2_42.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_2_42.csv"
+        },
+        {
+          "neuron": 43,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_2_43.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_2_43.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_2_43.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_2_43.csv"
+        },
+        {
+          "neuron": 44,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_2_44.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_2_44.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_2_44.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_2_44.csv"
+        },
+        {
+          "neuron": 45,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_2_45.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_2_45.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_2_45.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_2_45.csv"
+        },
+        {
+          "neuron": 46,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_2_46.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_2_46.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_2_46.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_2_46.csv"
+        },
+        {
+          "neuron": 47,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_2_47.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_2_47.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_2_47.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_2_47.csv"
+        },
+        {
+          "neuron": 48,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_2_48.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_2_48.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_2_48.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_2_48.csv"
+        },
+        {
+          "neuron": 49,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_2_49.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_2_49.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_2_49.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_2_49.csv"
+        },
+        {
+          "neuron": 50,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_2_50.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_2_50.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_2_50.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_2_50.csv"
+        },
+        {
+          "neuron": 51,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_2_51.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_2_51.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_2_51.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_2_51.csv"
+        },
+        {
+          "neuron": 52,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_2_52.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_2_52.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_2_52.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_2_52.csv"
+        },
+        {
+          "neuron": 53,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_2_53.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_2_53.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_2_53.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_2_53.csv"
+        },
+        {
+          "neuron": 54,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_2_54.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_2_54.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_2_54.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_2_54.csv"
+        },
+        {
+          "neuron": 55,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_2_55.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_2_55.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_2_55.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_2_55.csv"
+        },
+        {
+          "neuron": 56,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_2_56.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_2_56.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_2_56.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_2_56.csv"
+        },
+        {
+          "neuron": 57,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_2_57.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_2_57.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_2_57.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_2_57.csv"
+        },
+        {
+          "neuron": 58,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_2_58.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_2_58.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_2_58.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_2_58.csv"
+        },
+        {
+          "neuron": 59,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_2_59.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_2_59.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_2_59.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_2_59.csv"
+        },
+        {
+          "neuron": 60,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_2_60.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_2_60.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_2_60.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_2_60.csv"
+        },
+        {
+          "neuron": 61,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_2_61.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_2_61.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_2_61.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_2_61.csv"
+        },
+        {
+          "neuron": 62,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_2_62.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_2_62.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_2_62.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_2_62.csv"
+        },
+        {
+          "neuron": 63,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_2_63.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_2_63.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_2_63.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_2_63.csv"
+        }
+      ]
+    },
+    {
+      "layer": 3,
+      "neurons": [
+        {
+          "neuron": 0,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_3_0.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_3_0.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_3_0.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_3_0.csv"
+        },
+        {
+          "neuron": 1,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_3_1.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_3_1.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_3_1.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_3_1.csv"
+        },
+        {
+          "neuron": 2,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_3_2.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_3_2.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_3_2.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_3_2.csv"
+        },
+        {
+          "neuron": 3,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_3_3.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_3_3.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_3_3.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_3_3.csv"
+        },
+        {
+          "neuron": 4,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_3_4.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_3_4.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_3_4.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_3_4.csv"
+        },
+        {
+          "neuron": 5,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_3_5.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_3_5.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_3_5.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_3_5.csv"
+        },
+        {
+          "neuron": 6,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_3_6.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_3_6.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_3_6.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_3_6.csv"
+        },
+        {
+          "neuron": 7,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_3_7.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_3_7.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_3_7.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_3_7.csv"
+        },
+        {
+          "neuron": 8,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_3_8.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_3_8.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_3_8.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_3_8.csv"
+        },
+        {
+          "neuron": 9,
+          "weights_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\w_3_9.mif",
+          "bias_mif": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\mif\\b_3_9.mif",
+          "weights_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\w_3_9.csv",
+          "bias_csv": "CIFAR_Gray_Model_Neuron1\\Memory_Files\\csv\\b_3_9.csv"
+        }
+      ]
+    }
+  ]
+}

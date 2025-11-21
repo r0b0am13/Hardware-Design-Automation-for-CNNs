@@ -1,0 +1,7 @@
+Running: xsim.dir/Complete_CNN_TestBench_FixedParams_behav/xsimk.exe -simmode gui -wdb Complete_CNN_TestBench_FixedParams_behav.wdb -simrunnum 0 -socket 51151
+Design successfully loaded
+Design Loading Memory Usage: 9996 KB (Peak: 9996 KB)
+Design Loading CPU Usage: 62 ms
+Simulation completed
+Simulation Memory Usage: 12964 KB (Peak: 12964 KB)
+Simulation CPU Usage: 468 ms
